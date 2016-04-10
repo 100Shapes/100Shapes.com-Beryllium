@@ -1,7 +1,26 @@
 ---
-layout: page
+layout: default
 title: "Labs"
 permalink: /labs/
 ---
 
-<p>Labs are great too</p>
+<div class="col col-12 px2 mb4">
+    <h1>Labs</h1>
+    <p>
+        We do labs things too.
+    </p>
+
+    <div class="mxn1 clearfix">
+        {% for post in site.categories.labs | sort: 'date', 'last'%}
+        <div class="col col-12 p1">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">{{ post.title }}</h3>
+                <p class="m0">
+                    {{ post.date }}
+                </p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
