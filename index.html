@@ -2,22 +2,163 @@
 layout: default
 ---
 
-<div class="home">
+<div class="col col-12 px2 mt4 mb2">
+    <h1 class="hide">100 Shapes</h1>
+    <p class="full-width lead">
+        Opportunity to write something here as the introduction to the whole page. lots
+        more text here. something really interested too. I have a special class so I
+        span the full width.
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    </p>
 </div>
+<div class="col col-12 px2">
+    <p class="inline-block mr2">On this page:
+    <ol class="list-reset inline">
+        <li class="inline-block mr2">
+            <a href="#enterprise-ux">Enterprise UX</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#projects">Projects</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#labs">Lab projects</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#ventures">Latest Ventures</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#blog">Recent blog posts</a>
+        </li>
+    </ol>
+    </p>
+</div>
+<section class="col col-12 px2">
+    <h2 id="enterprise-ux" class="pt4">Enterprise UX</h2>
+    <p>
+        All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+
+    </p>
+    <div class="mxn1 clearfix">
+        <div class="sm-col sm-col-12 p1">
+            <a href="/enterprise-ux" class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Creating better business systems for internal tools</h3>
+                <p class="mb0 lead">People-centered design that boosts your bottomline.</p>
+            </a>
+        </div>
+        <div class="sm-col sm-col-12 md-col-6 p1">
+            <a href="/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+                <h3 class="h2 m0">Invest in the systems that give you the&nbsp;<i>competitive edge</i></h3>
+                <p class="mb0">Doing things for business</p>
+            </a>
+        </div>
+        <div class="sm-col sm-col-12 md-col-6 p1">
+            <a href="/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+                <h3 class="h2 m0">Calculate the&nbsp;<i>ROI</i>&nbsp;of your internal systems</h3>
+                <p class="mb0">Doing things for business</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="col col-12 px2">
+    <h2 id="projects" class="pt4">Typical projects</h2>
+    <p>Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+    </p>
+    <div class="mxn1 clearfix">
+        <div class="col col-12 p1">
+            <a href="/work/BBC-freebird" class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="/work/BBC-freebird" class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="/work/BBC-freebird" class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="col col-12 px2">
+    <h2 id="labs" class="pt4">Labs</h2>
+    <p>Our <a href="/labs">labs projects</a> are like, amazing. Lorem ipsum dolor sit amet,
+        consectetur adipiscin
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+    </p>
+
+    <div class="mxn1 clearfix">
+        {% for post in site.categories['labs'] limit: 3 %}
+        <div class="col col-12 p1">
+            <a href="{{ post.url | prepend: site.baseurl }}"
+               class="border-box border rounded p3 block">
+                <h3 class="m0">{{ post.title }}</h3>
+                <p class="m0">
+                    Doing things for business
+                </p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+
+</section>
+<section class="col col-12 px2">
+    <h2 id="ventures" class="pt4">Ventures</h2>
+    <p>
+        Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+
+    </p>
+    <div class="mxn1 clearfix">
+        <div class="col col-12 p1">
+            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">Climb.Social</h3>
+                <p class="m0">Social Media anywhere you need it</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">Wifime</h3>
+                <p class="m0">Cool things with Wifi</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">Allo' Allo'</h3>
+                <p class="m0">Project allocation plans for service agencies</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="col col-12 px2 mb4">
+    <h2 id="blog" class="pt4">Blog</h2>
+    <p>
+        Things we've written recently. Our labs projects are like, amazing. Lorem ipsum dolor sit amet,
+        consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam.
+    </p>
+
+    <div class="mxn1 clearfix">
+        {% for post in site.posts | sort: 'date', 'last' limit: 3 %}
+        <div class="col col-12 p1">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">{{ post.title }}</h3>
+                <p class="m0">
+                    Doing things for business
+                </p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
