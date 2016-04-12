@@ -26,7 +26,7 @@ layout: default
             <a href="#labs">Lab projects</a>
         </li>
         <li class="inline-block mr2">
-            <a href="#ventures">Latest Ventures</a>
+            <a href="#ventures">Latest ventures</a>
         </li>
         <li class="inline-block mr2">
             <a href="#blog">Recent blog posts</a>
@@ -104,8 +104,8 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}"
                class="border-box border rounded p3 block">
                 <h3 class="m0">{{ post.title }}</h3>
-                <p class="m0">
-                    Doing things for business
+                <p class="mt1 mb0">
+                    {{ post.subtitle }}
                 </p>
             </a>
         </div>
@@ -123,31 +123,22 @@ layout: default
 
     </p>
     <div class="mxn1 clearfix">
+        {% for venture in site.ventures %}
         <div class="col col-12 p1">
-            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
-                <h3 class="m0">Climb.Social</h3>
-                <p class="m0">Social Media anywhere you need it</p>
+            <a href="{{ venture.url }}" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">{{ venture.name }}</h3>
+                <p class="mt1 mb0">{{ venture.tagline }}</p>
             </a>
         </div>
-        <div class="col col-12 p1">
-            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
-                <h3 class="m0">Wifime</h3>
-                <p class="m0">Cool things with Wifi</p>
-            </a>
-        </div>
-        <div class="col col-12 p1">
-            <a href="/enterprise-ux" class="border-box border rounded px3 py2 block">
-                <h3 class="m0">Allo' Allo'</h3>
-                <p class="m0">Project allocation plans for service agencies</p>
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </section>
 <section class="col col-12 px2 mb4">
     <h2 id="blog" class="pt4">Blog</h2>
     <p>
-        Things we've written recently. Our labs projects are like, amazing. Lorem ipsum dolor sit amet,
-        consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        Things we've written recently <a href="{{ '/blog' | prepend: site.baseurl }}">on our blog</a>. Our labs projects are like,
+        amazing. Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut
         enim ad minim veniam.
     </p>
 
@@ -156,7 +147,7 @@ layout: default
         <div class="col col-12 p1">
             <a href="{{ post.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block">
                 <h3 class="m0">{{ post.title }}</h3>
-                <p class="m0">
+                <p class="mt1 mb0">
                     {{ post.subtitle }}
                 </p>
             </a>

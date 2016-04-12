@@ -22,6 +22,9 @@ email: hello@100shapes.com
 phone_number: +442037738175
 phone_number_display: +44 203 773 8175
 
+collections:
+- ventures
+
 # Build settings
 markdown: kramdown
 exclude:

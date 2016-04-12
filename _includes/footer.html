@@ -12,9 +12,14 @@
         <div class="clearfix">
             <small class="col col-12 px2 mb2">
                 <ul class="list-reset">
-                    <li class="inline-block mr2">Minor</li>
-                    <li class="inline-block mr2">Something here</li>
-                    <li class="inline-block mr2">&copy; 2016. 100 Shapes Ltd.</li>
+                    <li class="inline-block mr2">
+                        Something here
+                    </li>
+                    <li class="inline-block mr2">
+                        <a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a>
+                    </li>
+                    <li class="inline-block mr2">&copy; {{ 'now' | date: "%Y" }}. 100 Shapes Ltd. All rights
+                        reserved.</li>
                 </ul>
             </small>
         </div>
