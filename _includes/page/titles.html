@@ -1,0 +1,9 @@
+{% if include.long_title %}
+<h1 class="h1 mb1">{{ include.long_title }}</h1>
+{% else %}
+<h1 class="h1 mb1">{{ include.title }}</h1>
+{% endif %}
+
+{% if include.subtitle %}
+<p class="h2 mt1">{{ include.subtitle }}</p>
+{% endif %}

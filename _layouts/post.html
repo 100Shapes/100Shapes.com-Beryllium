@@ -6,8 +6,16 @@ layout: default
          itemtype="http://schema.org/BlogPosting">
 
     <header>
-        <h1 itemprop="name headline"
-            class="h1">{{ page.title }}</h1>
+        {% if page.long_title %}
+        <h1 itemprop="name headline" class="h1">{{ page.long_title }}</h1>
+        {% else %}
+        <h1 itemprop="name headline" class="h1">{{ page.title }}</h1>
+        {% endif %}
+
+        {% if page.subtitle %}
+        <p class="h2">{{ page.subtitle }}</p>
+        {% endif %}
+
         <p>
             <time datetime="{{ page.date | date_to_xmlschema }}"
                   itemprop="datePublished">
