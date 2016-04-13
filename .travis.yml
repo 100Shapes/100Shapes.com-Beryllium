@@ -6,8 +6,7 @@ script: "./scripts/cibuild"
 after_success: "./scripts/deploy"
 branches:
   only:
-  - gh-pages
-  - "/pages-(.*)/"
+  - master
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
