@@ -2,8 +2,9 @@ language: ruby
 sudo: false
 rvm:
 - 2.1
-script: "./scripts/cibuild"
-after_success: "./scripts/deploy"
+script:
+  - "./scripts/cibuild"
+  - "./scripts/deploy"
 branches:
   only:
   - master
