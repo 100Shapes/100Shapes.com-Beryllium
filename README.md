@@ -6,3 +6,18 @@
 Static site generated with Jekyll.
 
 `master` branch contains content and template files. [`travis`](https://travis-ci.org/100Shapes/100Shapes.com-Beryllium) builds the site and pushes to the `gh-pages` branch.
+
+
+Development
+-----------
+
+run `./scripts/dev`. This will start a Jekyll server in watch mode.
+
+Note: if you change config, you may have to restart.
+
+
+Deploy
+------
+
+You don't deploy, [Travis](https://travis-ci.org/100Shapes/100Shapes.com-Beryllium) does. Just push to master and it does the rest.
+
