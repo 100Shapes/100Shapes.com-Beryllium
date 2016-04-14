@@ -26,6 +26,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - scripts
+  - README.md
 gems:
   - jekyll-feed
+  - jekyll-less
 
