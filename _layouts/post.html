@@ -23,12 +23,13 @@ layout: default
                 {{ page.date | date: "%b %-d, %Y" }}
             </time>
             {% if page.author %}
+            {% assign thing = site.authors.michele %}
             •
         <span itemprop="author"
               itemscope
               itemtype="http://schema.org/Person">
             <span itemprop="name">
-                {{ page.author }}
+                {{ thing }}
             </span>
         </span>
             {% endif %}

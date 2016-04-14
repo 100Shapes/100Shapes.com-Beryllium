@@ -1,8 +1,8 @@
 ---
 title: BBC Freebird
 permalink: /work/BBC-freebird/
-long_title: "Something here init"
-subtitle: "Doing something cool"
+long_title: "BBC Freebird long title"
+subtitle: "Doing something cool with Creative Media"
 layout: project
 ---
 
