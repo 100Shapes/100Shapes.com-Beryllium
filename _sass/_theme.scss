@@ -1,0 +1,18 @@
+body {
+  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, sans-serif;
+  color: $black;
+  font-size: 1.4em;
+}
+
+a:link, a:visited {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  max-width: 35em;
+}
