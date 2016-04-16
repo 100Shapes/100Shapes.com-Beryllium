@@ -24,11 +24,12 @@ layout: default
             </time>
             {% if page.author %}
             {% assign author = site.data.people[page.author] %}
+            {% capture author_url %}/blog/authors/{{ page.author }}/{% endcapture %}
             •
         <span itemprop="author"
               itemscope
               itemtype="http://schema.org/Person">
-            <a href="#"
+            <a href="{{ author_url | prepend: site.baseurl }}"
                itemprop="name">
                 {{ author.name_long }}
             </a>

@@ -43,7 +43,7 @@ layout: default
     <ul class="list-reset">
         {% for category in site.categories %}
         <li>
-            <a href="#">{{ category | first | capitalize }}</a>
+            <a href="/category/{{ category | first }}/">{{ category | first | capitalize }}</a>
         </li>
         {% endfor %}
     </ul>
