@@ -2,21 +2,73 @@
 title: "Blog"
 long_title: "100 Shapes Blog"
 subtitle: "All things design related"
-layout: page
+layout: default
 ---
 
-<p class="lead">
-    We write interesting things here
-</p>
+<header class="col col-12 px2">
+    {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+</header>
 
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="col col-12 px2">
+    <p class="inline-block mr2">On this page:
+    <ol class="list-reset inline">
+        <li class="inline-block mr2">
+            <a href="#posts">Recent posts</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#categories">Categories</a>
+        </li>
+        <li class="inline-block mr2">
+            <a href="#authors">Authors</a>
+        </li>
+    </ol>
+    </p>
+</div>
 
-        <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-    </li>
+
+<div class="col col-12 px2 mb2"
+     id="posts">
+    {% for post in site.posts | sort: 'date', 'last' %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block mb2">
+        <h3 class="m0">{{ post.title }}</h3>
+        <p class="mt1 mb0">
+            {{ post.subtitle }}
+        </p>
+    </a>
     {% endfor %}
-</ul>
+</div>
+
+<div class="col col-6 md-col-4 px2"
+     id="categories">
+    <h3 class="mb1">Categories</h3>
+    <ul class="list-reset">
+        <li>
+            <a href="#">Labs</a>
+        </li>
+        <li>
+            <a href="#">Design</a>
+        </li>
+        <li>
+            <a href="#">Tech</a>
+        </li>
+    </ul>
+</div>
+
+<div class="col col-6 md-col-4 px2"
+     id="authors">
+    <h3 class="mb1">Authors</h3>
+    <ul class="list-reset">
+        <li>
+            <a href="#">Michele M.</a>
+        </li>
+        <li>
+            <a href="#">Chris E.</a>
+        </li>
+        <li>
+            <a href="#">Paolo M.</a>
+        </li>
+        <li>
+            <a href="#">Trev M.</a>
+        </li>
+    </ul>
+</div>

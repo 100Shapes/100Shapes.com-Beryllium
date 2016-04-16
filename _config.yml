@@ -29,5 +29,5 @@ exclude:
   - README.md
 gems:
   - jekyll-feed
-  - jekyll-less
+  - jekyll-assets
 
