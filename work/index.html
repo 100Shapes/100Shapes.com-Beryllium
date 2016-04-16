@@ -1,8 +1,90 @@
 ---
-layout: page
+layout: default
 title: "Work"
 long_title: "Something here init"
 subtitle: "Doing something cool"
 permalink: /work/
 ---
 
+<header class="col col-12 px2">
+    {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+</header>
+
+<section class="col col-12 px2">
+    <h2 id="enterprise-ux" class="pt4">Enterprise UX</h2>
+    <p>
+        All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+
+    </p>
+    <div class="mxn1 clearfix">
+        <div class="sm-col sm-col-12 p1">
+            <a href="/work/enterprise-ux" class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Creating better business systems for internal tools</h3>
+                <p class="mb0 lead">People-centered design that boosts your bottomline.</p>
+            </a>
+        </div>
+        <div class="sm-col sm-col-12 md-col-6 p1">
+            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+                <h3 class="h2 m0">Invest in the systems that give you the&nbsp;<i>competitive edge</i></h3>
+                <p class="mb0">Doing things for business</p>
+            </a>
+        </div>
+        <div class="sm-col sm-col-12 md-col-6 p1">
+            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+                <h3 class="h2 m0">Calculate the&nbsp;<i>ROI</i>&nbsp;of your internal systems</h3>
+                <p class="mb0">Doing things for business</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="col col-12 px2">
+    <h2 id="projects" class="pt4">Typical projects</h2>
+    <p>Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+    </p>
+    <div class="mxn1 clearfix">
+        <div class="col col-12 p1">
+            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+               class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+               class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+        <div class="col col-12 p1">
+            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+               class="border-box border rounded px3 py4 block">
+                <h3 class="h1 m0">Transforming the way people transform</h3>
+                <p class="mb0 lead">Doing things for business and something else really cool.</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="col col-12 px2">
+    <h2 id="ventures" class="pt4">Ventures</h2>
+    <p>
+        Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam.
+
+    </p>
+    <div class="mxn1 clearfix">
+        {% for venture in site.ventures %}
+        <div class="col col-12 p1">
+            <a href="{{ venture.url }}" class="border-box border rounded px3 py2 block">
+                <h3 class="m0">{{ venture.name }}</h3>
+                <p class="mt1 mb0">{{ venture.tagline }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>

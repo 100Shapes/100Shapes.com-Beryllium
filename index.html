@@ -23,9 +23,6 @@ layout: default
             <a href="#projects">Projects</a>
         </li>
         <li class="inline-block mr2">
-            <a href="#labs">Lab projects</a>
-        </li>
-        <li class="inline-block mr2">
             <a href="#ventures">Latest ventures</a>
         </li>
         <li class="inline-block mr2">
@@ -44,19 +41,19 @@ layout: default
     </p>
     <div class="mxn1 clearfix">
         <div class="sm-col sm-col-12 p1">
-            <a href="/enterprise-ux" class="border-box border rounded px3 py4 block">
+            <a href="/work/enterprise-ux" class="border-box border rounded px3 py4 block">
                 <h3 class="h1 m0">Creating better business systems for internal tools</h3>
                 <p class="mb0 lead">People-centered design that boosts your bottomline.</p>
             </a>
         </div>
         <div class="sm-col sm-col-12 md-col-6 p1">
-            <a href="/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
                 <h3 class="h2 m0">Invest in the systems that give you the&nbsp;<i>competitive edge</i></h3>
                 <p class="mb0">Doing things for business</p>
             </a>
         </div>
         <div class="sm-col sm-col-12 md-col-6 p1">
-            <a href="/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
+            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
                 <h3 class="h2 m0">Calculate the&nbsp;<i>ROI</i>&nbsp;of your internal systems</h3>
                 <p class="mb0">Doing things for business</p>
             </a>
@@ -92,30 +89,6 @@ layout: default
             </a>
         </div>
     </div>
-</section>
-<section class="col col-12 px2">
-    <h2 id="labs" class="pt4">Labs</h2>
-    <p>Our <a href="/labs">labs projects</a> are like, amazing. Lorem ipsum dolor sit amet,
-        consectetur adipiscin
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam.
-    </p>
-
-    <div class="mxn1 clearfix">
-        {% for post in site.categories['labs'] limit: 3 %}
-        <div class="col col-12 p1">
-            <a href="{{ post.url | prepend: site.baseurl }}"
-               class="border-box border rounded p3 block">
-                <h3 class="m0">{{ post.title }}</h3>
-                <p class="mt1 mb0">
-                    {{ post.subtitle }}
-                </p>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-
-
 </section>
 <section class="col col-12 px2">
     <h2 id="ventures" class="pt4">Ventures</h2>
