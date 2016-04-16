@@ -25,7 +25,6 @@ layout: default
     </p>
 </div>
 
-
 <div class="col col-12 px2 mb2"
      id="posts">
     {% for post in site.posts | sort: 'date', 'last' %}
@@ -42,15 +41,11 @@ layout: default
      id="categories">
     <h3 class="mb1">Categories</h3>
     <ul class="list-reset">
+        {% for category in site.categories %}
         <li>
-            <a href="#">Labs</a>
+            <a href="#">{{ category | first | capitalize }}</a>
         </li>
-        <li>
-            <a href="#">Design</a>
-        </li>
-        <li>
-            <a href="#">Tech</a>
-        </li>
+        {% endfor %}
     </ul>
 </div>
 
@@ -58,17 +53,11 @@ layout: default
      id="authors">
     <h3 class="mb1">Authors</h3>
     <ul class="list-reset">
+        {% for item in site.data.people %}
+        {% assign person = item | last %}
         <li>
-            <a href="#">Michele M.</a>
+            <a href="#">{{ person.name }}</a>
         </li>
-        <li>
-            <a href="#">Chris E.</a>
-        </li>
-        <li>
-            <a href="#">Paolo M.</a>
-        </li>
-        <li>
-            <a href="#">Trev M.</a>
-        </li>
+        {% endfor %}
     </ul>
 </div>

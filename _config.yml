@@ -1,5 +1,5 @@
 # Site settings
-title: UX & Design studio for enterprise
+title: (Chris to write some tagline here)
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -15,10 +15,6 @@ email: hello@100shapes.com
 phone_number: +442037738175
 phone_number_display: +44 203 773 8175
 
-collections:
-  - ventures
-  - authors
-
 # Build settings
 markdown: kramdown
 exclude:
@@ -27,6 +23,7 @@ exclude:
   - Gemfile.lock
   - scripts
   - README.md
+
 gems:
   - jekyll-feed
   - jekyll-assets

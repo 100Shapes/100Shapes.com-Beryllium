@@ -98,7 +98,8 @@ layout: default
 
     </p>
     <div class="mxn1 clearfix">
-        {% for venture in site.ventures %}
+        {% for item in site.data.ventures %}
+        {% assign venture = item | last %}
         <div class="col col-12 p1">
             <a href="{{ venture.url }}" class="border-box border rounded px3 py2 block">
                 <h3 class="m0">{{ venture.name }}</h3>
