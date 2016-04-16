@@ -14,5 +14,12 @@ a:hover {
 }
 
 p {
-  max-width: 35em;
+
+  &:not(.full-width) {
+    max-width: 35em;
+  }
+
+  &.lead {
+    font-size: 2rem;
+  }
 }
