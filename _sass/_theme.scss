@@ -17,13 +17,6 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-
-  &:not(.full-width) {
-    max-width: 35em;
-  }
-
-  &.lead {
-    font-size: 2rem;
-  }
+p:not(.full-width) {
+  max-width: 35em;
 }
