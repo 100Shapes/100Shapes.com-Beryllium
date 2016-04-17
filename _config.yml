@@ -20,7 +20,7 @@ phone_number_display: +44 203 773 8175
 # Build settings
 markdown: kramdown
 safe: false
-author_dir: blog/authors
+author_dir: join-us
 
 sass:
   style: compressed
@@ -39,7 +39,7 @@ jekyll-archives:
     month: '/blog/archive/:year/:month/'
     category: '/blog/:name/'
 
-paginate: 2
+paginate: 7
 paginate_path: '/blog/p:num/'
 
 compress_html:

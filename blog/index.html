@@ -43,7 +43,9 @@ layout: page
         <ul class="list-reset">
             {% for category in site.categories %}
             <li>
-                <a href="/blog/{{ category | first }}/">{{ category | first | capitalize }}</a>
+                <a href="{{ '/blog/' | prepend: site.baseurl }}{{ category | first }}/">
+                    {{ category | first | capitalize }}
+                </a>
             </li>
             {% endfor %}
         </ul>
@@ -56,13 +58,11 @@ layout: page
             {% for item in site.data.people %}
             {% assign person = item | last %}
             <li>
-                <a href="/blog/authors/{{ item | first }}/">{{ person.name }}</a>
+                <a href="{{ '/join-us/' | prepend: site.baseurl }}{{ item | first }}/">{{ person.name }}</a>
             </li>
             {% endfor %}
             <li class="mt2">
-                <small>
-                    <a href="{{ '/join-us/#team' | prepend: site.baseurl }}">Meet the team &#10095;</a>
-                </small>
+                <a href="{{ '/join-us/#team' | prepend: site.baseurl }}">Meet the team &#10095;</a>
             </li>
         </ul>
     </div>
