@@ -43,6 +43,7 @@ layout: default
                       itemscope
                       itemtype="http://schema.org/Person">
                     <img src="{{ author.gravatar }}?s=80"
+                         class="Profile"
                          alt="Profile of {{ author.name_long }}">
                     <a href="{{ author_url | prepend: site.baseurl }}"
                        itemprop="name">

@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-long_title: "Something here init"
-subtitle: "Doing something cool"
+title:  "New site design"
+subtitle: "'Beryllium' release with Jekyll"
 category: news
 author: michele
 ---

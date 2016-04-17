@@ -2,8 +2,15 @@
 @import "basscss/basscss";
 @import "theme";
 
+@import "components/profile";
+
 @media #{$breakpoint-md} {
   .md-right-align {
     text-align: right;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
