@@ -8,13 +8,13 @@ layout: default
 
     <header>
         {% if page.long_title %}
-        <h1 itemprop="name headline" class="h1">{{ page.long_title }}</h1>
+        <h1 itemprop="name headline" class="h1 mb0">{{ page.long_title }}</h1>
         {% else %}
-        <h1 itemprop="name headline" class="h1">{{ page.title }}</h1>
+        <h1 itemprop="name headline" class="h1 mb0">{{ page.title }}</h1>
         {% endif %}
 
         {% if page.subtitle %}
-        <p class="h2">{{ page.subtitle }}</p>
+        <p class="lead mt0">{{ page.subtitle }}</p>
         {% endif %}
 
         <p>
@@ -42,6 +42,8 @@ layout: default
                 <span itemprop="author"
                       itemscope
                       itemtype="http://schema.org/Person">
+                    <img src="{{ author.gravatar }}?s=80"
+                         alt="Profile of {{ author.name_long }}">
                     <a href="{{ author_url | prepend: site.baseurl }}"
                        itemprop="name">
                         {{ author.name_long }}
