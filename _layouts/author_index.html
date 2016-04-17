@@ -12,20 +12,21 @@ layout: default
         {% include page/titles.html title=page-title %}
     </header>
 
-    {% assign index = true %}
-    {% for post in site.posts %}
-    {% if post.author contains page.author %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    <div class="mxn1 clearfix">
+        {% assign index = true %}
+        {% for post in site.posts %}
+        {% if post.author contains page.author %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
-    {% unless year == this_year %}
-    {% assign year = this_year %}
-    <h2 class="h2">{{ year }}</h2>
-    {% endunless %}
+        {% unless year == this_year %}
+        {% assign year = this_year %}
+        <h2 class="h2 px1">{{ year }}</h2>
+        {% endunless %}
 
-    <div class="p1">
-        {% include post/list-item.html post=post %}
+        <div class="p1">
+            {% include post/list-item.html post=post %}
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
-
 </div>

@@ -1,13 +1,33 @@
-chris:
-  name: Chris E.
-  name_long: Chris Elphick
-  role: Co-founder & director
-  twitter: "@chris_elf"
-  gravatar: "https://s.gravatar.com/avatar/798f3c917969706360904b58919a36cf"
-
 michele:
   name: Michele M.
   name_long: Michele Memoli
-  role: Co-founder & director
+  role: Managing Director
   twitter: "@mmm0li"
   gravatar: "https://s.gravatar.com/avatar/3d04e99eeabbced1bd5204dd8828c9b0"
+
+chris:
+  name: Chris E.
+  name_long: Chris Elphick
+  role: Design Director
+  twitter: "@chris_elf"
+  gravatar: "https://s.gravatar.com/avatar/798f3c917969706360904b58919a36cf"
+
+paolo:
+  name: Paolo M.
+  name_long: Paolo Memoli
+  role: Finance Director
+  twitter: "@memolipd"
+  gravatar: "https://s.gravatar.com/avatar/9da0930d9591d3fb673c8204cf858598"
+
+trev:
+  name: Trev M.
+  name_long: Trev Morris
+  role: Senior Visual Designer
+  twitter: "@trev_morris"
+  gravatar: "https://s.gravatar.com/avatar/b42a51def59a6fedeefd63dc83171eef"
+
+christean:
+  name: Christean M.
+  name_long: Christean Murray
+  role: Visual Designer
+  gravatar: "https://s.gravatar.com/avatar/cd76d5686bc61618f6c13f3245341c47"

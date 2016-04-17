@@ -1,14 +1,34 @@
 @import "vars";
 @import "basscss/basscss";
+@import "basscss/responsive-padding";
+@import "basscss/responsive-margin";
 @import "theme";
 
 @import "components/profile";
+
+@media #{$breakpoint-sm} {
+  .sm-mxn3 {
+    margin-left: -$space-3;
+    margin-right: -$space-3;
+  }
+
+  .sm-mxn4 {
+    margin-left: -$space-4;
+    margin-right: -$space-4;
+  }
+}
 
 @media #{$breakpoint-md} {
   .md-right-align {
     text-align: right;
   }
+
+  .md-mxn4 {
+    margin-left: -$space-4;
+    margin-right: -$space-4;
+  }
 }
+
 
 img {
   max-width: 100%;

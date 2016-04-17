@@ -1,0 +1,27 @@
+ixd:
+  role: Interaction Designer
+  apply_link: "#"
+  description: |
+    A description of an *interaction designer* here.
+    Something really cool that describes exactly what the role
+    is and why it's important. You can also include
+    [links to work](http://www.londonlive.co.uk/) so that everything works.
+
+vd:
+  role: Visual Designer
+  apply_link: "#"
+  description: |
+    A description of an _visual designer_ here. Liking this too
+    It's really important that work is done here and that it
+    is of a high standard. We'll need to see examples of the
+    kind of work you produce.
+
+fe-dev:
+  role: Frontend Dev
+  apply_link: "#"
+  description: |
+    A description of a frontend dev is important. Webpack, React stuffy and things.
+    All of which are super important.
+
+
+

@@ -12,9 +12,11 @@ layout: default
         {% include page/titles.html title=page-title %}
     </header>
 
-    {% for post in page.posts %}
-    <div class="p1">
-       {% include post/list-item.html post=post %}
+    <div class="mxn1 clearfix">
+        {% for post in page.posts %}
+        <div class="p1">
+           {% include post/list-item.html post=post %}
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
