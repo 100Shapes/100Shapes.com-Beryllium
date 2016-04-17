@@ -10,7 +10,7 @@ twitter_username: '@100Shapes'
 github_username:  '@100Shapes'
 address: '13 Hawley Cres, Camden, London, NW1 8NP'
 address_link: https://goo.gl/maps/YVr9ih4MLZL2
-permalink: /blog/:categories/:title
+permalink: /blog/:categories/:title/
 
 # 100 Shapes Settings
 email: hello@100shapes.com
