@@ -20,6 +20,17 @@ markdown: kramdown
 safe: false
 author_dir: blog/authors
 
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+  layout: 'archive'
+  permalinks:
+    year: '/blog/archive/:year/'
+    month: '/blog/archive/:year/:month/'
+    category: '/blog/categories/:name/'
+
 exclude:
   - vendor
   - Gemfile

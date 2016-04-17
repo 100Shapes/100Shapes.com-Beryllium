@@ -43,7 +43,7 @@ layout: default
     <ul class="list-reset">
         {% for category in site.categories %}
         <li>
-            <a href="/category/{{ category | first }}/">{{ category | first | capitalize }}</a>
+            <a href="/blog/categories/{{ category | first }}/">{{ category | first | capitalize }}</a>
         </li>
         {% endfor %}
     </ul>
@@ -56,7 +56,7 @@ layout: default
         {% for item in site.data.people %}
         {% assign person = item | last %}
         <li>
-            <a href="#">{{ person.name }}</a>
+            <a href="/blog/authors/{{ item | first }}/">{{ person.name }}</a>
         </li>
         {% endfor %}
     </ul>

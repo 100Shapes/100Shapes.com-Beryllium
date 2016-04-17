@@ -20,7 +20,19 @@ layout: default
         <p>
             <time datetime="{{ page.date | date_to_xmlschema }}"
                   itemprop="datePublished">
-                {{ page.date | date: "%b %-d, %Y" }}
+
+                {% assign post-day-display = page.date | date: "%-d" %}
+                {% assign post-month = page.date | date: "%m" %}
+                {% assign post-month-display = page.date | date: "%b" %}
+                {% assign post-year = page.date | date: "%Y" %}
+
+                <a href="/blog/archive/{{ post-year }}/{{ post-month }}/">
+                    {{ post-month-display }}
+                </a>
+                {{ post-day-display }},
+                <a href="/blog/archive/{{ post-year}}/">
+                    {{ post-year }}
+                </a>
             </time>
             {% if page.author %}
             {% assign author = site.data.people[page.author] %}
