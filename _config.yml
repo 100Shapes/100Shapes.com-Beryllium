@@ -22,6 +22,9 @@ markdown: kramdown
 safe: false
 author_dir: blog/authors
 
+sass:
+  style: compressed
+
 jekyll-archives:
   enabled:
     - year
@@ -38,6 +41,13 @@ jekyll-archives:
 
 paginate: 2
 paginate_path: '/blog/p:num/'
+
+compress_html:
+  clippings: all
+  comments: all
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
 
 exclude:
   - vendor
