@@ -8,7 +8,7 @@ baseurl: ""
 url: "http://www.100shapes.com"
 twitter_username: 100Shapes
 github_username:  100Shapes
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:title/
 
 # 100 Shapes Settings
 email: hello@100shapes.com
