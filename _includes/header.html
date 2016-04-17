@@ -16,20 +16,20 @@
                     <ul class="list-reset md-right-align m0">
                         <li class="inline-block mr2">
                             <a href="mailto:{{ site.email }}">
-                                {{ site.email }}
+                                <small class="md-hide lg-hide">Email</small>
+                                <span class="xs-hide sm-hide">{{ site.email }}</span>
                             </a>
                         </li>
                         <li class="inline-block mr2">
                             <a href="tel:{{ site.phone_number }}">
-                                {{ site.phone_number_display }}
+                                <small class="md-hide lg-hide">Call</small>
+                                <span class="xs-hide sm-hide">{{ site.phone_number_display }}</span>
                             </a>
                         </li>
                         <li class="inline-block">
-                            <small>
-                                <a href="{{ site.address_link }}">
-                                    Map
-                                </a>
-                            </small>
+                            <a href="{{ site.address_link }}">
+                                <small>Map</small>
+                            </a>
                         </li>
                     </ul>
                 </div>
