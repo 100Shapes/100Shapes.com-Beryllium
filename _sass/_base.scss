@@ -3,8 +3,8 @@
 @import "basscss/responsive-padding";
 @import "basscss/responsive-margin";
 @import "theme";
-
-@import "components/profile";
+@import "components/Profile";
+@import "components/Menu";
 
 @media #{$breakpoint-sm} {
   .sm-mxn3 {

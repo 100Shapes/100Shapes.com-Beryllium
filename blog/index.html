@@ -26,13 +26,13 @@ layout: page
     <div class="mxn1 clearfix">
     {% for post in paginator.posts | sort: 'date', 'last' %}
         <div class="p1">
-            {% include blog/list-item.html post=post %}
+            {% include blog/list-item--large.html post=post %}
         </div>
     {% endfor %}
     </div>
 </div>
 
-<p class="right-align full-width">
+<p class="full-width">
     {% include blog/paginate-list.html %}
 </p>
 

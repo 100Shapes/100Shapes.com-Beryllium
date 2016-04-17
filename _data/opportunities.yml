@@ -23,5 +23,11 @@ fe-dev:
     A description of a frontend dev is important. Webpack, React stuffy and things.
     All of which are super important.
 
+ur:
+  role: User Researcher
+  apply_link: "/"
+  description: |
+    A description of a User researcher and the types of things they do.
+
 
 
