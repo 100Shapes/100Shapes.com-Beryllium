@@ -34,19 +34,25 @@ layout: default
                     {{ post-year }}
                 </a>
             </time>
+
             {% if page.author %}
-            {% assign author = site.data.people[page.author] %}
-            {% capture author_url %}/blog/authors/{{ page.author }}/{% endcapture %}
-            •
-        <span itemprop="author"
-              itemscope
-              itemtype="http://schema.org/Person">
-            <a href="{{ author_url | prepend: site.baseurl }}"
-               itemprop="name">
-                {{ author.name_long }}
-            </a>
-        </span>
+                {% assign author = site.data.people[page.author] %}
+                {% capture author_url %}/blog/authors/{{ page.author }}/{% endcapture %}
+                •
+                <span itemprop="author"
+                      itemscope
+                      itemtype="http://schema.org/Person">
+                    <a href="{{ author_url | prepend: site.baseurl }}"
+                       itemprop="name">
+                        {{ author.name_long }}
+                    </a>
+                </span>
             {% endif %}
+        </p>
+        <p>Category:
+            <a href="/blog/categories/{{ page.category }}/">
+                {{ page.category | capitalize }}
+            </a>
         </p>
     </header>
 
