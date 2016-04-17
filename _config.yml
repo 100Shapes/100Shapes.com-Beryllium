@@ -36,7 +36,7 @@ jekyll-archives:
     month: '/blog/archive/:year/:month/'
     category: '/blog/:name/'
 
-paginate: 10
+paginate: 2
 paginate_path: "/blog/p:num/"
 
 exclude:

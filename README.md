@@ -7,6 +7,14 @@ Static site generated with Jekyll.
 
 `master` branch contains content and template files. [`travis`](https://travis-ci.org/100Shapes/100Shapes.com-Beryllium) builds the site and pushes to the `gh-pages` branch.
 
+To Do
+-----
+
+- Migrate over content
+    - Copy and paste content
+    - Pull over media
+    - Update `aliases` of each file
+
 
 Development
 -----------
