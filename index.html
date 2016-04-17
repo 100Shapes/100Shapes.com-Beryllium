@@ -102,10 +102,7 @@ layout: default
         {% for item in site.data.ventures %}
         {% assign venture = item | last %}
         <div class="col col-12 p1">
-            <a href="{{ venture.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block">
-                <h3 class="m0">{{ venture.name }}</h3>
-                <p class="mt1 mb0">{{ venture.tagline }}</p>
-            </a>
+            {% include ventures/list-item.html venture=venture %}
         </div>
         {% endfor %}
     </div>
