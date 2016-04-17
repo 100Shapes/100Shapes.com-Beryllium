@@ -27,15 +27,30 @@ layout: default
 
 <div class="col col-12 px2 mb2"
      id="posts">
-    {% for post in site.posts | sort: 'date', 'last' %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="border-box border rounded px3 py2 block mb2">
-        <h3 class="m0">{{ post.title }}</h3>
-        <p class="mt1 mb0">
-            {{ post.subtitle }}
-        </p>
-    </a>
+    <div class="mxn1 clearfix">
+    {% for post in paginator.posts | sort: 'date', 'last' %}
+        <div class="p1">
+            {% include blog/list-item.html post=post %}
+        </div>
     {% endfor %}
+    </div>
 </div>
+
+<!-- Pagination links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next ">Next</span>
+    {% endif %}
+</div>
+
 
 <div class="col col-6 md-col-4 px2"
      id="categories">
@@ -43,7 +58,7 @@ layout: default
     <ul class="list-reset">
         {% for category in site.categories %}
         <li>
-            <a href="/blog/categories/{{ category | first }}/">{{ category | first | capitalize }}</a>
+            <a href="/blog/{{ category | first }}/">{{ category | first | capitalize }}</a>
         </li>
         {% endfor %}
     </ul>

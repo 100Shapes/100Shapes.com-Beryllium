@@ -53,7 +53,7 @@ layout: default
             {% endif %}
         </p>
         <p>Category:
-            <a href="/blog/categories/{{ page.category }}/">
+            <a href="/blog/{{ page.category }}/">
                 {{ page.category | capitalize }}
             </a>
         </p>
@@ -65,4 +65,4 @@ layout: default
 
 </article>
 
-{% include post/pagination.html %}
+{% include blog/pagination.html %}

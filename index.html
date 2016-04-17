@@ -119,7 +119,7 @@ layout: default
     <div class="mxn1 clearfix">
         {% for post in site.posts | sort: 'date', 'last' limit: 3 %}
         <div class="col col-12 p1">
-            {% include post/list-item.html post=post %}
+            {% include blog/list-item.html post=post %}
         </div>
         {% endfor %}
     </div>
