@@ -25,7 +25,10 @@ jekyll-archives:
     - year
     - month
     - categories
-  layout: 'archive'
+  layouts:
+    year: archive-year
+    month: archive-month
+    category: archive-category
   permalinks:
     year: '/blog/archive/:year/'
     month: '/blog/archive/:year/:month/'
