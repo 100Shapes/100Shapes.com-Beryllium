@@ -6,18 +6,24 @@
     {% capture page-title %}{% if page.long_title %}{{ page.long_title | escape }}{% else %}{{ page.title | escape | capitalize }}{% if page.subtitle %} – {{ page.subtitle | escape }}{% endif %}{% endif %}{% endcapture %}
     <title>{{ page-title }} | 100 Shapes</title>
 
+    {% assign page-url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+
 
     {% capture page-description %}{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-    <meta name="description" content="{{ page-description }}">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERAAAAAAAAERAQAAAAAAEBEAEAAAAAEAEQABAAAAEAARAAAQAAEAABEAAAEAEAAAEQAAABEAAAARAAAAEQAAABEAAAEAEAAAEQAAEAABAAARAAEAAAAQABEAEAAAAAEAEQEAAAAAABAREAAAAAAAAREREREREREREAAAAAP/wAAF/6AABv9gAAd+4AAHveAAB9vgAAfn4AAH5+AAB9vgAAe94AAHfuAABv9gAAX/oAAD/8AAAAAAAA" rel="icon" type="image/x-icon" />
 
     <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page-url }}">
     {% feed_meta %}
 
-    <!-- Update your html tag to include the itemscope and itemtype attributes. -->
-    <html>
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ page-title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page-url }}" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="{{ page-description }}" />
+    <meta property="og:site_name" content="100 Shapes – {{ site.title }}" />
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{ page-title }}">
@@ -32,14 +38,6 @@
     <meta name="twitter:creator" content="{{ site.twitter_username }}">
     <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image:src" content="http://www.example.com/image.html">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="{{ page-title }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:image" content="http://example.com/image.jpg" />
-    <meta property="og:description" content="{{ page-description }}" />
-    <meta property="og:site_name" content="100 Shapes – {{ site.title }}" />
 
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
