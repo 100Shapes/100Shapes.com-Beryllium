@@ -3,7 +3,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.long_title %}{{ page.long_title | escape }}{% else %}{{ page.title | escape }}{% endif %}
+    <title>{% if page.long_title | capitalize %}{{ page.long_title | escape | capitalize }}{% else %}{{ page.title |
+        escape | capitalize }}{%
+        endif %}
         | 100 Shapes</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
