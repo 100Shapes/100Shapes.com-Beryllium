@@ -2,32 +2,39 @@ michele:
   name: Michele M.
   name_long: Michele Memoli
   role: Managing Director
-  twitter: "@mmm0li"
-  gravatar: "https://s.gravatar.com/avatar/3d04e99eeabbced1bd5204dd8828c9b0"
+  twitter: '@mmm0li'
+  gravatar: 'https://s.gravatar.com/avatar/3d04e99eeabbced1bd5204dd8828c9b0'
 
 chris:
   name: Chris E.
   name_long: Chris Elphick
   role: Design Director
-  twitter: "@chris_elf"
-  gravatar: "https://s.gravatar.com/avatar/798f3c917969706360904b58919a36cf"
+  twitter: '@chris_elf'
+  gravatar: 'https://s.gravatar.com/avatar/798f3c917969706360904b58919a36cf'
 
 paolo:
   name: Paolo M.
   name_long: Paolo Memoli
   role: Finance Director
-  twitter: "@memolipd"
-  gravatar: "https://s.gravatar.com/avatar/9da0930d9591d3fb673c8204cf858598"
+  twitter: '@memolipd'
+  gravatar: 'https://s.gravatar.com/avatar/9da0930d9591d3fb673c8204cf858598'
 
 trev:
   name: Trev M.
   name_long: Trev Morris
   role: Senior Visual Designer
-  twitter: "@trev_morris"
-  gravatar: "https://s.gravatar.com/avatar/b42a51def59a6fedeefd63dc83171eef"
+  twitter: '@trev_morris'
+  gravatar: 'https://s.gravatar.com/avatar/b42a51def59a6fedeefd63dc83171eef'
 
 cmurray:
   name: Christean M.
   name_long: Christean Murray
   role: Visual Designer
-  gravatar: "https://s.gravatar.com/avatar/cd76d5686bc61618f6c13f3245341c47"
+  gravatar: 'https://s.gravatar.com/avatar/cd76d5686bc61618f6c13f3245341c47'
+
+james:
+  name: James G.
+  name_long: James Greenaway
+  role: Frontend Developer
+  twitter: '@jvgreenaway'
+  gravatar: 'https://s.gravatar.com/avatar/00f845f34c2be00b93322f6a8848cb0a'

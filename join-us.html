@@ -6,15 +6,15 @@ permalink: /join-us/
 ---
 
 <section class="mb4">
-    <p class="inline-block mr2">On this page:
+    <p class="inline-block mr3">On this page:
     <ol class="list-reset inline">
-        <li class="inline-block mr2">
+        <li class="inline-block mr3">
             <a href="#team">Meet the team</a>
         </li>
-        <li class="inline-block mr2">
+        <li class="inline-block mr3">
             <a href="#opportunities">Job Opportunities</a>
         </li>
-        <li class="inline-block mr2">
+        <li class="inline-block mr3">
             <a href="#ventures">Ventures</a>
         </li>
     </ol>
@@ -30,11 +30,11 @@ permalink: /join-us/
         {% assign person = item | last %}
         <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center">
             <h3 class="h3 mb0">{{ person.name }}</h3>
-            <p class="my0 xs-hide sm-hide">{{ person.role }}</p>
+            <p class="my0 xs-hide sm-hide md-hide">{{ person.role }}</p>
             <a href="{{ site.baseurl }}/join-us/{{ item | first }}/">
                 <img src="{{ person.gravatar }}?s=300"
                  alt="Profile of {{ author.name_long }}"
-                 class="block Profile my2">
+                 class="block Profile fit my2">
                 <span>
                     View posts
                 </span>
