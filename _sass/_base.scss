@@ -1,3 +1,9 @@
 @import "vars";
 @import "basscss/basscss";
 @import "theme";
+
+@media #{$breakpoint-md} {
+  .md-right-align {
+    text-align: right;
+  }
+}
