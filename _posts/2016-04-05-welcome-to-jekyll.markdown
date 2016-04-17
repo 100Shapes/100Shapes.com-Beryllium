@@ -3,7 +3,6 @@ layout: post
 title:  "Welcome to Jekyll!"
 long_title: "Something here init"
 subtitle: "Doing something cool"
-date:   2016-04-05 16:49:56 +0100
 category: news
 author: michele
 ---
