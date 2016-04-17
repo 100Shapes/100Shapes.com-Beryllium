@@ -59,5 +59,10 @@ layout: default
             <a href="/blog/authors/{{ item | first }}/">{{ person.name }}</a>
         </li>
         {% endfor %}
+        <li class="mt2">
+            <small>
+                <a href="{{ '/join-us/' | prepend: site.baseurl }}">Meet the team &#10095;</a>
+            </small>
+        </li>
     </ul>
 </div>
