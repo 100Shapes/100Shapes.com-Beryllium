@@ -5,9 +5,9 @@ subtitle: "A designers tour of my favourite features"
 category: tools
 
 description: >
-  Trev, senior visual designers from 100 Shapes, explains some of his
-  favourite features in the new version of Sketch 3 and gives examples
-  of use in some of our recent design projects.
+  Trev, senior visual designers from 100 Shapes, explains his
+  favourite features in Sketch 3 and gives examples
+  of their use in some of our recent design projects.
   
 author: trev
 ---
