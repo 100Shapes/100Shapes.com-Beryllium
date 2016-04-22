@@ -1,3 +1,5 @@
+@import "vars";
+
 html {
   overflow-y: scroll;
   font-size: 1em;
@@ -7,10 +9,13 @@ body {
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, sans-serif;
   color: $black;
   line-height: 1.45;
+  background-color: $blue;
+  color: $white;
 }
 
 a:link, a:visited {
-  color: $blue;
+  color: $orange;
+  font-weight: bold;
   text-decoration: none;
 }
 
