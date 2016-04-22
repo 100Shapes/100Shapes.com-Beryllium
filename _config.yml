@@ -20,27 +20,9 @@ phone_number_display: +44 203 773 8175
 # Build settings
 markdown: kramdown
 safe: false
-author_dir: join-us
 
 sass:
   style: compressed
-
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - categories
-  layouts:
-    year: archive-year
-    month: archive-month
-    category: archive-category
-  permalinks:
-    year: '/blog/archive/:year/'
-    month: '/blog/archive/:year/:month/'
-    category: '/blog/:name/'
-
-paginate: 7
-paginate_path: '/blog/p:num/'
 
 compress_html:
   clippings: all
@@ -57,8 +39,6 @@ exclude:
   - README.md
 
 gems:
-  - jekyll-feed
   - jekyll-assets
-  - jekyll-archives
   - jekyll-sitemap
   - jekyll-paginate
