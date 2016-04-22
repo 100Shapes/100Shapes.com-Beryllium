@@ -28,17 +28,13 @@ permalink: /join-us/
     <div class="mxn2 sm-mxn3 md-mxn4 clearfix">
         {% for item in site.data.people %}
         {% assign person = item | last %}
-        <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center">
+        <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center mx-auto">
             <h3 class="h3 mb0">{{ person.name }}</h3>
             <p class="my0 xs-hide sm-hide md-hide">{{ person.role }}</p>
-            <a href="{{ site.baseurl }}/join-us/{{ item | first }}/">
-                <img src="{{ person.gravatar }}?s=300"
+
+            <img src="{{ person.gravatar }}?s=300"
                  alt="Profile of {{ author.name_long }}"
-                 class="block Profile fit my2">
-                <span>
-                    View posts
-                </span>
-            </a>
+                 class="inline-block Profile fit my2" />
         </div>
         {% endfor %}
     </div>
@@ -48,12 +44,12 @@ permalink: /join-us/
     <h2 class="h2 pt4"
         id="opportunities">Job Opportunities</h2>
     {% for item in site.data.opportunities %}
-        {% assign job = item | last %}
-        <div class="mb4">
-            <h3 class="h3">{{ job.role }}</h3>
-            {{ job.description | markdownify }}
-            <a href="{{ job.apply_link }}">Apply &#10095;</a>
-        </div>
+    {% assign job = item | last %}
+    <div class="mb4">
+        <h3 class="h3">{{ job.role }}</h3>
+        {{ job.description | markdownify }}
+        <a href="{{ job.apply_link }}">Apply &#10095;</a>
+    </div>
     {% endfor %}
 </section>
 

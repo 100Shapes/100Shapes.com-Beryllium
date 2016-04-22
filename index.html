@@ -25,9 +25,6 @@ layout: default
         <li class="inline-block mr3">
             <a href="#ventures">Ventures</a>
         </li>
-        <li class="inline-block mr3">
-            <a href="#blog">Recent blog posts</a>
-        </li>
     </ol>
     </p>
 </div>
@@ -102,7 +99,7 @@ layout: default
         </div>
     </div>
 </section>
-<section class="col col-12 px2">
+<section class="col col-12 px2 mb4">
     <h2 id="ventures" class="pt4 h2">Ventures</h2>
     <p>
         Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
@@ -115,23 +112,6 @@ layout: default
         {% assign venture = item | last %}
         <div class="col col-12 p1">
             {% include ventures/list-item.html venture=venture %}
-        </div>
-        {% endfor %}
-    </div>
-</section>
-<section class="col col-12 px2 mb4">
-    <h2 id="blog" class="pt4 h2">Blog</h2>
-    <p>
-        Things we've written recently <a href="{{ '/blog' | prepend: site.baseurl }}">on our blog</a>. Our labs projects are like,
-        amazing. Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut
-        enim ad minim veniam.
-    </p>
-
-    <div class="mxn1 clearfix">
-        {% for post in site.posts | sort: 'date', 'last' limit: 3 %}
-        <div class="col col-12 p1">
-            {% include blog/list-item.html post=post %}
         </div>
         {% endfor %}
     </div>
