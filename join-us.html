@@ -5,27 +5,24 @@ subtitle: "Designers, developers, architects and managers"
 permalink: /join-us/
 ---
 
-<section class="mb4">
-    <p class="inline-block mr3 mt0">On this page:
-    <ol class="list-reset inline">
-        <li class="inline-block mr3">
-            <a href="#team">Meet the team</a>
-        </li>
-        <li class="inline-block mr3">
-            <a href="#opportunities">Job Opportunities</a>
-        </li>
-        <li class="inline-block mr3">
-            <a href="#ventures">Ventures</a>
-        </li>
-    </ol>
-    </p>
-</section>
+<span class="inline-block mr3">On this page:</span>
+<ol class="list-reset inline">
+    <li class="inline-block mr3">
+        <a href="#team">Meet the team</a>
+    </li>
+    <li class="inline-block mr3">
+        <a href="#opportunities">Job Opportunities</a>
+    </li>
+    <li class="inline-block mr3">
+        <a href="#ventures">Ventures</a>
+    </li>
+</ol>
 
 
-<section>
-    <h2 class="h2 pt4 hide"
+<div>
+    <h2 class="hide"
         id="team">Team</h2>
-    <div class="mxn2 sm-mxn3 md-mxn4 clearfix">
+    <div class="mxn2 sm-mxn3 md-mxn4 clearfix pt4">
         {% for item in site.data.people %}
         {% assign person = item | last %}
         <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center mx-auto">
@@ -38,7 +35,7 @@ permalink: /join-us/
         </div>
         {% endfor %}
     </div>
-</section>
+</div>
 
 <section>
     <h2 class="h2 pt4"
