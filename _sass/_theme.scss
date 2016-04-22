@@ -1,11 +1,12 @@
 html {
   overflow-y: scroll;
+  font-size: 1em;
 }
 
 body {
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, sans-serif;
   color: $black;
-  font-size: 1.4em;
+  line-height: 1.45;
 }
 
 a:link, a:visited {
@@ -19,4 +20,36 @@ a:hover {
 
 p:not(.full-width) {
   max-width: 35em;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2, .h2 {
+  font-size: 2.369em;
+}
+
+h3, .h3 {
+  font-size: 1.777em;
+}
+
+h4, .h4 {
+  font-size: 1.333em;
+}
+
+small, .font_small {
+  font-size: 0.75em;
 }

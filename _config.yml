@@ -8,7 +8,7 @@ baseurl: ''
 url: 'http://www.100shapes.com'
 twitter_username: '@100Shapes'
 github_username:  '@100Shapes'
-address: '13 Hawley Cres, Camden, London, NW1 8NP'
+address: '13 Hawley Cres., Camden, London, NW1 8NP'
 address_link: https://goo.gl/maps/YVr9ih4MLZL2
 permalink: /blog/:categories/:title/
 
