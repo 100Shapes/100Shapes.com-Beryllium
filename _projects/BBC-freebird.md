@@ -1,10 +1,11 @@
 ---
 promo_title: BBC Freebird promo title
 promo_image: placeholder.jpg
-slug: /BBC-freebird/
 title: BBC Freebird title 
 featured: true
 images:
+  - placeholder.jpg
+  - placeholder.jpg
   - placeholder.jpg
 
 ---

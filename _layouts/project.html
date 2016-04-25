@@ -9,4 +9,10 @@ layout: default
 
     {{ content }}
 
+    {% for image in page.images %}
+    <img src="{{ site.base_url }}/static/images/projects/{{ image }}"
+         alt="image"
+         class="round mb2 fit"/>
+    {% endfor %}
+
 </div>

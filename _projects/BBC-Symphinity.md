@@ -1,10 +1,10 @@
 ---
 promo_title: BBC Symphinity promo title
 promo_image: placeholder.jpg
-slug: /BBC-Symphinity/
 title: BBC Symphinity title 
 featured: false
 images:
+  - placeholder.jpg
   - placeholder.jpg
 
 ---
