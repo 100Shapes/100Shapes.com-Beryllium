@@ -1,15 +1,12 @@
 ---
 layout: default
 ---
-<article class="col col-12 px2 mb2">
+<div class="col col-12 px2 mb2">
 
-    <header>
-        <a href="/work">< More projects</a>
+    <header class="pt4 pb2">
         {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
     </header>
 
-    <div>
-        {{ content }}
-    </div>
+    {{ content }}
 
-</article>
+</div>

@@ -43,33 +43,12 @@ layout: default
         minim veniam.
     </p>
     <div class="mxn1 clearfix">
+        {% assign featured_projects = site.projects | where: 'featured', true %}
+        {% for project in featured_projects %}
         <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 m0">Transforming the way people transform</h3>
-                    <p class="my0 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
+            {% include page/project-promo.html project=project %}
         </div>
-        <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 m0">Transforming the way people transform</h3>
-                    <p class="my0 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
-        </div>
-        <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 m0">Transforming the way people transform</h3>
-                    <p class="my0 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </section>
 <section class="col col-12 px2">

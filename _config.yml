@@ -17,6 +17,18 @@ email: hello@100shapes.com
 phone_number: +442037738175
 phone_number_display: +44 203 773 8175
 
+collections:
+  projects:
+    output: true
+    permalink: /work/:path/
+
+defaults:
+  -
+    scope:
+      collection: projects
+    values:
+      layout: project
+
 # Build settings
 markdown: kramdown
 safe: false
