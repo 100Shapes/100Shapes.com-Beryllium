@@ -1,5 +1,5 @@
 ---
-promo_title: Digitial platform for London
+promo_title: Digital platform for London
 promo_image: placeholder.jpg
 title: London Live
 featured: true
