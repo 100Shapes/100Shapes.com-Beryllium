@@ -1,5 +1,5 @@
 ---
-promo_title: BBC Freebird promo title
+promo_title: BBC Freebird promo title really long title with things
 promo_image: placeholder.jpg
 title: BBC Freebird title 
 featured: true

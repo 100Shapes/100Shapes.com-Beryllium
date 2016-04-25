@@ -1,9 +1,10 @@
 ---
-promo_title: BBC Symphinity promo title also quite long
+promo_title: Digitial platform for London
 promo_image: placeholder.jpg
-title: BBC Symphinity title 
-featured: false
+title: London Live
+featured: true
 images:
+  - placeholder.jpg
   - placeholder.jpg
   - placeholder.jpg
 

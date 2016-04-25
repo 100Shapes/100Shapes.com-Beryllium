@@ -3,7 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% capture page-title %}{% if page.long_title %}{{ page.long_title | escape }}{% else %}{{ page.title | escape | capitalize }}{% if page.subtitle %} – {{ page.subtitle | escape }}{% endif %}{% endif %}{% endcapture %}
+    {% capture page-title %}{% if page.long_title %}{{ page.long_title | escape }}{% else %}{{ page.title | escape }}{%
+    if page.subtitle %} – {{ page.subtitle | escape }}{% endif %}{% endif %}{% endcapture %}
     <title>{{ page-title }} | 100 Shapes</title>
 
     {% assign page-url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}

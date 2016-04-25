@@ -12,7 +12,27 @@ layout: default
     {% for image in page.images %}
     <img src="{{ site.base_url }}/static/images/projects/{{ image }}"
          alt="image"
-         class="round mb2 fit"/>
+         class="rounded mb2 fit"/>
     {% endfor %}
+
+    {% for project in site.projects %}
+    {% if project.title == page.title %}
+    {% if forloop.last %}
+    {% assign next_project = site.projects.first %}
+    {% else %}
+    {% assign next_project = site.projects[forloop.index] %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <a href="{{ next_project.url }}"
+       class="block border rounded center px2 sm-px4 py4 mt4">
+        <span class="block h4 mb2">
+            Next Project:
+        </span>
+        <span class="h2 m0">
+            {{ next_project.promo_title }}
+        </span>
+    </a>
 
 </div>
