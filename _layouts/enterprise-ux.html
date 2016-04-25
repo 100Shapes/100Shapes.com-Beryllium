@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-<article>
+<div class="col col-12 px2">
 
-    <header class="col col-12 px2">
-        <div itemprop="breadcrumb">
-            <a href="/work/enterprise-ux">< Enterprise UX</a>
-        </div>
-
+    <header class="pt4 pb2">
+        <ul itemprop="breadcrumb" class="list-reset Breadcrumb">
+            <li class="inline-block mr1">
+                <a href="{{ '/work/' | prepend: site.baseurl }}">Work</a>
+            </li>
+            <li class="inline-block mr1">
+                <a href="{{ '/work/enterprise-ux' | prepend: site.baseurl }}">Enterprise UX</a>
+            </li>
+        </ul>
         {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
-
     </header>
 
-    <div class="col col-12 px2">
-        {{ content }}
-    </div>
-
-</article>
+    {{ content }}
+</div>

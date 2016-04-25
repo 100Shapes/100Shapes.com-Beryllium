@@ -27,7 +27,7 @@ layout: default
         </li>
     </ol>
 </div>
-<section class="col col-12 px2">
+<div class="col col-12 px2">
     <h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
     <p>
         All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -35,9 +35,9 @@ layout: default
         minim veniam.
     </p>
     {% include page/enterprise-promo.html %}
-</section>
-<section class="col col-12 px2">
-    <h2 id="projects" class="pt4 h2">Typical projects</h2>
+</div>
+<div class="col col-12 px2">
+    <h2 id="projects" class="pt4 h2">Recent projects</h2>
     <p>Various projects <a href="/work/">our work</a> dolor sit amet, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam.
@@ -50,8 +50,10 @@ layout: default
         </div>
         {% endfor %}
     </div>
-</section>
-<section class="col col-12 px2">
+    <a href="{{ '/work/' | prepend: site.baseurl }}"
+       class="inline-block h4 mt2">See more of our work</a>
+</div>
+<div class="col col-12 px2">
     <h2 id="ventures" class="pt4 h2">Ventures</h2>
     <p>
         Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
@@ -66,4 +68,4 @@ layout: default
         </div>
         {% endfor %}
     </div>
-</section>
+</div>

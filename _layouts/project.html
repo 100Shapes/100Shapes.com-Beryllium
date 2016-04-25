@@ -25,7 +25,15 @@ layout: default
     {% endif %}
     {% endfor %}
 
-    <a href="{{ next_project.url }}"
+</div>
+
+<div class="col col-12 px2 mb2">
+    <h2>Can we help?</h2>
+    <p>Some kind of promo here</p>
+</div>
+
+<div class="col col-12 px2 mb2">
+    <a href="{{ next_project.url | prepend: site.baseurl }}"
        class="block border rounded center px2 sm-px4 py4 mt4">
         <span class="block h4 mb2">
             Next Project:
