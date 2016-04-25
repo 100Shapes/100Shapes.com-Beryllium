@@ -19,93 +19,61 @@ permalink: /work/
 </ol>
 
 
-<section>
-    <h2 id="projects" class="h2 mt0 pt4">Recent projects</h2>
-    <p>Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam.
-    </p>
-    <div class="mxn1 clearfix">
-        <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 my0">Transforming the way people transform</h3>
-                    <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
-        </div>
-        <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 my0">Transforming the way people transform</h3>
-                    <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
-        </div>
-        <div class="col col-12 p1">
-            <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
-               class="border-box border rounded px3 py4 block">
-                <div class="max-width-2">
-                    <h3 class="h2 my0">Transforming the way people transform</h3>
-                    <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
-                </div>
-            </a>
-        </div>
+<h2 id="projects" class="h2 mt0 pt4">Recent projects</h2>
+<p>Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam.
+</p>
+<div class="mxn1 clearfix">
+    <div class="col col-12 p1">
+        <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+           class="border-box border rounded px3 py4 block">
+            <div class="max-width-2">
+                <h3 class="h2 my0">Transforming the way people transform</h3>
+                <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
+            </div>
+        </a>
     </div>
-</section>
-
-<section>
-    <h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
-    <p>
-        All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam.
-
-    </p>
-    <div class="mxn1 clearfix">
-        <div class="sm-col sm-col-12 p1">
-            <a href="/work/enterprise-ux" class="border-box border rounded px3 py4 block">
-                <div class="max-width-3">
-                    <h3 class="h1 m0">Creating better business systems<br /> for internal tools</h3>
-                    <p class="mb0 h2">People-centered design that boosts your bottomline.</p>
-                </div>
-            </a>
-        </div>
-        <div class="sm-col sm-col-12 md-col-6 p1">
-            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
-                <div class="max-width-2">
-                    <h3 class="h2 m0">Invest in the systems that give you the&nbsp;<i>competitive edge</i></h3>
-                    <p class="mb0">Doing things for business</p>
-                </div>
-            </a>
-        </div>
-        <div class="sm-col sm-col-12 md-col-6 p1">
-            <a href="/work/enterprise-ux/raise-your-bottom-line" class="border-box border rounded p3 block">
-                <div class="max-width-2">
-                    <h3 class="h2 m0">Calculate the&nbsp;<i>ROI</i>&nbsp;of your internal systems</h3>
-                    <p class="mb0">Doing things for business</p>
-                </div>
-            </a>
-        </div>
+    <div class="col col-12 p1">
+        <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+           class="border-box border rounded px3 py4 block">
+            <div class="max-width-2">
+                <h3 class="h2 my0">Transforming the way people transform</h3>
+                <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
+            </div>
+        </a>
     </div>
-</section>
-
-<section>
-    <h2 id="ventures" class="pt4 h2">Ventures</h2>
-    <p>
-        Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam.
-
-    </p>
-    <div class="mxn1 clearfix">
-        {% for item in site.data.ventures %}
-        {% assign venture = item | last %}
-        <div class="col col-12 p1">
-            {% include ventures/list-item.html venture=venture %}
-        </div>
-        {% endfor %}
+    <div class="col col-12 p1">
+        <a href="{{ '/work/BBC-freebird/' | prepend: site.baseurl }}"
+           class="border-box border rounded px3 py4 block">
+            <div class="max-width-2">
+                <h3 class="h2 my0">Transforming the way people transform</h3>
+                <p class="mb0 mt1 h3">Doing things for business and something else really cool.</p>
+            </div>
+        </a>
     </div>
-</section>
+</div>
+
+
+<h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
+<p>
+    All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam.
+</p>
+{% include page/enterprise-promo.html %}
+
+<h2 id="ventures" class="pt4 h2">Ventures</h2>
+<p>
+    Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam.
+</p>
+<div class="mxn1 clearfix">
+    {% for item in site.data.ventures %}
+    {% assign venture = item | last %}
+    <div class="col col-12 p1">
+        {% include ventures/list-item.html venture=venture %}
+    </div>
+    {% endfor %}
+</div>
