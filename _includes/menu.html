@@ -1,21 +1,11 @@
 <nav class="Menu">
     <h1 class="hide">Site navigation</h1>
     <ul class="list-reset">
+        {% for item in site.menu %}
         <li class="inline-block mr3">
-            <a href="{{ '/' | prepend: site.baseurl }}"
-               class="h4">Home</a>
+            <a href="{{ item.link | prepend: site.baseurl }}"
+               class="h4">{{ item.label }}</a>
         </li>
-        <li class="inline-block mr3">
-            <a href="{{ '/work/enterprise-ux/' | prepend: site.baseurl }}"
-               class="h4">UX for Enterprise</a>
-        </li>
-        <li class="inline-block mr3">
-            <a href="{{ '/work/' | prepend: site.baseurl }}"
-               class="h4">Work</a>
-        </li>
-        <li class="inline-block mr3">
-            <a href="{{ '/join-us/' | prepend: site.baseurl }}"
-               class="h4">Join Us</a>
-        </li>
+        {% endfor %}
     </ul>
 </nav>

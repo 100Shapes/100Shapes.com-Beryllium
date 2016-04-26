@@ -17,6 +17,19 @@ email: hello@100shapes.com
 phone_number: +442037738175
 phone_number_display: +44 203 773 8175
 
+menu:
+  - label: Home
+    link: /
+
+  - label: UX & Enterprise
+    link: /work/enterprise-ux/
+
+  - label: Work
+    link: /work/
+
+  - label: Join us
+    link: /join-us/
+
 collections:
   projects:
     output: true
