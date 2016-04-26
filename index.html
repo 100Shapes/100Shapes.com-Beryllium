@@ -8,8 +8,7 @@ layout: default
     <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
     <p class="full-width mt1 h2">
-        Opportunity to write something here as the introduction to the whole page. lots
-        more text here. something really interested too. I have a special class so I
+        Opportunity to write something here as the introduction to the whole page. I have a special class so I
         span the full width.
     </p>
 </div>
@@ -45,7 +44,7 @@ layout: default
     <div class="mxn1 clearfix">
         {% assign featured_projects = site.projects | where: 'featured', true %}
         {% for project in featured_projects %}
-        <div class="col col-12 p1">
+        <div class="col col-12 px1 mb1">
             {% include page/project-promo.html project=project %}
         </div>
         {% endfor %}
@@ -63,7 +62,7 @@ layout: default
     <div class="mxn1 clearfix">
         {% for item in site.data.ventures %}
         {% assign venture = item | last %}
-        <div class="col col-12 p1">
+        <div class="col col-12 px1 mb1">
             {% include ventures/list-item.html venture=venture %}
         </div>
         {% endfor %}

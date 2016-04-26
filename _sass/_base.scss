@@ -8,6 +8,10 @@
 @import "components/Promo";
 @import "components/Typography";
 
+html {
+  overflow-y: scroll;
+}
+
 @media #{$breakpoint-sm} {
   .sm-mxn3 {
     margin-left: -$space-3;
