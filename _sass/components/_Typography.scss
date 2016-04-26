@@ -1,17 +1,9 @@
 html {
-  font-size: 0.9em;
+  font-size: 1em;
 
   @media #{$breakpoint-sm} {
-    font-size: 1em;
-  }
-
-  @media #{$breakpoint-md} {
     font-size: 1.063em;
   }
-}
-
-p {
-  margin-bottom: 1.3em;
 }
 
 h1, .h1,
@@ -22,6 +14,12 @@ h4, .h4 {
 }
 
 p, ul, ol {
+  font-size: 1.25em;
+
+  @media #{$breakpoint-md} {
+    font-size: 1em;
+  }
+
   &:not(.full-width) {
     max-width: 40rem;
   }
