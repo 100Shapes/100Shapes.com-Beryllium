@@ -16,14 +16,14 @@ permalink: /work/
 </ol>
 
 
-<h2 id="projects" class="h2 mt0 pt4">Recent projects</h2>
-<p>Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
+<h2 id="projects" class="hide">Recent projects</h2>
+<p class="mt4">Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
     minim veniam.
 </p>
 <div class="mxn1 clearfix">
     {% for project in site.projects %}
-    <div class="col col-12 px1 mb1">
+    <div class="col col-12 px1 mt4">
         {% include page/project-promo.html project=project %}
     </div>
     {% endfor %}

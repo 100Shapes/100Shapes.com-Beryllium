@@ -44,7 +44,7 @@ layout: default
     <div class="mxn1 clearfix">
         {% assign featured_projects = site.projects | where: 'featured', true %}
         {% for project in featured_projects %}
-        <div class="col col-12 px1 mb1">
+        <div class="col col-12 px1 mt4">
             {% include page/project-promo.html project=project %}
         </div>
         {% endfor %}
