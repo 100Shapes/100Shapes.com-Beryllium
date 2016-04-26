@@ -1,7 +1,7 @@
 <a href="{{ include.project.url | prepend: site.baseurl }}"
    style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }});"
-   class="border-box border rounded px3 py4 block Promo">
+   class="Promo border rounded p3 block flex flex-column justify-center">
     <div class="max-width-2">
-        <h3 class="h2 my3">{{ include.project.promo_title }}</h3>
+        <h3 class="h2 m0">{{ include.project.promo_title }}</h3>
     </div>
 </a>

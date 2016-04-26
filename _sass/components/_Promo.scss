@@ -1,4 +1,22 @@
 .Promo {
   background-size: cover;
   background-position: center;
+  height: $space-1 * 22; // Mobile
+  overflow: hidden;
+
+  @media #{$breakpoint-md} {
+    height: $space-1 * 30;
+  }
+
+  &--large {
+    height: $space-1 * 44;
+
+    @media #{$breakpoint-md} {
+      height: $space-1 * 60;
+    }
+  }
+
+  &--small {
+    height: $space-1 * 12;
+  }
 }
