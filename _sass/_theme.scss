@@ -2,7 +2,7 @@
 
 html {
   overflow-y: scroll;
-  font-size: 1em;
+  font-size: 1.063em;
 }
 
 body {
@@ -21,4 +21,8 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+small, .font_small {
+  font-size: 0.8em;
 }

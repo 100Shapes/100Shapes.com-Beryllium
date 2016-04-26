@@ -9,6 +9,8 @@ h4, .h4 {
   line-height: 1.2;
 }
 
-p:not(.full-width) {
-  max-width: 40rem;
+p, ul, ol {
+  &:not(.full-width) {
+    max-width: 40rem;
+  }
 }
