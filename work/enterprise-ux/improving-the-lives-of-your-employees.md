@@ -51,4 +51,3 @@ Businesses technologies and processes are intrinsically complicated. They requir
 
 The sum of all this is allows employees to feel empowered by the tools they use to do their jobs, rather than shackled by them, reducing the significant amount of wasted time (and money), handing back control and allowing people to lead happier more rewarding lives at work and achieve career greatness! 
 
-[Read about our design principles](./design-principles)
