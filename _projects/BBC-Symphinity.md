@@ -2,6 +2,7 @@
 promo_title: BBC Symphinity promo title also quite long
 promo_image: placeholder.jpg
 title: BBC Symphinity title 
+subtitle: Some subtitle for Symphinity here
 featured: false
 images:
   - placeholder.jpg

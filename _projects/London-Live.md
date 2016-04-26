@@ -2,6 +2,7 @@
 promo_title: Digital platform for London
 promo_image: placeholder.jpg
 title: London Live
+subtitle: And something else really important
 featured: true
 images:
   - placeholder.jpg

@@ -2,6 +2,7 @@
 promo_title: BBC Freebird promo title really long title with things
 promo_image: placeholder.jpg
 title: BBC Freebird title 
+subtitle: Some subtitle for Freebird here
 featured: true
 images:
   - placeholder.jpg
