@@ -13,9 +13,6 @@ permalink: /work/
     <li class="inline-block mr3">
         <a href="#enterprise-ux">Enterprise UX</a>
     </li>
-    <li class="inline-block mr3">
-        <a href="#ventures">Ventures</a>
-    </li>
 </ol>
 
 
@@ -39,19 +36,5 @@ permalink: /work/
     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
     minim veniam.
 </p>
-{% include page/enterprise-promo.html %}
 
-<h2 id="ventures" class="pt4 h2">Ventures</h2>
-<p>
-    Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet, consectetur adipiscin
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam.
-</p>
-<div class="mxn1 clearfix">
-    {% for item in site.data.ventures %}
-    {% assign venture = item | last %}
-    <div class="col col-12 p1">
-        {% include ventures/list-item.html venture=venture %}
-    </div>
-    {% endfor %}
-</div>
+{% include page/enterprise-promo.html %}
