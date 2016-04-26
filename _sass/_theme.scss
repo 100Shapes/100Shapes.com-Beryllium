@@ -2,14 +2,13 @@
 
 body {
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, sans-serif;
-  color: $black;
   line-height: 1.45;
-  background-color: $blue;
-  color: $white;
+  background-color: $white;
+  color: $grey-dark;
 }
 
 a:link, a:visited {
-  color: $orange;
+  color: $blue;
   font-weight: bold;
   text-decoration: none;
 }
