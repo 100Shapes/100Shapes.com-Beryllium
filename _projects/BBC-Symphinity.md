@@ -1,8 +1,8 @@
 ---
-promo_title: BBC Symphinity promo title also quite long
+promo_title: Discover the world of classical music and its history at the BBC
 promo_image: placeholder.jpg
-title: BBC Symphinity title 
-subtitle: Some subtitle for Symphinity here
+title: Discover the world of classical music and its history at the BBC
+subtitle: Repurposing existing radio content into a brand new format in order to engage more Radio fans
 featured: false
 images:
   - placeholder.jpg
@@ -10,9 +10,4 @@ images:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+If you’re a fan of the odd classical tune but feel a bit daunted by the sheer breadth of choice on offer, BBC Symphinity can help. Each week you’ll find a new collection of compositions connected by a simple, sometimes curious theme. You can enjoy some well-known classics or forgotten gems, whilst BBC Symphinity presents you with short passages and excerpts about the composers and their music.
