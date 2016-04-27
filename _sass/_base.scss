@@ -7,9 +7,15 @@
 @import "components/Menu";
 @import "components/Promo";
 @import "components/Typography";
+@import "components/wrapper";
 
 html {
   overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 @media #{$breakpoint-sm} {
