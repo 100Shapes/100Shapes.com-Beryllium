@@ -2,16 +2,21 @@ html {
   font-size: 1em;
 
   @media #{$breakpoint-sm} {
-    font-size: 1.063em;
+    font-size: 1.188em;
   }
+}
+
+body {
+  font-weight: 200;
+  line-height: 1.45;
 }
 
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
+  font-weight: 300;
   line-height: 1.2;
-
   &:not(.full-width) {
     max-width: 45rem;
   }
