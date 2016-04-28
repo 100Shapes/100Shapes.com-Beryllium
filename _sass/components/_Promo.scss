@@ -5,6 +5,9 @@
   overflow: hidden;
   position: relative;
 
+  background-color: $grey-dark;
+  color: $white !important;
+
   > div:first-child {
     z-index: 1;
   }

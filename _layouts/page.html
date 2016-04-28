@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
-<div class="col col-12">
+<div class="Wrapper max-width-4">
+    <div class="clearfix">
+        <div class="col col-12 mt32">
 
-    <header class="pt4 pb2">
-        {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
-    </header>
+            <header class="pb2">
+                {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+            </header>
 
-    {{ content }}
+            {{ content }}
+        </div>
+
+    </div>
 </div>
