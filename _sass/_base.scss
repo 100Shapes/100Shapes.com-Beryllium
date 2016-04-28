@@ -9,9 +9,15 @@
 @import "components/Typography";
 @import "components/wrapper";
 @import "components/LogoBadge";
+@import "components/Banner";
 
 html {
+  box-sizing: border-box;
   overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {

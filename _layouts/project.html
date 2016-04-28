@@ -1,50 +1,59 @@
 ---
 layout: default
 ---
-<div class="col col-12 px2 mb2">
 
-    <header class="pt4 pb2">
+<div class="Banner border mb4">
+    <div class="Wrapper max-width-4">
         {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
-    </header>
-
-    {{ content }}
-
-    {% if page.images %}
-    {% for image in page.images %}
-    <img src="{{ site.base_url }}/static/images/projects/{{ image }}"
-         alt="image"
-         class="rounded mb2 fit"/>
-    {% endfor %}
-    {% endif %}
-
-    {% for project in site.projects %}
-    {% if project.title == page.title %}
-    {% if forloop.last %}
-    {% assign next_project = site.projects.first %}
-    {% else %}
-    {% assign next_project = site.projects[forloop.index] %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-
+    </div>
 </div>
 
-<div class="col col-12 px2 mb2">
-    <h2>Can we help?</h2>
-    <p>Some kind of promo here</p>
-</div>
+<div class="Wrapper max-width-4">
+    <div class="clearfix">
 
-<div class="col col-12 px2 mb2">
-    <a href="{{ next_project.url | prepend: site.baseurl }}"
-       class="block border rounded center p3 Promo flex flex-column items-center justify-center">
-        <div class="max-width-2">
+        <div class="col col-12 px2 mb2">
+
+            {{ content }}
+
+            {% if page.images %}
+            {% for image in page.images %}
+            <img src="{{ site.base_url }}/static/images/projects/{{ image }}"
+                 alt="image"
+                 class="rounded mb2 fit"/>
+            {% endfor %}
+            {% endif %}
+
+            {% for project in site.projects %}
+            {% if project.title == page.title %}
+            {% if forloop.last %}
+            {% assign next_project = site.projects.first %}
+            {% else %}
+            {% assign next_project = site.projects[forloop.index] %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+        </div>
+
+        <div class="col col-12 px2 mb2">
+            <h2>Can we help?</h2>
+            <p>Some kind of promo here</p>
+        </div>
+
+        <div class="col col-12 px2 mb2">
+            <a href="{{ next_project.url | prepend: site.baseurl }}"
+               class="block border rounded center p3 Promo flex flex-column items-center justify-center">
+                <div class="max-width-2">
             <span class="block h4 mb2">
             Next Project:
         </span>
         <span class="h2 m0">
             {{ next_project.promo_title }}
         </span>
-        </div>
-    </a>
+                </div>
+            </a>
 
+        </div>
+    </div>
 </div>
+
