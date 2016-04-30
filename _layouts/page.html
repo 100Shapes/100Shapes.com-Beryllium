@@ -3,8 +3,11 @@ layout: default
 ---
 <div class="Wrapper max-width-4">
     <div class="clearfix">
-        <div class="col col-12 mt32">
+        <header class="col col-12 sm-col-10 md-col-10 mt32 mb2">
             {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+        </header>
+
+        <div class="col col-12">
             {{ content }}
         </div>
     </div>

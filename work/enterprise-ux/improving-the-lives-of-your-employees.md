@@ -1,5 +1,5 @@
 ---
-layout: enterprise-ux
+layout: page
 title: Improves the lives of your employees
 long_title: Good design improves the lives of your employees as well as your organisation
 subtitle: "…and yourself too"

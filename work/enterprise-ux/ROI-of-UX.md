@@ -1,5 +1,5 @@
 ---
-layout: enterprise-ux
+layout: page
 title: The ROI of UX
 long_title: Measuring the ROI of UX
 subtitle: "Something that's really important"
