@@ -4,13 +4,8 @@ layout: default
 <div class="Wrapper max-width-4">
     <div class="clearfix">
         <div class="col col-12 mt32">
-
-            <header class="pb2">
-                {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
-            </header>
-
+            {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
             {{ content }}
         </div>
-
     </div>
 </div>

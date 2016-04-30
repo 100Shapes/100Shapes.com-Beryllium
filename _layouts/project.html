@@ -2,9 +2,13 @@
 layout: default
 ---
 
-<div class="Banner border mb4">
+<div class="Banner mb4">
     <div class="Wrapper max-width-4">
-        {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+        <div class="clearfix">
+            <div class="col col-12 sm-col-10 md-col-10">
+                {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+            </div>
+        </div>
     </div>
 </div>
 
@@ -14,14 +18,6 @@ layout: default
         <div class="col col-12 px2 mb2">
 
             {{ content }}
-
-            {% if page.images %}
-            {% for image in page.images %}
-            <img src="{{ site.base_url }}/static/images/projects/{{ image }}"
-                 alt="image"
-                 class="rounded mb2 fit"/>
-            {% endfor %}
-            {% endif %}
 
             {% for project in site.projects %}
             {% if project.title == page.title %}
@@ -41,18 +37,14 @@ layout: default
         </div>
 
         <div class="col col-12 px2 mb2">
-            <a href="{{ next_project.url | prepend: site.baseurl }}"
-               class="block border rounded center p3 Promo flex flex-column items-center justify-center">
-                <div class="max-width-2">
-            <span class="block h4 mb2">
-            Next Project:
-        </span>
-        <span class="h2 m0">
-            {{ next_project.promo_title }}
-        </span>
+            <a href="{{ next_project.project.url | prepend: site.baseurl }}"
+               style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }});"
+               class="Promo rounded p3 block">
+                <div class="max-width-1 flex flex-column justify-center" style="height: 100%;">
+                    <span class="Tag">Next project</span>
+                    <h3 class="h2 m0">{{ next_project.promo_title }}</h3>
                 </div>
             </a>
-
         </div>
     </div>
 </div>
