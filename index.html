@@ -6,47 +6,30 @@ layout: default
 <div class="Wrapper max-width-4">
     <div class="clearfix">
 
-        <div class="col col-12 sm-col-10 md-col-8 mt32 mb2">
+        <div class="col col-12 sm-col-10 md-col-10 mt32">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
-            <p class="full-width mt1 h1">
-                Opportunity to write something here as the introduction to the whole page. I have a special class so I
-                span the full width.
+            <p class="full-width h1">
+                People-focused design for products and business systems.
             </p>
         </div>
-        <div class="col col-12">
-            <span class="mr3">On this page:</span>
-            <ol class="list-reset inline">
-                <li class="inline-block mr3">
-                    <a href="#enterprise-ux">Enterprise UX</a>
-                </li>
-                <li class="inline-block mr3">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="inline-block mr3">
-                    <a href="#ventures">Ventures</a>
-                </li>
-            </ol>
-        </div>
-        <div class="col col-12">
-            <h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
+        <div class="col col-12 mb2 mt3">
+            <h2 id="enterprise-ux" class="hide">Enterprise UX</h2>
             <p>
-                All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam.
+                Good enterprise ux isn’t just what an interface looks like. Systems and tools work measurably better.
             </p>
             {% include page/enterprise-promo.html %}
         </div>
         <div class="col col-12">
-            <h2 id="projects" class="pt4 h2">Recent projects</h2>
-            <p>Various projects <a href="/work/">our work</a> dolor sit amet, consectetur adipiscing
+            <h2 id="projects" class="pt2 h2">Recent projects</h2>
+            <p class="mb3">Various projects <a href="/work/">our work</a> dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                 minim veniam.
             </p>
             <div class="mxn1 clearfix">
                 {% assign featured_projects = site.projects | where: 'featured', true %}
                 {% for project in featured_projects %}
-                <div class="col col-12 px1 mt4">
+                <div class="col col-12 mb3 px1">
                     {% include page/project-promo.html project=project %}
                 </div>
                 {% endfor %}
@@ -58,14 +41,12 @@ layout: default
             <h2 id="ventures" class="pt4 h2">Ventures</h2>
             <p>
                 Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet,
-                consectetur adipiscin
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam.
+                consectetur adipiscin.
             </p>
             <div class="mxn1 clearfix">
                 {% for item in site.data.ventures %}
                 {% assign venture = item | last %}
-                <div class="col col-12 px1 mb1">
+                <div class="col col-12 px1 mb3">
                     {% include ventures/list-item.html venture=venture %}
                 </div>
                 {% endfor %}
