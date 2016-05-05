@@ -7,6 +7,9 @@ layout: default
         <div class="clearfix">
             <div class="col col-12 sm-col-10 md-col-10">
                 {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam debitis dolorem dolorum hic illo
+                    laboriosam natus, obcaecati pariatur provident quisquam quos, repellat repellendus soluta voluptates
+                    voluptatum. Amet labore laudantium quisquam.</p>
             </div>
         </div>
     </div>
@@ -15,28 +18,9 @@ layout: default
 <div class="Wrapper max-width-4">
     <div class="clearfix">
 
-        <div class="col col-12 px2 mb2">
+        {{ content }}
 
-            {{ content }}
-
-            {% for project in site.projects %}
-            {% if project.title == page.title %}
-            {% if forloop.last %}
-            {% assign next_project = site.projects.first %}
-            {% else %}
-            {% assign next_project = site.projects[forloop.index] %}
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-
-        </div>
-
-        <div class="col col-12 px2 mb2">
-            <h2>Can we help?</h2>
-            <p>Some kind of promo here</p>
-        </div>
-
-        <div class="col col-12 px2 mb2">
+        <div class="col col-12 mb2">
             <a href="{{ next_project.project.url | prepend: site.baseurl }}"
                style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }});"
                class="Promo rounded p3 block">
