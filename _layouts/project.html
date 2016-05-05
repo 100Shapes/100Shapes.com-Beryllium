@@ -20,8 +20,21 @@ layout: default
 
         {{ content }}
 
+        {% for project in site.projects %}
+        {% if project.title == page.title %}
+        {% if forloop.last %}
+        {% assign next_project = site.projects.first %}
+        {% else %}
+        {% assign next_project = site.projects[forloop.index] %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
         <div class="col col-12 mb2">
-            <a href="{{ next_project.project.url | prepend: site.baseurl }}"
+            <hr class="my4">
+
+
+            <a href="{{ next_project.url | prepend: site.baseurl }}"
                style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }});"
                class="Promo rounded p3 block">
                 <div class="max-width-1 flex flex-column justify-center" style="height: 100%;">
