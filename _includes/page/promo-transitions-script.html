@@ -1,0 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script>
+    function generateScene(trigger) {
+        var elem = trigger.getElementsByClassName('Promo')[0];
+        elem.classList.add('Promo--init');
+        return new ScrollMagic
+                .Scene({loglevel: 3, triggerElement: trigger})
+                .setClassToggle(elem, 'Promo--visible')
+                .offset(-200);
+    }
+
+    var triggers = [].slice.call(document.getElementsByClassName('js-trigger'));
+    var scenes = triggers.map(generateScene);
+
+    var controller = new ScrollMagic.Controller();
+    controller.addScene(scenes);
+</script>

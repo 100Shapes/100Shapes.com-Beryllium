@@ -2,6 +2,8 @@
   min-height: $space-1 * 45; // Mobile
   position: relative;
 
+  opacity: 0;
+
   background-color: $grey-dark;
   color: $white !important;
 
