@@ -1,0 +1,13 @@
+.Author {
+  left: -24em;
+  top: 18em;
+  transform: rotate(-90deg);
+  transform-origin: 100% 50%;
+  text-align: right;
+  width: 30em;
+}
+
+.Author__profile {
+  transform: rotate(90deg);
+  width: 50px;
+}

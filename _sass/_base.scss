@@ -13,6 +13,7 @@
 @import "components/Tag";
 @import "components/Footer";
 @import "components/Panel";
+@import "components/Author";
 
 html {
   box-sizing: border-box;
@@ -51,6 +52,6 @@ body {
   }
 }
 
-.mt32 {
-  margin-top: $space-1 * 32;
+.mt-mega {
+  margin-top: $space-1 * 18;
 }
