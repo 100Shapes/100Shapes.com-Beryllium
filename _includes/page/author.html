@@ -6,10 +6,15 @@
 
 {% if authorKey %}
 {% assign person = site.data.people[authorKey] %}
-<div class="Author fixed">
-    <img src="{{ person.gravatar }}" alt="{{ person.name_long }}" class="Profile Author__profile right ml3">
-    <p class="full-width right my1">
-        {{ person.name_long }} / 20th Apr 2016
-    </p>
+<div class="Author absolute">
+    <img src="{{ person.gravatar }}" alt="{{ person.name_long }}" class="Profile Author__profile right">
+    <ol class="right my1 mr3 list-reset full-width Author__details">
+        <li class="inline-block">
+            {{ person.name_long }}
+        </li>
+        <li class="inline-block">
+            {{ page.date | date: "%-d %B %Y" }}
+        </li>
+    </ol>
 </div>
 {% endif %}
