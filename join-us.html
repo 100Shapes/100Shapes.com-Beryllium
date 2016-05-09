@@ -26,10 +26,9 @@ permalink: /join-us/
     <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center mx-auto">
         <h3 class="h3 mb0">{{ person.name }}</h3>
         <p class="my0 xs-hide sm-hide md-hide">{{ person.role }}</p>
-
-        <img src="{{ person.gravatar }}?s=300"
-             alt="Profile of {{ author.name_long }}"
-             class="inline-block Profile fit my2"/>
+        {% assign gravatar = person.gravatar | append: '?s=300' %}
+        {% include page/Profile.html image=gravatar description=person.name_long classes='inline-block Profile fit
+        my2' %}
     </div>
     {% endfor %}
 </div>

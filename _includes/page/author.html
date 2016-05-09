@@ -7,7 +7,7 @@
 {% if authorKey %}
 {% assign person = site.data.people[authorKey] %}
 <div class="Author absolute">
-    <img src="{{ person.gravatar }}" alt="{{ person.name_long }}" class="Profile Author__profile right">
+    {% include page/Profile.html image=person.gravatar description=person.name_long classes='Author__profile right' %}
     <ol class="right my1 mr3 list-reset full-width Author__details">
         <li class="inline-block">
             {{ person.name_long }}
