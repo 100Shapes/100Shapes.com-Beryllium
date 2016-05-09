@@ -16,13 +16,6 @@ vd:
     is of a high standard. We'll need to see examples of the
     kind of work you produce.
 
-fe-dev:
-  role: Frontend Dev
-  apply_link: "/"
-  description: |
-    A description of a frontend dev is important. Webpack, React stuffy and things.
-    All of which are super important.
-
 ur:
   role: User Researcher
   apply_link: "/"

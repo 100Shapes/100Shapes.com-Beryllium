@@ -1,15 +1,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script>
     function generateScene(trigger) {
-        var elem = trigger.getElementsByClassName('Promo')[0];
-        elem.classList.add('Promo--init');
+        var elems = trigger.getElementsByClassName('Fade');
+
+        if (elems.length === 0) {
+            return null;
+        }
+
+        var elem = elems[0];
+        elem.classList.add('Fade--init');
         return new ScrollMagic
-                .Scene({loglevel: 3, triggerElement: trigger})
-                .setClassToggle(elem, 'Promo--visible')
+                .Scene({triggerElement: trigger})
+                .setClassToggle(elem, 'Fade--visible')
                 .offset(-200);
     }
 
-    var triggers = [].slice.call(document.getElementsByClassName('js-trigger'));
+    var triggers = Array.prototype.slice.call(document.getElementsByClassName('Fade__trigger'));
     var scenes = triggers.map(generateScene);
 
     var controller = new ScrollMagic.Controller();
