@@ -63,6 +63,10 @@ exclude:
   - Gemfile.lock
   - scripts
   - README.md
+  - package.json
+  - webpack.config.js
+  - node_modules
+  - static/js
 
 gems:
   - jekyll-assets

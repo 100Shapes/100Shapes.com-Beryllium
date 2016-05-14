@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-bundle exec jekyll serve
+node ./node_modules/.bin/webpack --content-base=_site/ --watch & bundle exec jekyll serve
