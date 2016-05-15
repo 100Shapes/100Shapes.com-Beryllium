@@ -1,10 +1,13 @@
-language: ruby
+language: node_js
 sudo: false
-rvm:
-  - 2.1
+
+node_js:
+  - "0.12"
 
 install:
   - npm i
+  - gem install bundler
+  - bundle install
 
 script:
   - "./scripts/cibuild"
@@ -29,4 +32,5 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - GITHUB_REPO: github.com/100Shapes/100Shapes.com-Beryllium.git
   - REPO_TARGET_BRANCH: gh-pages
+  - NODE_ENV=production
   - secure: ARR3GAEgu8DvDVy6e48VJ7Hei0OxcyQIqghAsyKdrbAiWrTU97786jLJIJ95dhkA9nSf5oQyUdZI6KbB3QelYPMhEi24AFnaM9nUgxMmivyOmq+AIE5NTopfX93UD99teAkVfrjUEmzg9VTvLb8orkTGDww61CxjixhKD8Aj/ZsbGq2Hrta2aP/EkJE2QDVUpCkJS++pf66S0XSv5NaTzMr2omsU62cPn7kA9SknMGJ369uAFSWEVQLWe2zc51mnhdMqetUTOs4KBV0IcCqJ25iboyk23B3V2G3OKc5vNagCbD+S0cJJnk3IuDPK7aHlboUeLR8FFHAeG4J4QzlSI94bSMAizN1wpZ2iUBJPWfBL79VC2rabkVm0eyLBZeItnbHH0o+18E+JPLbYXm5vLoTw7gOi74n1/GBEa53UqHWxAdiiQI1UU0S7fjFuZD6ZrBjXdfs/72Lgu2ESBWIgEOZIPJSFnMRw9CtVLgXJVgN6QWGcd0tf1nMChaqjsOH9+y0056to6rAWHvIlgnJAnYi37GZEI/yDfzBjX3bix5fLsqPwZnc7idfD0TYRwiEpUPX/gZTVVAgk3OqbirQseiOV8hAuoMjAWIwfbQ38V65X7/d1Pe0+AW9HP2WhfAkqU/2o+Mkm8jk0gVJ4cDF4yHBulOOq6kvum48uULA5TQ8=
