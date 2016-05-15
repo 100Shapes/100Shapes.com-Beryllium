@@ -13,10 +13,10 @@ github:
   link: 'https://github.com/100Shapes'
   icon: GH
 
-linkedIn:
-  handle: '100shapes'
-  link: 'https://www.linkedin.com/company/100-shapes'
-  icon: LI
+#linkedIn:
+#  handle: '100shapes'
+#  link: 'https://www.linkedin.com/company/100-shapes'
+#  icon: LI
 
 dribbble:
   handle: '@100shapes'
