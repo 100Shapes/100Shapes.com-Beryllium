@@ -1,8 +1,8 @@
 <footer class="Footer mt4 py4">
     <div class="Wrapper max-width-4">
         <div class="clearfix">
-            <small class="col col-10 mb2">
-                <ul class="list-reset full-width">
+            <div class="col col-10 mb2 ">
+                <ul class="list-reset full-width font_small">
                     <li class="inline-block mr3">
                         <a href="mailto:{{ site.email }}">
                             {{ site.email }}
@@ -19,9 +19,9 @@
                         </a>
                     </li>
                 </ul>
-            </small>
+            </div>
             <div class="col col-2 right-align">
-                <ul class="list-reset full-width">
+                <ul class="list-reset full-width font_small">
                     {% for item in site.data.networks %}
                     {% assign network = item | last %}
                     <li class="inline-block mr1">
@@ -32,8 +32,8 @@
                     {% endfor %}
                 </ul>
             </div>
-            <small class="col col-12 mb2">
-                <ul class="list-reset full-width">
+            <div class="col col-12 mb2">
+                <ul class="list-reset full-width font_small">
                     <li class="inline-block mr3">&copy; {{ 'now' | date: "%Y" }}. 100 Shapes Ltd. All rights
                         reserved.
                     </li>
@@ -41,7 +41,7 @@
                         Approved design &amp; UX Supplier for the BBC, ITV and the Crown.
                     </li>
                 </ul>
-            </small>
+            </div>
         </div>
     </div>
 </footer>
