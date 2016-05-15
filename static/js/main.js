@@ -1,2 +1,2 @@
-import "../../_sass/_base.scss";
-console.log('to');
+import "./components/promos";
+import "../styles/_base.scss";
