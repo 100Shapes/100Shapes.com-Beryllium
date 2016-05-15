@@ -3,6 +3,8 @@ layout: page
 title: Improves the lives of your employees
 long_title: Good design improves the lives of your employees as well as your organisation
 subtitle: "…and yourself too"
+author: chris
+date: 2016-04-03
 ---
 
 The day-to-day reality of work for many of us is a sedentary one. Our bodies fixed in an upright position; our minds focused on completing the task in hand.
