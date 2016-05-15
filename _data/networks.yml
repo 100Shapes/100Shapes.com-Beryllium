@@ -1,0 +1,24 @@
+instagram:
+  handle: '@100shapes'
+  link: 'https://www.instagram.com/100shapes/'
+  icon: In
+
+twitter:
+  handle: '@100shapes'
+  link: 'https://twitter.com/100shapes'
+  icon: Tw
+
+github:
+  handle: '@100shapes'
+  link: 'https://github.com/100Shapes'
+  icon: GH
+
+linkedIn:
+  handle: '100shapes'
+  link: 'https://www.linkedin.com/company/100-shapes'
+  icon: LI
+
+dribbble:
+  handle: '@100shapes'
+  link: 'https://dribbble.com/100shapes'
+  icon: Dr
