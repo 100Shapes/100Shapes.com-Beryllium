@@ -27,7 +27,7 @@ var loaders = [
 ];
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'cheap-module-source-map',
   entry: path.resolve('static/js', 'main.js'),
   output: {
     path: path.resolve('build'),
@@ -37,6 +37,11 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('main.css', {
       allChunks: true
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
     })
   ],
   module: {
