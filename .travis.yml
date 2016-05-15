@@ -4,10 +4,14 @@ sudo: false
 node_js:
   - "0.12"
 
-install:
-  - npm i
+before_install:
+  - rvm install ruby-2.1.0
+  - rvm use 2.1.0 --default
   - gem install bundler
   - bundle install
+
+install:
+  - npm i
 
 script:
   - "./scripts/cibuild"
