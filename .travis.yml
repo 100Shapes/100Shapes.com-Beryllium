@@ -1,5 +1,7 @@
 language: node_js
 sudo: false
+cache:
+  - bundler
 
 node_js:
   - "0.12"
@@ -25,7 +27,6 @@ after_success:
   - rsync -az --delete --exclude '.git*' ../_site/ .
   - touch .nojekyll
   - git add -A .
-  - git add -f ../_site/dist/
   - git commit -m "Generated Jekyll site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
   - git push --force "https://${DEPLOY_KEY}@${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH}
 
