@@ -1,6 +1,6 @@
 ixd:
   role: Interaction Designer
-  apply_link: "/"
+  apply_link: "mailto:hello@100shapes.com"
   description: |
     A description of an *interaction designer* here.
     Something really cool that describes exactly what the role
@@ -9,7 +9,7 @@ ixd:
 
 vd:
   role: Visual Designer
-  apply_link: "/"
+  apply_link: "mailto:hello@100shapes.com"
   description: |
     A description of an _visual designer_ here. Liking this too
     It's really important that work is done here and that it
@@ -18,7 +18,7 @@ vd:
 
 ur:
   role: User Researcher
-  apply_link: "/"
+  apply_link: "mailto:hello@100shapes.com"
   description: |
     A description of a User researcher and the types of things they do.
 
