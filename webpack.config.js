@@ -30,7 +30,7 @@ module.exports = {
   devtool: 'cheap-module-source-map',
   entry: path.resolve('static/js', 'main.js'),
   output: {
-    path: path.resolve('build'),
+    path: path.resolve('dist'),
     filename: '[name].js',
     publicPath: '/'
   },
