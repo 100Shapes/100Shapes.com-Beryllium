@@ -67,6 +67,5 @@ exclude:
   - static/styles
 
 gems:
-  - jekyll-assets
   - jekyll-sitemap
   - jekyll-paginate
