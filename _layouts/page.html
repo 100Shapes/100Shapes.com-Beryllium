@@ -9,11 +9,14 @@ layout: default
 
         </header>
 
+        {% if page.bannerImage %}
+        {% assign bannerImage = '/static/images/page-banners/' | append: page.bannerImage %}
         <div class="col col-12 my3">
-            <img src="{{ '/static/images/page-image-placeholder.jpg' | prepend: site.baseurl }}"
+            <img src="{{ bannerImage | prepend: site.baseurl }}"
                  alt="Promo image"
                  class="fit"/>
         </div>
+        {% endif %}
 
         <div class="col col-12">
             {{ content }}
