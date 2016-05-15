@@ -11,6 +11,7 @@ before_install:
   - bundle install
 
 install:
+  - npm config set registry http://registry.npmjs.org/
   - npm i
 
 script:
