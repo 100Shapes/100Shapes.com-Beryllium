@@ -1,8 +1,8 @@
 <nav class="Menu">
     <h1 class="hide">Site navigation</h1>
-    <ul class="list-reset full-width">
+    <ul class="list-reset full-width my0">
         {% for item in site.menu %}
-        <li class="inline-block mr3">
+        <li class="inline-block{% unless forloop.last %} mr3{% endunless %}">
             <a href="{{ item.link | prepend: site.baseurl }}"
                class="h5">{{ item.label }}</a>
         </li>
