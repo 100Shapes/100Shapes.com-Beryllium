@@ -19,7 +19,13 @@ paolo:
   name_long: Paolo Memoli
   role: Finance Director
   twitter: '@memolipd'
-  gravatar: 'https://s.gravatar.com/avatar/9da0930d9591d3fb673c8204cf858598'
+  gravatar: 'https://s.gravatar.com/avatar/e965051f5042d8f4e9f77aa5e33d27f4'
+
+anna:
+  name: Anna M.
+  name_long: Anna McSweeney
+  role: UX Designer
+  gravatar: 'https://s.gravatar.com/avatar/e965051f5042d8f4e9f77aa5e33d27f4'
 
 trev:
   name: Trev M.
@@ -40,3 +46,11 @@ james:
   role: Frontend Developer
   twitter: '@jvgreenaway'
   gravatar: 'https://s.gravatar.com/avatar/00f845f34c2be00b93322f6a8848cb0a'
+
+zoe:
+  name: Zoé G.
+  name_long: Zoe Guiraudon
+  role: UX Designer
+  gravatar: 'https://s.gravatar.com/avatar/c27d2acbf6ff57c551e9a08aa4da0630'
+
+
