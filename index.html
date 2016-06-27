@@ -9,23 +9,21 @@ layout: default
         <div class="col col-12 sm-col-10 md-col-10 mt-giga">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
-            <p class="full-width h1">
-                People-focused design for products and business systems.
+            <p class="h1 mb3">
+                All great design has people at its heart.
+            </p>
+
+            <p>
+                At 100 Shapes we design business systems and digital products that put the user experience (UX)
+                at the centre. Because tools work better when designed around the people who use them.
             </p>
         </div>
         <div class="col col-12 mb2 mt3">
-            <h2 id="enterprise-ux" class="hide">Enterprise UX</h2>
-            <p>
-                Good enterprise ux isn’t just what an interface looks like. Systems and tools work measurably better.
-            </p>
+            <h2 id="enterprise-ux">Business systems and enterprise software</h2>
             {% include page/enterprise-promo.html %}
         </div>
         <div class="col col-12">
-            <h2 id="projects" class="pt2 h2">Recent projects</h2>
-            <p class="mb3">Various projects <a href="/work/">our work</a> dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam.
-            </p>
+            <h2 id="projects" class="pt2 h2">Organisations seeing the benefits of UX design</h2>
             <div class="mxn1 clearfix">
                 {% assign featured_projects = site.projects | where: 'featured', true %}
                 {% for project in featured_projects %}
@@ -38,10 +36,10 @@ layout: default
                class="inline-block h4 mt2">See more of our work</a>
         </div>
         <div class="col col-12">
-            <h2 id="ventures" class="pt4 h2">Ventures</h2>
+            <h2 id="ventures" class="pt4 h2">Our ventures</h2>
             <p>
-                Our own products & services. Our labs projects are like, amazing. Lorem ipsum dolor sit amet,
-                consectetur adipiscin.
+                In the tumultuous business of cutting-in and attending to a whale, there is much running
+                backwards and forwards among the crew.
             </p>
             <div class="mxn1 clearfix">
                 {% for item in site.data.ventures %}
