@@ -27,7 +27,7 @@ p, ul, ol {
   font-size: 1.25em;
 
   @media #{$breakpoint-md} {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   &:not(.full-width) {
