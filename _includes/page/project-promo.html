@@ -1,10 +1,11 @@
 <div class="Fade__trigger">
     <a href="{{ include.project.url | prepend: site.baseurl }}"
-       class="Promo Fade rounded p3 block"
+       class="Promo Fade rounded p4 block"
        style="background-color: {{ include.project.themeColour }}">
-        <div class="max-width-1 mt2">
-            <h3 class="h2 mt0 mb1">{{ include.project.promo_title }}</h3>
-            <span class="Tag">Read more</span>
+        <div class="max-width-1 mx2">
+            <h3 class="h3 mt0 mb1">{{ include.project.promo_title }}</h3>
+            <span class="Tag">Read about</span>
+            <span class="Tag">{{ include.project.project_name}}</span>
         </div>
         <img src="{{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }}"
              alt="{{ include.project.promo_title }}"

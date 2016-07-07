@@ -1,7 +1,7 @@
 .Promo {
   background-size: cover;
   background-position: center;
-  height: $space-1 * 33; // Mobile
+  height: $space-1 * 36; // Mobile
   overflow: hidden;
   position: relative;
 
@@ -26,6 +26,7 @@
 
   &__image {
     height: 100%;
+    width: 340px;
   }
 
   &::after {

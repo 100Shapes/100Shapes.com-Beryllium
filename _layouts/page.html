@@ -5,7 +5,8 @@ layout: default
     <div class="clearfix">
 
         <header class="col col-12 sm-col-10 md-col-10 mt-mega mb2">
-            {% include page/titles.html title=page.title long_title=page.long_title subtitle=page.subtitle %}
+            {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
+            slug=page.url %}
         </header>
 
         {% if page.bannerImage %}
