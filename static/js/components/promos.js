@@ -4,7 +4,7 @@ const ELEMENTS_CLASS = 'Fade';
 const TRIGGER_CLASS = 'Fade__trigger';
 const INIT_CLASS = 'Fade--init';
 const IN_CLASS = 'Fade--visible';
-const OFFSET = -100;
+const OFFSET = -150;
 
 const generateScene = trigger => {
   var elems = trigger.getElementsByClassName(ELEMENTS_CLASS);

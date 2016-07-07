@@ -5,59 +5,22 @@ subtitle: "Designers, developers, architects and managers"
 permalink: /join-us/
 ---
 
-<span class="inline-block mr3">On this page:</span>
-<ol class="list-reset inline">
-    <li class="inline-block mr3">
-        <a href="#team">Meet the team</a>
-    </li>
-    <li class="inline-block mr3">
-        <a href="#opportunities">Job Opportunities</a>
-    </li>
-    <li class="inline-block mr3">
-        <a href="#ventures">Ventures</a>
-    </li>
-</ol>
+<div class="col col-12 mb2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
+        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
+        voluptate?</p>
 
-<h2 class="hide"
-    id="team">Team</h2>
-<div class="mxn2 sm-mxn3 md-mxn4 clearfix pt4">
-    {% for item in site.data.people %}
-    {% assign person = item | last %}
-    <div class="col col-6 sm-col-4 px2 sm-px3 md-px4 mb2 sm-mb4 center mx-auto">
-        <h3 class="h3 mb0">{{ person.name }}</h3>
-        <p class="my0 xs-hide sm-hide md-hide">{{ person.role }}</p>
-        {% assign gravatar = person.gravatar | append: '?s=300' %}
-        {% include page/Profile.html image=gravatar description=person.name_long classes='inline-block Profile fit
-        my2' %}
-    </div>
-    {% endfor %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
+        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
+        voluptate?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
+        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
+        voluptate?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
+        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
+        voluptate?</p>
 </div>
 
-<h2 class="h2 pt4"
-    id="opportunities">Job Opportunities</h2>
-{% for item in site.data.opportunities %}
-{% assign job = item | last %}
-<div class="mb4">
-    <h3 class="h3">{{ job.role }}</h3>
-    {{ job.description | markdownify }}
-    <a href="{{ job.apply_link }}">Apply &#10095;</a>
-</div>
-{% endfor %}
 
-<section class="mb4">
-    <h2 id="ventures"
-        class="pt4 h2">Ventures</h2>
-    <p>
-        As well as <a href="{{ '/work/#projects' | prepend: site.baseurl }}">Client projects</a>,
-        we also help <a href="{{ '/work/enterprise-ux/' | prepend: site.baseurl }}">large organisations stay
-        creative</a>, and we have a couple of our own ventures too:
-    </p>
-    <div class="mxn1 clearfix">
-        {% for item in site.data.ventures %}
-        {% assign venture = item | last %}
-        <div class="p1">
-            {% include ventures/list-item.html venture=venture %}
-        </div>
-        {% endfor %}
-    </div>
-</section>

@@ -8,7 +8,7 @@ html {
 
 body {
   font-weight: 200;
-  line-height: 1.45;
+  line-height: 1.33;
 }
 
 h1, .h1,
@@ -18,8 +18,9 @@ h4, .h4 {
   font-weight: 200;
   font-family: "Brandon Text";
   line-height: 1.2;
+
   &:not(.full-width) {
-    max-width: 45rem;
+    max-width: 35rem;
   }
 }
 
@@ -36,6 +37,6 @@ p, ul, ol {
   }
 
   &:not(.full-width) {
-    max-width: 25rem;
+    max-width: 35rem;
   }
 }
