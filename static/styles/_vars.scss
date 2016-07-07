@@ -4,19 +4,25 @@ $border-radius: 5px;
 
 // Color palette
 $black: #111;
-$grey-dark: #656565;
+$grey-dark: #4c4c4c;
+$grey-light: #f8f8f8;
 $white: #fff;
 $blue: #215CFF;
 $blue-dark: #0038CC;
-$orange: #FFD605;
-$orange-dark: #FF7D05;
-$grey-light: #bcbcbc;
+$yellow: #FFD605;
+$orange: #FF7D05;
 
 // Type-size
-$h1: 2.887em;
+$h1: 3.28em;
 $h2: 1.424em;
 $h3: 1.266em;
 $h4: 1.125em;
 
 // Widths
 $width-4: 51.578rem;
+
+// Spacing
+$space-1: .5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
