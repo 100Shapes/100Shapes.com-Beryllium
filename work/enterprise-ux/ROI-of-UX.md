@@ -22,7 +22,7 @@ Designing tools which are a ‘pleasure to use’ can hugely affect the traction
 
 ## 3. Reduced user errors/increased data quality
 
-Humans make mistakes, well designed tools can minimise the user input and check everything (with the user) at the input stage, before the problem escalates. Uncaught input errors can hugely affect the running cost of a large corporation from having to make additional compliance workflows to time spent correcting and firefighting growing problems, or other catastropic cases: [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter#Cause_of_failure)
+Humans make mistakes, well designed tools can minimise the user input and check everything (with the user) at the input stage, before the problem escalates. Uncaught input errors can hugely affect the running cost of a large corporation from having to make additional compliance workflows to time spent correcting and firefighting growing problems, or other catastrophic cases: [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter#Cause_of_failure)
 
 
 ## 4. Decreased training and support costs
