@@ -20,3 +20,12 @@ a:hover {
 small, .font_small {
   font-size: 0.8em;
 }
+
+.page--enterprise {
+  background-color: $blue;
+  color: $white;
+
+  a {
+    color: $yellow;
+  }
+}

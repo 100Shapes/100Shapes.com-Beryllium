@@ -14,9 +14,12 @@
                 {{ person.name_long }}
             </a>
         </li>
+
+        {% if page.date %}
         <li class="inline-block">
             {{ page.date | date: "%-d %B %Y" }}
         </li>
+        {% endif %}
     </ol>
 </small>
 {% endif %}

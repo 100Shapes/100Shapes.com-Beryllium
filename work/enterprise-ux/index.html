@@ -1,52 +1,90 @@
 ---
 layout: page
-title: "Enterprise UX"
-long_title: "UX & Design for Enterprise"
+title: "Putting people at the centre"
+long_title: "Putting people at the centre. UX & Design for Enterprise"
 subtitle: "Changing how large organisations do design"
 author: chris
 date: 2016-04-03
+pageClass: page--enterprise
+standfirst: |
+Better business systems mean better user experiences – and a competitive edge for your business
 ---
 
-<div class="clearfix my4">
-    <div class="sm-col-12 md-col-7">
-        <p>Polaroid hammock small batch bushwick normcore. Food truck plaid crucifix, bitters neutra franzen master
-            cleanse kombucha. Drinking vinegar disrupt blue bottle, fashion axe 8-bit XOXO skateboard.</p>
-        <ul>
-            <li>
-                <a href="./improving-the-lives-of-your-employees/">Improving the lives of your employees</a>
-            </li>
-            <li>
-                <a href="./what-we-do-and-how-we-do-it/">What we do, and how we do it</a>
-            </li>
-            <li>
-                <a href="./ROI-of-UX/">Measuring the ROI of UX</a>
-            </li>
-        </ul>
-        <p>
-            Shabby chic beard locavore chartreuse fingerstache, single-origin coffee pickled. 8-bit vegan cliche
-            cornhole aesthetic cardigan, scenester quinoa. Meggings yr locavore beard.
-        </p>
-    </div>
-</div>
-<div class="clearfix my4">
+<div class="clearfix">
     <div class="sm-col-12 md-col-7 right">
         <p>
-            Ugh yr art party offal pabst. Mlkshk thundercats williamsburg, helvetica viral put a bird on it ugh
-            biodiesel microdosing knausgaard. Venmo ennui readymade authentic, bitters salvia chia farm-to-table VHS
-            master cleanse synth pickled. Migas whatever ugh seitan, kitsch fingerstache bushwick butcher sartorial
-            health goth portland twee kombucha swag.
+            Good system design isn’t just what an interface looks like. Systems and tools work measurably better when
+            designed around the needs of their users. Companies who put their staff as well as their business objectives
+            at the heart of the design process see
+            <a href="./improving-the-lives-of-your-employees/">the difference to their bottom line</a>.
         </p>
     </div>
 </div>
-<div class="clearfix my4">
-    <div class="sm-col-12 md-col-7">
+
+<hr>
+
+<div class="clearfix">
+    <div class="col col-12 mb2">
+        <span class="Tag h4">Overview</span>
+        <p class="h2">
+            Well-designed business tools directly
+            support your core business objectives.
+        </p>
         <p>
-            Shabby chic beard locavore chartreuse fingerstache, single-origin coffee pickled. 8-bit vegan cliche
-            cornhole aesthetic cardigan, scenester quinoa. Meggings yr locavore beard. Fap keytar salvia freegan, neutra
-            chambray flannel organic disrupt godard before they sold out mustache ethical +1. Organic quinoa
-            flexitarian, tofu cray umami meditation scenester. Roof party freegan brooklyn, YOLO cronut kogi meditation
-            +1 echo park waistcoat quinoa kickstarter narwhal kale chips. Humblebrag banjo irony, four loko chambray
-            polaroid ennui umami thundercats selvage.
+            For any organisation, the most efficient systems are those that align with the way staff really work. By
+            making tasks intuitive and simple, user-focused tools are naturally optimised to maximise work rates and
+            minimise errors and ad-hoc fixes.
+        </p>
+        <p>
+            100 Shapes will help you design systems that let your team work as effectively as possible. By reducing your
+            staff’s pain points and improving task satisfaction, you’ll also feed into job positivity and staff
+            retention. All these factors impact your profitability and your competitiveness in the market.
         </p>
     </div>
 </div>
+
+<hr>
+
+<div class="clearfix">
+    <div class="col col-12 mb2">
+        <span class="Tag h4">Case Study</span>
+        <p class="h2">
+            Shaping design at the UK’s largest and most progressive companies.
+        </p>
+        <p>
+            For any organisation, the most efficient systems are those that align with the way staff really work. By
+            making tasks intuitive and simple, user-focused tools are naturally optimised to maximise work rates and
+            minimise errors and ad-hoc fixes.
+        </p>
+
+
+        {% for project in site.projects %}
+        {% if project.title == page.title %}
+        {% if forloop.last %}
+
+        {% else %}
+        {% assign next_project = site.projects[forloop.index] %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        {% assign project = site.projects. %}
+
+        <div class="col col-12 mb2 Fade__trigger">
+            <hr class="my4">
+
+
+            <a href="{{ next_project.url | prepend: site.baseurl }}"
+               style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image }});"
+               class="Promo rounded p3 block">
+                <div class="max-width-1 flex flex-column justify-center" style="height: 100%;">
+                    <span class="Tag">Next project</span>
+                    <h3 class="h2 m0">{{ next_project.promo_title }}</h3>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
