@@ -6,18 +6,17 @@
 
 {% if authorKey %}
 {% assign person = site.data.people[authorKey] %}
-<div class="Author absolute">
+<small class="Author absolute">
     {% include page/Profile.html image=person.gravatar description=person.name_long classes='Author__profile right' %}
-    <ol class="right my1 mr3 list-reset full-width Author__details">
+    <ol class="right my1 mr3 list-reset full-width Author__details ffss">
         <li class="inline-block">
-            {{ person.name_long }}
-        </li>
-        <li class="inline-block">
-            {{ person.role }}
+            <a href="mailto:{{ person.email}}">
+                {{ person.name_long }}
+            </a>
         </li>
         <li class="inline-block">
             {{ page.date | date: "%-d %B %Y" }}
         </li>
     </ol>
-</div>
+</small>
 {% endif %}

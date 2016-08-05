@@ -18,10 +18,13 @@ h4, .h4 {
   font-weight: 200;
   font-family: "Brandon Text";
   line-height: 1.2;
-  margin: $space-4 0 $space-1;
 
   &:not(.full-width) {
     max-width: 35rem;
+  }
+
+  .content & {
+    margin: $space-4 0 $space-1;
   }
 }
 
@@ -40,4 +43,8 @@ p, ul, ol {
   &:not(.full-width) {
     max-width: 35rem;
   }
+}
+
+.ffss {
+  font-family: "Brandon Text";
 }
