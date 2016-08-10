@@ -22,7 +22,7 @@ var loaders = [
   {
     test: /\.scss?$/,
     exclude: /node_modules/,
-    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
+    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader?')
   }
 ];
 
@@ -46,5 +46,13 @@ module.exports = {
   ],
   module: {
     loaders: loaders
+  },
+  resolve: {
+    alias: {
+      'foundation': 'foundation-sites'
+    }
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, 'node_modules')]
   }
 };

@@ -1,2 +1,3 @@
-import "./components/promos";
-import "../styles/_base.scss";
+import "jquery";
+import "foundation-sites";
+import "../styles/app.scss";
