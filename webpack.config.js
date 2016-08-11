@@ -49,7 +49,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'foundation': 'foundation-sites'
+      'foundation': 'foundation-sites',
+      'settings': 'static/_settings'
     }
   },
   sassLoader: {
