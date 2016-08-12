@@ -3,58 +3,59 @@ title: Home
 layout: default
 ---
 
-<div class="Wrapper">
-    <div class="row">
-        <div class="column">
-            <h1 class="hide">100 Shapes {{ site.title }}</h1>
+<div class="row mb2">
+    <div class="column">
+        <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
-            <h1>
-                All great design has people at its heart.
-            </h1>
+        <h1>
+            All great design has people at its heart.
+        </h1>
 
-            <p class="lead">
-                At 100 Shapes we design business systems and digital products that put the user experience (UX)
-                at the centre. Because tools work better when designed around the people who use them.
-            </p>
-        </div>
+        <p class="lead">
+            At 100 Shapes we design business systems and digital products that put the user experience (UX)
+            at the centre. Because tools work better when designed around the people who use them.
+        </p>
     </div>
+</div>
 
-    <div class="row">
-        <div class="column">
-            <h2 id="enterprise-ux">Business systems and enterprise software</h2>
-            {% include page/enterprise-promo.html %}
-        </div>
+<div class="row mb2">
+    <div class="column">
+        <h2 id="enterprise-ux">Business systems and enterprise software</h2>
+        {% include page/enterprise-promo.html %}
     </div>
+</div>
 
-    <div class="row">
-        <div class="column">
-            <h2 id="projects">Organisations seeing the benefits of UX design</h2>
-            <div class="row">
-                {% assign featured_projects = site.projects | where: 'featured', true %}
-                {% for project in featured_projects %}
-                <div class="small-12 column">
-                    {% include page/project-promo.html project=project %}
-                </div>
-                {% endfor %}
+
+<div class="row mb2">
+    <div class="column">
+        <h2 id="projects">Organisations seeing the benefits of UX design</h2>
+        <div class="row">
+            {% assign featured_projects = site.projects | where: 'featured', true %}
+            {% for project in featured_projects %}
+            <div class="small-12 column mb">
+                {% include page/project-promo.html project=project %}
             </div>
-            <a href="{{ '/work/' | prepend: site.baseurl }}">See more of our work</a>
+            {% endfor %}
         </div>
+        <a href="{{ '/work/' | prepend: site.baseurl }}">See more of our work</a>
     </div>
-    <div class="row">
-        <div class="column">
-            <h2>Our ventures</h2>
-            <p>
-                In the tumultuous business of cutting-in and attending to a whale, there is much running backwards
-                and forwards among the crew.
-            </p>
-            <div class="row">
-                {% for item in site.data.ventures %}
-                {% assign venture = item | last %}
-                <div class="small-12 column">
-                    {% include ventures/list-item.html venture=venture %}
-                </div>
-                {% endfor %}
+</div>
+
+<div class="row mb2">
+    <div class="column">
+        <h2>Our ventures</h2>
+        <p>
+            In the tumultuous business of cutting-in and attending to a whale, there is much running backwards
+            and forwards among the crew.
+        </p>
+        <div class="row">
+            {% for item in site.data.ventures %}
+            {% assign venture = item | last %}
+            <div class="small-12 column mb">
+                {% include ventures/list-item.html venture=venture %}
             </div>
+            {% endfor %}
         </div>
+
     </div>
 </div>

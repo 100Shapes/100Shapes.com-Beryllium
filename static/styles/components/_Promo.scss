@@ -1,6 +1,5 @@
 .Promo {
   display: block;
-  margin-bottom: 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,17 +13,14 @@
   }
 
   &__content {
-    padding: 20px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__row {
     height: 100%;
-    outline: 1px solid green;
-  }
-
-  .column {
-    outline: 1px solid red;
   }
 }
 

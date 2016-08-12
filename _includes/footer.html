@@ -1,6 +1,6 @@
 <footer class="row">
     <div class="small-12 medium-6 column">
-        <ul class="no-bullet">
+        <ul class="menu">
             <li>
                 <a href="mailto:{{ site.email }}">
                     {{ site.email }}
@@ -20,7 +20,7 @@
     </div>
 
     <div class="small-12 medium-6 column">
-        <ul class="no-bullet">
+        <ul class="menu text-right">
             {% for item in site.data.networks %}
             {% assign network = item | last %}
             <li>
