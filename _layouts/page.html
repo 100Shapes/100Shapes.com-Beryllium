@@ -3,23 +3,27 @@ layout: default
 ---
 <div class="Wrapper">
 
-    <header class="col col-12 sm-col-10 md-col-10 mt-mega mb2">
-        {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
-        slug=page.url %}
+    <header class="row">
+        <div class="columns">
+            {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
+            slug=page.url %}
+    </header>
     </header>
 
     {% if page.bannerImage %}
     {% assign bannerImage = '/static/images/page-banners/' | append: page.bannerImage %}
-    <div class="col col-12 my3">
-        <img src="{{ bannerImage | prepend: site.baseurl }}"
-             alt="Promo image"
-             class="fit"/>
+    <div class="row">
+        <div class="columns">
+            <img src="{{ bannerImage | prepend: site.baseurl }}"
+                 alt="Promo image"
+                 class="fit"/>
+        </div>
     </div>
     {% endif %}
 
-    <div class="col col-12 content">
-        {{ content }}
-    </div>
+
+    {{ content }}
+
 
 </div>
 

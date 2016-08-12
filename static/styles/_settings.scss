@@ -5,6 +5,14 @@
 
 // Globals
 $global-flexbox: true;
+$global-width: rem-calc(1000);
+
+// Typography
+$header-font-family: "Brandon Text";
+$body-font-family: "Sentinel", Helvetica, sans-serif;
 
 // Grid
 $column-gutter: rem-calc(30);
+
+// Topbar
+$topbar-background: transparent;

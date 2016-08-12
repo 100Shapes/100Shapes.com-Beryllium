@@ -3,48 +3,54 @@ title: Home
 layout: default
 ---
 
-<div class="Wrapper max-width-4">
-    <div class="clearfix">
-
-        <div class="col col-12 sm-col-10 md-col-10 mt-giga">
+<div class="Wrapper">
+    <div class="row">
+        <div class="column">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
-            <p class="h1 mb3">
-                All great design has <br/>people at its heart.
-            </p>
+            <h1>
+                All great design has people at its heart.
+            </h1>
 
             <p class="lead">
                 At 100 Shapes we design business systems and digital products that put the user experience (UX)
                 at the centre. Because tools work better when designed around the people who use them.
             </p>
         </div>
-        <div class="col col-12 mb2 mt3">
-            <h2 id="enterprise-ux" class="h4">Business systems and enterprise software</h2>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2 id="enterprise-ux">Business systems and enterprise software</h2>
             {% include page/enterprise-promo.html %}
         </div>
-        <div class="col col-12">
-            <h2 id="projects" class="pt2 h4">Organisations seeing the benefits of UX design</h2>
-            <div class="mxn1 clearfix">
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2 id="projects">Organisations seeing the benefits of UX design</h2>
+            <div class="row">
                 {% assign featured_projects = site.projects | where: 'featured', true %}
                 {% for project in featured_projects %}
-                <div class="col col-12 mt2 mb1 px1">
+                <div class="small-12 column">
                     {% include page/project-promo.html project=project %}
                 </div>
                 {% endfor %}
             </div>
-            <a href="{{ '/work/' | prepend: site.baseurl }}"
-               class="inline-block h4 mt2">See more of our work</a>
+            <a href="{{ '/work/' | prepend: site.baseurl }}">See more of our work</a>
         </div>
-        <div class="col col-12">
-            <h2 id="ventures" class="pt4 h4">Our ventures</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Our ventures</h2>
             <p>
                 In the tumultuous business of cutting-in and attending to a whale, there is much running backwards
                 and forwards among the crew.
             </p>
-            <div class="mxn1 clearfix">
+            <div class="row">
                 {% for item in site.data.ventures %}
                 {% assign venture = item | last %}
-                <div class="col col-12 px1 mb3">
+                <div class="small-12 column">
                     {% include ventures/list-item.html venture=venture %}
                 </div>
                 {% endfor %}

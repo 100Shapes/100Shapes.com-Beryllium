@@ -1,0 +1,30 @@
+.Promo {
+  display: block;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+
+  color: $white;
+  background-color: $black;
+
+  &:hover {
+    color: $white;
+  }
+
+  &__content {
+    padding: 20px;
+    height: 100%;
+  }
+
+  &__row {
+    height: 100%;
+    outline: 1px solid green;
+  }
+
+  .column {
+    outline: 1px solid red;
+  }
+}
+

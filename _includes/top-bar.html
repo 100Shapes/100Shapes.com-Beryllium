@@ -5,9 +5,10 @@
     <div class="top-bar-right">
         <ul class="menu">
             {% for item in site.menu %}
-            <li class="inline-block{% unless forloop.last %} mr3{% endunless %}">
-                <a href="{{ item.link | prepend: site.baseurl }}"
-                   class="h5">{{ item.label }}</a>
+            <li>
+                <a href="{{ item.link | prepend: site.baseurl }}">
+                    {{ item.label }}
+                </a>
             </li>
             {% endfor %}
         </ul>
