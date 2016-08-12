@@ -44,9 +44,9 @@ module.exports = {
       }
     }),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
+      $: "foundation-sites/node_modules/jquery",
+      jQuery: "foundation-sites/node_modules/jquery",
+      "window.jQuery": "foundation-sites/node_modules/jquery"
     })
   ],
   module: {
