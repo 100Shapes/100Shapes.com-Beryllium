@@ -1,8 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var precss = require('precss');
-var autoprefixer = require('autoprefixer');
 
 var loaders = [
   {
@@ -27,10 +25,6 @@ var loaders = [
     loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
   }
 ];
-
-module.postcss = function () {
-  return [precss, autoprefixer];
-};
 
 module.exports = {
   devtool: 'cheap-module-source-map',
