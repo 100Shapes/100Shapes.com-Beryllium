@@ -17,9 +17,6 @@ phone_number: +442037738175
 phone_number_display: +44 203 773 8175
 
 menu:
-  - label: Home
-    link: /
-
   - label: UX & Enterprise
     link: /work/enterprise-ux/
 

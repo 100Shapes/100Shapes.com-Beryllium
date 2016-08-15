@@ -1,17 +1,17 @@
 instagram:
   handle: '@100shapes'
   link: 'https://www.instagram.com/100shapes/'
-  icon: In
+  icon: instagram
 
 twitter:
   handle: '@100shapes'
   link: 'https://twitter.com/100shapes'
-  icon: Tw
+  icon: twitter
 
 github:
   handle: '@100shapes'
   link: 'https://github.com/100Shapes'
-  icon: GH
+  icon: github
 
 #linkedIn:
 #  handle: '100shapes'
@@ -21,4 +21,4 @@ github:
 dribbble:
   handle: '@100shapes'
   link: 'https://dribbble.com/100shapes'
-  icon: Dr
+  icon: dribbble

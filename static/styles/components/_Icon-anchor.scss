@@ -1,0 +1,8 @@
+.icon-anchor {
+  fill: map-get($foundation-palette, primary);
+
+  &:hover {
+    fill: $blue-dark !important;
+  }
+
+}

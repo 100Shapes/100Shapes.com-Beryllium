@@ -2,7 +2,14 @@
   background-color: map-get($foundation-palette, primary);
   color: $white;
 
-  a {
-    color: $yellow !important;
+  a, .icon-anchor {
+    color: $yellow;
+    fill: $yellow;
+
+    &:hover {
+      color: $orange;
+      fill: $orange;
+    }
+
   }
 }

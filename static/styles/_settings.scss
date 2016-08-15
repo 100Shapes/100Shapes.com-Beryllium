@@ -4,16 +4,19 @@
 @import "foundation-sites/scss/util/unit";
 
 // Palette
+$blue: #215CFF;
+$blue-dark: #0038CC;
+$yellow: #FFD605;
+$orange: #FF7D05;
+
 $foundation-palette: (
-        primary: #215CFF,
+        primary: $blue,
         secondary: #777,
         success: #3adb76,
-        warning: #ffae00,
+        warning: $yellow,
         alert: #ec5840
 );
 
-$blue-dark: #0038CC;
-$yellow: #FFD605;
 
 // Globals
 $global-flexbox: true;

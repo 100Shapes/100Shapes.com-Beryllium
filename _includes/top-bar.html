@@ -1,7 +1,10 @@
 <header class="Top-Bar pv">
     <div class="row align-middle">
         <div class="small-6 column">
-            {% include logo.html %}
+            <a href="{{ '/' | prepend: site.baseurl }}"
+               class="icon-anchor">
+                {% include icons/logo.svg %}
+            </a>
         </div>
         <div class="small-6 column">
             <ul class="menu menu--right h5">

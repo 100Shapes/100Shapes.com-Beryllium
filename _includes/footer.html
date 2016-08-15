@@ -25,8 +25,9 @@
                 {% for item in site.data.networks %}
                 {% assign network = item | last %}
                 <li>
-                    <a href="{{ network.link }}">
-                        {{ network.icon }}
+                    <a href="{{ network.link }}" class="icon-anchor">
+                        {% assign icon = 'icons/' | append: network.icon | append: '.svg' %}
+                        {% include {{ icon }} %}
                     </a>
                 </li>
                 {% endfor %}
