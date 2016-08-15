@@ -31,12 +31,12 @@
     "node-sass": "^3.7.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "motion-ui": "^1.2.2",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
-    "motion-ui": "^1.2.2",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0"
   }

@@ -1,6 +1,6 @@
-@import 'motion-ui/src/motion-ui';
 @import "settings";
 @import 'foundation-sites/scss/foundation';
+@import 'motion-ui/motion-ui';
 
 /// or use just particular modules
 @include foundation-global-styles;
