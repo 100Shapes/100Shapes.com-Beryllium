@@ -1,0 +1,8 @@
+.page--enterprise {
+  background-color: map-get($foundation-palette, primary);
+  color: $white;
+
+  a {
+    color: $yellow !important;
+  }
+}

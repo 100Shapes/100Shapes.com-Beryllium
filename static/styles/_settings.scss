@@ -3,6 +3,18 @@
 //
 @import "foundation-sites/scss/util/unit";
 
+// Palette
+$foundation-palette: (
+        primary: #215CFF,
+        secondary: #777,
+        success: #3adb76,
+        warning: #ffae00,
+        alert: #ec5840
+);
+
+$blue-dark: #0038CC;
+$yellow: #FFD605;
+
 // Globals
 $global-flexbox: true;
 $global-width: rem-calc(1000);
@@ -10,6 +22,28 @@ $global-width: rem-calc(1000);
 // Typography
 $header-font-family: "Brandon Text";
 $body-font-family: "Sentinel", Helvetica, sans-serif;
+$lead-font-size: $global-font-size * 1.5;
+$hr-margin: rem-calc($global-font-size * 1) 0;
+$header-margin-bottom: 1.5rem;
+$header-sizes: (
+        small: (
+                'h1': 43.33,
+                'h2': 20,
+                'h3': 19,
+                'h4': 18,
+                'h5': 17,
+                'h6': 16,
+        ),
+        medium: (
+                'h1': 61.7,
+                'h2': 43.3,
+                'h3': 31,
+                'h4': 25,
+                'h5': 20,
+                'h6': 16,
+        )
+);
+$anchor-color-hover: $blue-dark;
 
 // Grid
 $column-gutter: rem-calc(30);

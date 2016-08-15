@@ -1,0 +1,33 @@
+// Generate .h1, .h2, ... classes
+
+@each $size, $headers in $header-sizes {
+  @include breakpoint($size) {
+    @each $header, $font-size in $headers {
+      .#{$header} {
+        font-size: rem-calc($font-size) !important;
+      }
+    }
+  }
+}
+
+.main {
+  @include breakpoint(large) {
+
+    p:not(.lead) {
+      max-width: grid-column(7);
+    }
+
+    h1, .h1 {
+      max-width: grid-column(10);
+    }
+
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6,
+    .lead {
+      max-width: grid-column(8);
+    }
+  }
+}

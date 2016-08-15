@@ -41,14 +41,6 @@
 // @include foundation-title-bar;
 // @include foundation-tooltip;
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 @import "components/Promo";
 @import "components/Menu";
 @import "components/CTA-Label";
@@ -57,3 +49,6 @@ html {
 @import "components/Tag";
 
 @import "helpers/margins-and-padding";
+@import "helpers/typography";
+
+@import "pages/enterprise";

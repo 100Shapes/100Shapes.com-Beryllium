@@ -20,6 +20,12 @@ $unit: $column-gutter;
   padding: $unit;
 }
 
+.md-p2 {
+  @include breakpoint(medium) {
+    padding: $unit * 2;
+  }
+}
+
 .pv {
   padding-top: $unit;
   padding-bottom: $unit;

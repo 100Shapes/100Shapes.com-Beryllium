@@ -5,7 +5,7 @@ layout: default
 
 <header class="Banner">
     <div class="row">
-        <div class="small-10 column">
+        <div class="small-11 medium-10 large-8 column">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
             <h1>
@@ -22,7 +22,8 @@ layout: default
 
 <div class="row mb2">
     <div class="column">
-        <h2 id="enterprise-ux">Business systems and enterprise software</h2>
+        <h2 class="h5"
+            id="enterprise-ux">Business systems and enterprise software</h2>
         {% include page/enterprise-promo.html %}
     </div>
 </div>
@@ -30,7 +31,8 @@ layout: default
 
 <div class="row mb2">
     <div class="column">
-        <h2 id="projects">Organisations seeing the benefits of UX design</h2>
+        <h2 class="h5"
+            id="projects">Organisations seeing the benefits of UX design</h2>
         <div class="row">
             {% assign featured_projects = site.projects | where: 'featured', true %}
             {% for project in featured_projects %}
@@ -45,7 +47,7 @@ layout: default
 
 <div class="row mb2">
     <div class="column">
-        <h2>Our ventures</h2>
+        <h2 class="h5">Our ventures</h2>
         <p>
             In the tumultuous business of cutting-in and attending to a whale, there is much running backwards
             and forwards among the crew.

@@ -1,6 +1,10 @@
 .cta-label {
   display: inline-block;
 
+  &__instruction {
+    font-style: italic;
+  }
+
   &__instruction, &__label {
     display: block;
   }

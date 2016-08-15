@@ -1,17 +1,17 @@
 <a href="{{ include.project.url | prepend: site.baseurl }}"
-   class="Promo p"
+   class="Promo p md-p2"
    style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image
     }});">
 
     <div class="row align-middle Promo__row">
-        <div class="small-10 medium-8 large-6 column Promo__content">
+        <div class="small-12 medium-8 large-7 column Promo__content">
             <h3>{{ include.project.promo_title }}</h3>
             <div class="cta-label">
                 <span class="cta-label__instruction">Read about</span>
-                <span class="cta-label__label">{{ include.project.project_name}}</span>
+                <span class="cta-label__label h5">{{ include.project.project_name}}</span>
             </div>
         </div>
-        <div class="small-6 column">
+        <div class="small-5 column">
             <span>{{ include.project.promo_title }}</span>
         </div>
     </div>
