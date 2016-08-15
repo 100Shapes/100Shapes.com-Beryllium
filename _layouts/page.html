@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<header class="Banner">
+{% if page.themeColour %}
+<header class="Banner mb2"
+        style="background-color: {{ page.themeColour }}">
+    {% else %}
+    <header class="Banner">
+{% endif %}
+
     <div class="row">
-        <div class="small-11 medium-10 large-8 column">
+        <div class="small-11 medium-10 column">
             {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
             slug=page.url %}
         </div>
@@ -15,8 +21,7 @@ layout: default
     <div class="row">
         <div class="column">
             <img src="{{ bannerImage | prepend: site.baseurl }}"
-                 alt="Promo image"
-                 class="fit"/>
+                 alt="Promo image"/>
         </div>
     </div>
     {% endif %}
