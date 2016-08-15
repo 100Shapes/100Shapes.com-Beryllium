@@ -1,5 +1,9 @@
 $unit: $column-gutter;
 
+.mb0 {
+  margin-bottom: 0;
+}
+
 .mb {
   margin-bottom: $unit;
 }
@@ -17,6 +21,11 @@ $unit: $column-gutter;
 }
 
 .pv {
+  padding-top: $unit;
+  padding-bottom: $unit;
+}
+
+.pv2 {
   padding-top: $unit;
   padding-bottom: $unit;
 }

@@ -1,29 +1,36 @@
 ---
 layout: page
 title: "Work"
-author: michele
-long_title: "UX design in practice: <br> case studies"
+long_title: "UX design in practice: case studies"
 permalink: /work/
+standfirst:
+Dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam.
 ---
 
-<p class="mt2">Various projects <a href="/work">our work</a> dolor sit amet, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam.
-</p>
 
-<div class="mxn1 clearfix">
-    {% for project in site.projects %}
-    <div class="col col-12 px1 mt3">
-        {% include page/project-promo.html project=project %}
+<div class="row mb2">
+    <div class="column">
+        <div class="row">
+            {% for project in site.projects %}
+            <div class="small-12 column mb">
+                {% include page/project-promo.html project=project %}
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    {% endfor %}
 </div>
 
-<h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
-<p>
-    All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam.
-</p>
+<div class="row mb2">
+    <div class="column">
+        <h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
+        <p>
+            All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam.
+        </p>
 
-{% include page/enterprise-promo.html %}
+        {% include page/enterprise-promo.html %}
+    </div>
+</div>
