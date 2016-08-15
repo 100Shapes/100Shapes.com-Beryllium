@@ -1,13 +1,39 @@
 ---
-layout: page
+layout: default
 title: "Work"
-long_title: "UX design in practice: case studies"
+long_title: "UX design in practice: <br /> case studies"
 permalink: /work/
 standfirst:
   Dolor sit amet, consectetur adipiscing
   elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
   minim veniam.
 ---
+
+
+{% if page.themeColour %}
+<header class="Banner mb2"
+    style="background-color: {{ page.themeColour }}">
+{% else %}
+<header class="Banner">
+    {% endif %}
+
+    <div class="row">
+        <div class="small-11 medium-10 column">
+            {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
+            slug=page.url %}
+        </div>
+    </div>
+
+    {% if page.bannerImage %}
+    {% assign bannerImage = '/static/images/page-banners/' | append: page.bannerImage %}
+    <div class="row">
+        <div class="column">
+            <img src="{{ bannerImage | prepend: site.baseurl }}"
+                 alt="Promo image"/>
+        </div>
+    </div>
+    {% endif %}
+</header>
 
 
 <div class="row mb2">
@@ -24,13 +50,13 @@ standfirst:
 
 <div class="row mb2">
     <div class="column">
-        <h2 id="enterprise-ux" class="pt4 h2">Enterprise UX</h2>
+        <h2 class="h5"
+            id="enterprise-ux">Enterprise UX</h2>
         <p>
             All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam.
         </p>
-
         {% include page/enterprise-promo.html %}
     </div>
 </div>

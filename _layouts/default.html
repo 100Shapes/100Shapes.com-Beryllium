@@ -2,7 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html triggerscope triggertype="http://schema.org/WebPage">
+<html triggerscope triggertype="http://schema.org/WebPage" class="no-js" lang="en">
 
 {% include head.html %}
 
@@ -12,11 +12,20 @@ layout: compress
 <body>
 {% endif %}
 
-{% include top-bar.html %}
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-{{ content }}
+        {% include page/global-nav--small.html %}
+        {% include page/off-canvas.html %}
 
-{% include footer.html %}
+        {% include page/global-nav--large.html %}
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </div>
+</div>
 
 <script src="{{ '/dist/main.js' | prepend: site.baseurl }}"></script>
 <noscript>
@@ -35,7 +44,9 @@ layout: compress
             '//www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
 })(window, document, 'script', 'dataLayer', 'GTM-W7R7WD');</script>
-
+<script>
+    new WOW().init();
+</script>
 </body>
 
 </html>

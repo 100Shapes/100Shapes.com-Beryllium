@@ -15,12 +15,13 @@ permalink: /blog/:categories/:title/
 email: hello@100shapes.com
 phone_number: +442037738175
 phone_number_display: +44 203 773 8175
+animation_in_classes: 'wow fadeIn'
 
 menu:
   - label: UX & Enterprise
     link: /work/enterprise-ux/
 
-  - label: Work
+  - label: Our Work
     link: /work/
 
   - label: Join us

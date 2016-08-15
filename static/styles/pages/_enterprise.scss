@@ -7,9 +7,13 @@
     fill: $yellow;
 
     &:hover {
-      color: $orange;
-      fill: $orange;
+      color: $white;
+      fill: $white !important;
     }
 
+  }
+
+  .Footer {
+    background-color: $blue-dark;
   }
 }

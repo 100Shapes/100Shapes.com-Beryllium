@@ -1,0 +1,23 @@
+<div class="Top-Bar">
+    <div class="row">
+        <div class="column">
+            <div id="widemenu" class="top-bar">
+                <a href="{{ '/' | prepend: site.baseurl }}"
+                   class="icon-anchor Top-Bar__logo">
+                    {% include icons/logo--large.svg %}
+                </a>
+                <div class="top-bar-right">
+                    <ul class="menu menu--right h5">
+                        {% for item in site.menu %}
+                        <li>
+                            <a href="{{ item.link | prepend: site.baseurl }}">
+                                {{ item.label }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

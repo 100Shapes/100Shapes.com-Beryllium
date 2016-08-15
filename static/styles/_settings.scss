@@ -9,6 +9,8 @@ $blue-dark: #0038CC;
 $yellow: #FFD605;
 $orange: #FF7D05;
 
+$light-gray: #F5F5F5;
+
 $foundation-palette: (
         primary: $blue,
         secondary: #777,
@@ -21,17 +23,22 @@ $foundation-palette: (
 // Globals
 $global-flexbox: true;
 $global-width: rem-calc(1000);
+$global-radius: 4px;
 
 // Typography
 $header-font-family: "Brandon Text";
 $body-font-family: "Sentinel", Helvetica, sans-serif;
 $lead-font-size: $global-font-size * 1.5;
-$hr-margin: rem-calc($global-font-size * 1) 0;
 $header-margin-bottom: 1.5rem;
+$header-lineheight: 1.13;
+$paragraph-lineheight: 1.33;
+$lead-lineheight: 1.33;
+$blockquote-border: none;
+$blockquote-padding: 0;
 $header-sizes: (
         small: (
                 'h1': 43.33,
-                'h2': 20,
+                'h2': 24.05,
                 'h3': 19,
                 'h4': 18,
                 'h5': 17,
@@ -40,16 +47,33 @@ $header-sizes: (
         medium: (
                 'h1': 61.7,
                 'h2': 43.3,
-                'h3': 31,
-                'h4': 25,
+                'h3': 30.43,
+                'h4': 24.07,
                 'h5': 20,
                 'h6': 16,
         )
 );
 $anchor-color-hover: $blue-dark;
+$header-margin-bottom: 2.1rem;
 
 // Grid
 $column-gutter: rem-calc(30);
+$grid-column-gutter: (
+        small: $column-gutter * 2,
+        large: $column-gutter
+);
+
 
 // Topbar
 $topbar-background: transparent;
+$topbar-padding: $column-gutter 0;
+
+// TitleBar
+$titlebar-background: transparent;
+$titlebar-color: inherit;
+$titlebar-padding: $column-gutter 0;
+
+// Off Canvas
+$maincontent-shadow: none;
+$offcanvas-exit-background: rgba($blue, 0.25);
+$offcanvas-background: $blue-dark;
