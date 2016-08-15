@@ -1,0 +1,7 @@
+.cta-label {
+  display: inline-block;
+
+  &__instruction, &__label {
+    display: block;
+  }
+}
