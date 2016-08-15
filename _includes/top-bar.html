@@ -1,26 +1,18 @@
-<div class="title-bar"
-     data-responsive-toggle="nav-menu"
-     data-hide-for="medium">
-
-    <button class="menu-icon"
-            type="button"
-            data-toggle></button>
-    <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="nav-menu">
-    <div class="top-bar-left">
-        {% include logo.html %}
+<header class="Top-Bar pv">
+    <div class="row align-middle">
+        <div class="small-6 column">
+            {% include logo.html %}
+        </div>
+        <div class="small-6 column">
+            <ul class="menu menu--right">
+                {% for item in site.menu %}
+                <li>
+                    <a href="{{ item.link | prepend: site.baseurl }}">
+                        {{ item.label }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-    <div class="top-bar-right">
-        <ul class="menu">
-            {% for item in site.menu %}
-            <li>
-                <a href="{{ item.link | prepend: site.baseurl }}">
-                    {{ item.label }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
+</header>
