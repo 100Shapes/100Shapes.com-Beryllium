@@ -26,6 +26,18 @@ $unit: $column-gutter;
   }
 }
 
+.md-p3 {
+  @include breakpoint(medium) {
+    padding: $unit * 3;
+  }
+}
+
+.lg-p3 {
+  @include breakpoint(large) {
+    padding: $unit * 3;
+  }
+}
+
 .pv {
   padding-top: $unit;
   padding-bottom: $unit;

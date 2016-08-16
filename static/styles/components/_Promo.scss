@@ -1,9 +1,16 @@
+$unit: $column-gutter;
+
 .Promo {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 350px;
+
+  height: $unit * 10;
+  @include breakpoint(medium) {
+    height: $unit * 12;
+  }
+
 
   color: $white;
   background-color: $black;
@@ -36,6 +43,13 @@
 
   &__row {
     height: 100%;
+  }
+
+  &--enterprise {
+    height: $unit * 12;
+    @include breakpoint(medium) {
+      height: $unit * 17;
+    }
   }
 }
 

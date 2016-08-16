@@ -1,5 +1,5 @@
 <a href="{{ include.project.url | prepend: site.baseurl }}"
-   class="Promo wow animate-fade-in p md-p2"
+   class="Promo wow animate-fade-in p md-p2 lg-p3"
    style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image
     }});">
 
@@ -11,7 +11,7 @@
                 <span class="cta-label__label h5">{{ include.project.project_name}}</span>
             </div>
         </div>
-        <div class="small-5 column Promo__logo">
+        <div class="small-12 medium-4 large-5 column Promo__logo">
             <span>
                 {% assign icon = 'icons/' | append: include.project.icon | append: '.svg' %}
                 {% include {{ icon }} %}
