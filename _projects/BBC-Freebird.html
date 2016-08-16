@@ -7,15 +7,18 @@ project_name: "BBC Freebird"
 themeColour: '#fc0'
 icon: bbc
 standfirst: |
-  Good system design isn’t just what an interface looks like. Systems and tools work measurably better good system design isn’t just what an interface looks like.
+  Good system design isn’t just what an interface looks like. Systems and tools work measurably better good system design isn’t just what an interface looks like. System design isn’t just what an  and tools work measurably better good system design isn’t just what an interface looks like.
 ---
 
 <div class="row">
     <div class="column">
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+
+        {% include page/quote.html %}
     </div>
 </div>

@@ -1,5 +1,5 @@
 <a href="{{ include.project.url | prepend: site.baseurl }}"
-   class="Promo wow animate-fade-in p md-p2 lg-p3"
+   class="Promo {{ site.animation_in_classes }} p md-p2 lg-p3"
    style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image
     }});">
 
