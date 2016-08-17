@@ -1,24 +1,25 @@
-<div class="row">
-    <div class="column">
-        <div id="widemenu" class="top-bar">
-            <div class="top-bar-left">
-                <a href="{{ '/' | prepend: site.baseurl }}"
-                   class="icon-anchor">
-                    {% include icons/logo--large.svg %}
-                </a>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu">
-                    {% for item in site.menu %}
-                    <li>
-                        <a href="{{ item.link | prepend: site.baseurl }}">
-                            {{ item.label }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+<div class="Top-Bar">
+    <div class="row">
+        <div class="column">
+            <div id="widemenu" class="top-bar">
+                <div class="top-bar-left">
+                    <a href="{{ '/' | prepend: site.baseurl }}"
+                       class="icon-anchor">
+                        {% include icons/logo--large.svg %}
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu menu--right h5">
+                        {% for item in site.menu %}
+                        <li>
+                            <a href="{{ item.link | prepend: site.baseurl }}">
+                                {{ item.label }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
