@@ -1,10 +1,15 @@
 <blockquote class="Panel Panel--quote {{ site.animation_in_classes }} p md-p2 mb0">
-    <div class="row">
-        <div class="small-10 small-order-2 column">
-                Those people who think they know everything are a great annoyance to those of us who do.
+    <div class="row align-middle">
+        <div class="small-12 medium-9 small-order-2 column sm-mt-only">
+            <p class="mb0 Panel--quote__text lead">{{ include.text }}</p>
         </div>
-        <cite class="small-2 small-order-1 column">
-            thing
+        <cite class="small-12 medium-3 small-order-1 column">
+            <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: 'profile.jpg' }}"
+                 alt="Chris Elphick"
+                 class="Panel--quote__profile">
+            {% include icons/itv.svg class='Panel--quote__logo' %}
+            <p class="mb0 h6">{{ include.name }}</p>
+            <p class="mb0 h6">{{ include.role }}</p>
         </cite>
     </div>
 </blockquote>

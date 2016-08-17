@@ -4,5 +4,45 @@
 
   &--quote {
 
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+
+    &__text {
+
+      font-style: italic;
+
+      &::before {
+        content: "\201C"
+      }
+
+      &::after{
+        content: "\201D"
+      }
+    }
+
+    &__profile {
+      width: $column-gutter * 3;
+      height: $column-gutter * 3;
+      border-radius: 999em;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      display: inline-block;
+      fill: currentColor;
+      width: 2.5rem;
+    }
+
+    cite {
+      text-align: center;
+      font-style: normal;
+
+      &:before {
+        content: '';
+      }
+    }
+
   }
 }
