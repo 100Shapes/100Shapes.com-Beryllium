@@ -61,3 +61,14 @@ $column-gutter: rem-calc(30);
 
 // Topbar
 $topbar-background: transparent;
+$topbar-padding: $column-gutter 0;
+
+// TitleBar
+$titlebar-background: transparent;
+$titlebar-color: inherit;
+$titlebar-padding: $column-gutter 0;
+
+// Off Canvas
+$maincontent-shadow: none;
+$offcanvas-exit-background: rgba($blue, 0.25);
+$offcanvas-background: $blue-dark;

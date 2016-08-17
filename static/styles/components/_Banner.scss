@@ -1,7 +1,7 @@
 $unit: $column-gutter;
 
 .Banner {
-  padding-top: $unit * 6;
+  padding-top: $unit * 5;
   padding-bottom: $unit;
 
   @include breakpoint(medium) {

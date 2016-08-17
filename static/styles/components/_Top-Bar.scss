@@ -1,5 +1,19 @@
-.Top-Bar {
+.top-bar {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
 }
