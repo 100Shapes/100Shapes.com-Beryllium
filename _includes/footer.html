@@ -1,20 +1,23 @@
 <footer class="Footer pv">
-    <div class="row">
+    <div class="row align-middle">
         <div class="small-12 medium-6 column">
             <ul class="menu">
                 <li>
                     <a href="mailto:{{ site.email }}">
-                        {{ site.email }}
+                        Email
+                        <span class="show-for-large">{{ site.email }}</span>
                     </a>
                 </li>
                 <li>
                     <a href="tel:{{ site.phone_number }}">
-                        {{ site.phone_number_display }}
+                        Phone
+                        <span class="show-for-large">{{ site.phone_number_display }}</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ site.address_link }}">
-                        {{ site.address }}
+                        Pin
+                        <span class="show-for-large">{{ site.address }}</span>
                     </a>
                 </li>
             </ul>

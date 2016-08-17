@@ -4,4 +4,14 @@ $unit: $column-gutter;
   margin-top: $unit * 4;
 
   background-color: $light-gray;
+
+  @include breakpoint(small only) {
+
+    text-align: center;
+
+    .menu {
+      justify-content: center !important;
+    }
+  }
+
 }
