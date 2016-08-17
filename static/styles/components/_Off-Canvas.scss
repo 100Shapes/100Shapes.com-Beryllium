@@ -1,7 +1,24 @@
 .off-canvas {
   height: 100%;
+  //z-index: -1 !important;
+  //opacity: 0;
+
+  a {
+    color: map-get($foundation-palette, orange);
+  }
 }
 
-.off-canvas-content, .off-canvas-content {
-  background-color: transparent !important;
-}
+//.off-canvas-content, .off-canvas-content {
+//  background-color: red !important;
+//}
+//
+//// Prevent the page from moving
+//.is-open-right {
+//  transform: none !important;
+//  opacity: 1 !important;
+//}
+//
+//.off-canvas.position-right {
+//  right: 0 !important;
+//  width: 100%;
+//}
