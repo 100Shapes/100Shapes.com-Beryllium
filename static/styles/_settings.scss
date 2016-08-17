@@ -58,6 +58,11 @@ $header-margin-bottom: 2.1rem;
 
 // Grid
 $column-gutter: rem-calc(30);
+$grid-column-gutter: (
+        small: $column-gutter * 2,
+        large: $column-gutter
+);
+
 
 // Topbar
 $topbar-background: transparent;
