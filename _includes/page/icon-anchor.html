@@ -1,0 +1,5 @@
+<a href="{{ include.href }}" class="icon-anchor align-middle h6">
+    {% assign icon = 'icons/' | append: include.icon | append: '.svg' %}
+    {% include {{ icon }} %}
+    <span class="show-for-large">{{ include.label }}</span>
+</a>

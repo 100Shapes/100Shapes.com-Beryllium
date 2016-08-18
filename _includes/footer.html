@@ -3,22 +3,15 @@
         <div class="small-12 medium-6 column">
             <ul class="menu">
                 <li>
-                    <a href="mailto:{{ site.email }}">
-                        Email
-                        <span class="show-for-large">{{ site.email }}</span>
-                    </a>
+                    {% assign emailHref = 'mailto:' | append: site.email %}
+                    {% include page/icon-anchor.html label=site.email href=emailHref icon='mail' %}
                 </li>
                 <li>
-                    <a href="tel:{{ site.phone_number }}">
-                        Phone
-                        <span class="show-for-large">{{ site.phone_number_display }}</span>
-                    </a>
+                    {% assign phoneHref = 'tel:' | append: site.phone_number %}
+                    {% include page/icon-anchor.html label=site.phone_number_display href=phoneHref icon='phone' %}
                 </li>
                 <li>
-                    <a href="{{ site.address_link }}">
-                        Pin
-                        <span class="show-for-large">{{ site.address }}</span>
-                    </a>
+                    {% include page/icon-anchor.html label=site.address href=site.address_link icon='location-pin' %}
                 </li>
             </ul>
         </div>
