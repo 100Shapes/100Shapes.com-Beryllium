@@ -10,7 +10,7 @@ layout: default
 {% endif %}
 
     <div class="row">
-        <div class="small-11 medium-10 large-9 column">
+        <div class="small-12 medium-offset-1 medium-10 large-8 column">
             {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
             slug=page.url %}
         </div>
@@ -28,7 +28,7 @@ layout: default
 </header>
 
 <div class="row main">
-    <div class="column">
+    <div class="medium-offset-1 medium-10 column">
         {{ content }}
     </div>
 </div>

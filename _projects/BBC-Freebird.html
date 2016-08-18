@@ -11,7 +11,7 @@ standfirst: |
 ---
 
 <div class="row">
-    <div class="column">
+    <div class="medium-offset-1 medium-10 column">
         {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
         {% for image in images %}
         <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"

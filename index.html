@@ -1,17 +1,19 @@
 ---
 title: Home
 layout: default
+pageClass: page--home
 ---
 
-<header class="Banner">
+<header class="Banner fcw">
     <div class="row">
-        <div class="small-11 medium-10 column">
+        <div class="small-12 medium-offset-1 medium-10 large-6 column">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
             <h1>
                 All great design has people at its heart.
             </h1>
-
+        </div>
+        <div class="small-12 medium-offset-1 medium-10 large-offset-0 large-4 column">
             <p class="lead">
                 At 100 Shapes we design business systems and digital products that put the user experience (UX)
                 at the centre. Because tools work better when designed around the people who use them.
@@ -21,8 +23,8 @@ layout: default
 </header>
 
 <div class="row mb2">
-    <div class="column">
-        <h2 class="h5"
+    <div class="medium-offset-1 medium-10 column">
+        <h2 class="h5 fcw"
             id="enterprise-ux">Business systems and enterprise software</h2>
         {% include page/enterprise-promo.html %}
     </div>
@@ -30,7 +32,7 @@ layout: default
 
 
 <div class="row mb2">
-    <div class="column">
+    <div class="medium-offset-1 medium-10 column">
         <h2 class="h5"
             id="projects">Organisations seeing the benefits of UX design</h2>
         <div class="row">
@@ -46,7 +48,7 @@ layout: default
 </div>
 
 <div class="row mb2">
-    <div class="column">
+    <div class="medium-offset-1 medium-10 column">
         <h2 class="h5">Our ventures</h2>
         <p>
             In the tumultuous business of cutting-in and attending to a whale, there is much running backwards
@@ -62,4 +64,12 @@ layout: default
         </div>
 
     </div>
+</div>
+
+<div class="Video-Banner">
+    <video class="Video-Banner__Video"
+           poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    </video>
 </div>

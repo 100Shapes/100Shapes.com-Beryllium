@@ -41,6 +41,8 @@
 // @include foundation-thumbnail;
 // @include foundation-tooltip;
 
+@import "base";
+
 @import "components/Promo";
 @import "components/Menu";
 @import "components/CTA-Label";
@@ -52,8 +54,10 @@
 @import "components/Panel";
 @import "components/Off-Canvas";
 @import "components/Title-Bar";
+@import "components/Video-Banner";
 
 @import "helpers/margins-and-padding";
 @import "helpers/typography";
 
 @import "pages/enterprise";
+@import "pages/home";
