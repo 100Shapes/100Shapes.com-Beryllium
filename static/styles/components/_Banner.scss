@@ -4,6 +4,8 @@ $unit: $column-gutter;
   padding-top: $unit * 5;
   padding-bottom: $unit;
 
+  border-radius: $global-radius;
+
   @include breakpoint(medium) {
     padding-top: $unit * 8;
     padding-bottom: $unit * 2;
