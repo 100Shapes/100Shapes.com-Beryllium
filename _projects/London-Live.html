@@ -1,77 +1,46 @@
 ---
-promo_title: Defining a TV station for London online
+promo_title: A vibrant digital platform showcasing London Live’s regional TV offering
 promo_image: freebird/promo.jpg
-title: Defining a TV station for London online
+title: A vibrant digital platform showcasing London Live’s regional TV offering
 featured: false
 icon: london-live
 project_name: "London Live"
-themeColour: '#0038CC'
+standfirst: |
+  It was an epic task with a tough deadline: to design and create London Live’s entire digital presence in time for a looming – and not-negotiable – go-live date.
+
 ---
-<div class="col col-12 mb2">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
-        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
-        voluptate?</p>
-</div>
 
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
+<div class="row main">
+    <div class="medium-offset-1 medium-10 column">
+        <p>
+            London Live was a new local TV channel backed by the Evening Standard and Independent newspapers. Our brief
+            was to translate its complete content offering – news, weather, entertainment, sport, programme listings,
+            social media, live and on-demand TV – to the web.
+
+        </p>
+        <p>
+            100 Shapes worked closely with sample audiences to research genuine user consumption behaviours and
+            expectations. We adapted the already-developed broadcast brand for online use and developed a flexible,
+            future-safe design across desktop, mobile and responsive formats. We also built a new tool for curating and
+            moderating ‘hyperlocal’ Twitter streams – the basis for our later
+            <a href="http://climb.social/">Climb.social</a> tool – and delivered the whole new digital platform right on
+            time for launch.
+        </p>
     </div>
 </div>
 
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="mxn1 Fade">
-        <div class="col col-7 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
 
-        <div class="col col-5 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Panel--small Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="flex flex-wrap content-stretch Fade">
-        <div class="col-4 Panel px2 flex flex-column justify-center">
-            <h3>Disciplines</h3>
-            <ul>
-                <li>User research</li>
-                <li>Interaction Design</li>
-                <li>Visual design</li>
-            </ul>
-        </div>
-        <div class="col-8">
-            <div class="ml2">
-                <div class="Panel Panel--small mb2">
-                    <p class="m0">1</p>
-                </div>
-                <div class="Panel Panel--small">
-                    <p class="m0">2</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col col-12 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
+        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
+        think they know everything
+        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance
+        to those of us who do.' %}
     </div>
 </div>

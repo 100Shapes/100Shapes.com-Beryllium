@@ -1,19 +1,53 @@
 ---
 promo_title: An app for Radio 3 to enrich the classical experience and engage new audiences
 promo_image: freebird/promo.jpg
-title: An app for Radio 3 to enrich the classical experience and engage new audiences.
+title: An app for Radio 3 to enrich the classical experience and engage new audiences
 featured: false
 icon: bbc
 project_name: "BBC Symphinity"
 bannerTheme: blue
+standfirst: |
+  BBC Symphinity was designed to give listeners a new way in to classical music by presenting themed playlists with nuggets of history, musical context and trivia.
+
 ---
 
+<div class="row main">
+    <div class="medium-offset-1 medium-10 column">
+        <p>
+            Unknown to most classical devotees, the BBC has a vast digital library of world-class classical recordings.
+            Radio 3 wanted to increase online engagement among its fanbase and also tap into a new community of Radio 4
+            listeners: people interested in but unsure how to approach the world of classical music.
+        </p>
+        <p>
+            100 Shapes won a commission to develop our original Symphinity concept, an app serving up playlists curated
+            by Radio 3 experts around a range of engaging themes. Each track was accompanied by snippets of information
+            about the piece, its composer and its historical significance.
+
+        </p>
+        <p>
+            The Symphinity pilot featured on the BBC Taster innovation platform for three months. It was tried by well
+            over 2000 listeners and shared by one in five. Symphinity was welcomed by BBC stakeholders as a simple,
+            inexpensive way to repurpose existing content, add depth to the listener experience and increase audience
+            reach.
+        </p>
+        <p>
+            Read more of the <a href="http://www.bbc.co.uk/taster/projects/symphinity/inside-story">inside story on the
+            BBC Taster website.</a>
+        </p>
+    </div>
+</div>
+
 <div class="row">
-    <div class="column">
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
-        <p>Image here</p>
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+
+        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
+        think they know everything
+        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance to those of us who do.' %}
     </div>
 </div>

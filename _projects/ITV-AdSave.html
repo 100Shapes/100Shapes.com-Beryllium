@@ -1,78 +1,47 @@
 ---
-promo_title: Increasing the ad revenue of ITV Hub
+promo_title: An interactive ad widget, integrated into ITV Player as a targeted CRM tool for ITV
 promo_image: freebird/promo.jpg
-title: Increasing the ad revenue of ITV Hub
+title: An interactive ad widget, integrated into ITV Player as a targeted CRM tool for ITV
 featured: false
 icon: itv
-project_name: "ITV AdSave"
-themeColour: '#0038CC'
+project_name: ITV AdSave
+standfirst: |
+  ITV Ad Save showed ITV how it could build a relationship with the viewer that offered genuine value on the customer’s terms, unlike the one-way broadcast of an ad.
+
 ---
 
-<div class="col col-12 mb2">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cupiditate, delectus eius fugiat ipsam
-        natus numquam quia quo tempore temporibus ullam, voluptate. Doloribus est fugiat hic iusto recusandae
-        voluptate?</p>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
+<div class="row main">
+    <div class="medium-offset-1 medium-10 column">
+        <p>
+            ITV’s commercial department wanted to make marketing messages within its online TV service more relevant and
+            useful. In response, 100 Shapes developed Ad Save, a tool that allowed viewers to save and collect offers to
+            a ‘wallet’ within ITV Player, and redeem them across all devices.
+        </p>
+        <p>
+            We designed and built a working prototype and tested it in a live pilot within the real ITV Player
+            interface. Targeted audiences were genuinely receptive to the personalised wallet experience and the
+            perceived increase in relevance of the interactive ads.
+        </p>
+        <p>
+            Following successful usability testing we held a presentation and future-applications workshop with senior
+            ITV stakeholders, demonstrating a range of use cases for interactive ads and how they could form a key
+            element of ITV’s future customer engagement strategy.
+        </p>
     </div>
 </div>
 
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="mxn1 Fade">
-        <div class="col col-7 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
 
-        <div class="col col-5 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
+        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
+        think they know everything
+        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance
+        to those of us who do.' %}
     </div>
 </div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Panel--small Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="flex flex-wrap content-stretch Fade">
-        <div class="col-4 Panel px2 flex flex-column justify-center">
-            <h3>Disciplines</h3>
-            <ul>
-                <li>User research</li>
-                <li>Interaction Design</li>
-                <li>Visual design</li>
-            </ul>
-        </div>
-        <div class="col-8">
-            <div class="ml2">
-                <div class="Panel Panel--small mb2">
-                    <p class="m0">1</p>
-                </div>
-                <div class="Panel Panel--small">
-                    <p class="m0">2</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col col-12 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div></div>

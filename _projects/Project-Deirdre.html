@@ -1,86 +1,49 @@
 ---
 promo_title: A streamlined, cost-saving new promo production system for ITV
 promo_image: freebird/promo.jpg
+title: A streamlined, cost-saving new promo production system for ITV
 featured: true
 icon: itv
-themeColour: '#fc0'
+bannerTheme: blue
 project_name: "Project Deidre"
 standfirst: |
   Named for ITV’s beloved Deirdre Barlow, Project Deidre centralised and simplified ITV’s complex programme
   promotion system
 ---
 
-<div class="col col-12 mb2">
-    <p>Our brief was to review review and fix a convoluted, time consuming production and approval process between
-        creative, marketing, scheduling and legal teams across multiple simultaneous campaigns.</p>
-    <p>An embedded 100 Shapes team worked closely with ITV to design a simple, accessible promo database. By creating a
-        ‘single source of truth’ with an integrated push email system, we were able to dramatically simplify workflows
-        and reduce user clicks, double-ups and error rates.</p>
-    <p>Deirdre increased efficency so markedly that ITV no longer needed to emplo additional staff in busy seasons,
-        delivering substantial cost savings to the business. The system won ITV’s 2016 Technology Supplier for
-        Innovation and Design Award.</p>
+<div class="row main">
+    <div class="medium-offset-1 medium-10 column">
+        <p>
+            ITV’s commercial department wanted to make marketing messages within its online TV service more relevant and
+            Our brief was to review and fix a convoluted, time-consuming production and approval process between
+            creative, marketing, scheduling and legal teams across multiple simultaneous campaigns.
+        </p>
+        <p>
+            An embedded 100 Shapes team worked closely with ITV to design a simple, accessible promo database. By
+            creating a ‘single source of truth’ with an integrated push email system, we were able to dramatically
+            simplify workflows and reduce user clicks, double-ups and error rates.
+        </p>
+        <p>
+            Deirdre increased efficiency so markedly that ITV no longer needed to employ additional staff in busy
+            seasons, delivering substantial cost savings to the business. The system won ITV’s 2016 Technical Supplier
+            for Innovation and Design Award.
 
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
+        </p>
     </div>
 </div>
 
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="mxn1 Fade">
-        <div class="col col-7 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
 
-        <div class="col col-5 px1">
-            <div class="Panel">
-                <p class="m0">Something here</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="Panel Panel--small Fade">
-        <p class="m0">Something here</p>
-    </div>
-</div>
-
-<div class="col col-12 mb2 Fade__trigger">
-    <div class="flex flex-wrap content-stretch Fade">
-        <div class="col-4 Panel px2 flex flex-column justify-center">
-            <h3>Disciplines</h3>
-            <ul>
-                <li>User research</li>
-                <li>Interaction Design</li>
-                <li>Visual design</li>
-            </ul>
-        </div>
-        <div class="col-8">
-            <div class="ml2">
-                <div class="Panel Panel--small mb2">
-                    <p class="m0">1</p>
-                </div>
-                <div class="Panel Panel--small">
-                    <p class="m0">2</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col col-12 Fade__trigger">
-    <div class="Panel Fade">
-        <p class="m0">Something here</p>
+        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
+        think they know everything
+        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance
+        to those of us who do.' %}
     </div>
 </div>
