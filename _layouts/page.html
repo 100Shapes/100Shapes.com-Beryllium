@@ -2,9 +2,8 @@
 layout: default
 ---
 
-{% if page.themeColour %}
-<header class="Banner mb2"
-        style="background-color: {{ page.themeColour }}">
+{% if page.bannerTheme %}
+<header class="Banner mb2 Banner--{{ page.bannerTheme }}">
     {% else %}
     <header class="Banner">
 {% endif %}

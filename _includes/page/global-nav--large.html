@@ -1,4 +1,8 @@
+{% if page.bannerTheme %}
+<div class="Top-Bar Top-Bar--{{ page.bannerTheme }}">
+{% else %}
 <div class="Top-Bar">
+{% endif %}
     <div class="row">
         <div class="column">
             <div id="widemenu" class="top-bar">

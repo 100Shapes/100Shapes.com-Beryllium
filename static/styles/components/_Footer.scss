@@ -1,9 +1,10 @@
 $unit: $column-gutter;
 
 .Footer {
-  margin-top: $unit * 4;
+  margin: ($unit * 4) 0 ($unit / 2);
 
   background-color: $light-gray;
+  border-radius: $global-radius;
 
   @include breakpoint(small only) {
 

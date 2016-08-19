@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<header style="background-color: {{ page.themeColour }}"
-        class="Banner mb2">
+<header class="Banner Banner--{{ page.bannerTheme }} mb2">
     <div class="row">
         <div class="small-12 medium-offset-1 medium-10 large-8 column">
             {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst %}
