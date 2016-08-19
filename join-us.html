@@ -23,3 +23,20 @@ permalink: /join-us/
     to great user experiences and design as we are.</p>
 
 <p>Check out our current vacancies below, or send us your CV.</p>
+
+<h2>
+    Current Opportunities
+</h2>
+
+{% for item in site.data.opportunities %}
+{% assign job = item | last %}
+<h3>
+    {{ job.role }}
+</h3>
+<p>
+    {{ job.description | markdownify }}
+</p>
+<p class="mb2">
+    <a href="{{ job.apply_link }}">Apply</a>
+</p>
+{% endfor %}
