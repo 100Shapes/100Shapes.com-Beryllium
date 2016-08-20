@@ -17,12 +17,12 @@ var loaders = [
   {
     test: /\.css?$/,
     exclude: /node_modules/,
-    loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader?browsers=last 2 versions')
   },
   {
     test: /\.scss?$/,
     exclude: /node_modules/,
-    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
+    loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader?browsers=last 2 versions!sass-loader')
   }
 ];
 

@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
+    "autoprefixer-loader": "^3.2.0",
     "exports-loader": "^0.6.3",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0"
