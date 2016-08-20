@@ -1,7 +1,7 @@
 ---
 title: Home
 long_title: UX design for business systems and digital products
-description:
+description: |
   100 Shapes designs enterprise software, applications and other digital tools based on user experience
   principles for better business performance.
 layout: default
@@ -9,18 +9,19 @@ pageClass: page--home
 ---
 
 <header class="Banner fcw">
-    <div class="row align-middle">
+    <div class="row">
         <div class="small-12 medium-offset-1 medium-10 large-6 column">
             <h1 class="hide">100 Shapes {{ site.title }}</h1>
 
             <h1>
-                All great design has people at its heart.
+                Tools work better when designed with people.
             </h1>
         </div>
-        <div class="small-12 medium-offset-1 medium-10 large-offset-0 large-4 column">
-            <p>
-                At 100 Shapes we design business systems and digital products that put the user experience (UX)
-                at the centre. Because tools work better when designed around the people who use them.
+    </div>
+    <div class="row">
+        <div class="small-12 medium-offset-7 medium-4 column">
+            <p class="lead">
+                Tools simply work better when designed for the people who use them.
             </p>
         </div>
     </div>
@@ -28,7 +29,7 @@ pageClass: page--home
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="h5 fcw"
+        <h2 class="hide"
             id="enterprise-ux">Business systems and enterprise software</h2>
         {% include page/enterprise-promo.html %}
     </div>
@@ -55,7 +56,8 @@ pageClass: page--home
     <div class="medium-offset-1 medium-10 column">
         <h2 class="h5">Experiments and innovations</h2>
         <p class="lead">
-            Get a bunch of curious, creative, hands-on people in a room and things start to happen. Sometimes our tinkering kicks off a whole new venture or product.
+            Get a bunch of curious, creative, hands-on people in a room and things start to happen. Sometimes our
+            tinkering kicks off a whole new venture or product.
         </p>
         <div class="row">
             {% for item in site.data.ventures %}

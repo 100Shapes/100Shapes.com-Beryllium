@@ -1,6 +1,6 @@
 <footer class="Footer pv">
     <div class="row align-middle">
-        <div class="small-12 medium-6 column">
+        <div class="small-12 medium-7 column">
             <ul class="menu">
                 <li>
                     {% assign emailHref = 'mailto:' | append: site.email %}
@@ -16,7 +16,7 @@
             </ul>
         </div>
 
-        <div class="small-12 medium-6 column sm-mt-only">
+        <div class="small-12 medium-5 column sm-mt-only">
             <ul class="menu menu--right">
                 {% for item in site.data.networks %}
                 {% assign network = item | last %}
@@ -30,7 +30,7 @@
             </ul>
         </div>
 
-        <div class="small-12 column mt">
+        <small class="small-12 column mt text-center">
             <ul class="no-bullet">
                 <li>&copy; {{ 'now' | date: "%Y" }}. 100 Shapes Ltd. All rights
                     reserved.
@@ -42,7 +42,7 @@
                     <a href="/privacy-policy/">Privacy Policy</a>
                 </li>
             </ul>
-        </div>
+        </small>
 
     </div>
 </footer>
