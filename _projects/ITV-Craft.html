@@ -1,0 +1,48 @@
+---
+promo_title: The transformation of one tiny, fiddly fulfilment task – with dramatic results.
+promo_image: freebird/promo.jpg
+title: One tiny, repetitive fulfilment task transformed – with dramatic results.
+featured: false
+icon: itv
+category: enterprise
+project_name: ITV Craft
+standfirst: |
+  The rapid development of a new user interface eliminated a major daily pain point for ITV’s busy Global
+  Entertainment team.
+
+---
+
+<div class="row main">
+    <div class="medium-offset-1 medium-10 column">
+        <p>ITV’s GE team distribute content around the globe, overseeing the transfer of files and data to other
+            broadcasters worldwide. For years they had been hamstrung by legacy tools and convoluted processes that were
+            slow, inefficient and error-prone.</p>
+
+        <p>We sat with the team and stepped through their day-to-day processes. To make a difference as quickly as
+            possible, we identified one of the worst frustration points and set about rapidly developing and testing a
+            new user interface design.</p>
+
+        <p>This became Craft, a 'translator layer' that sits over the legacy database and immediately reduced one
+            frequent order-fulfilment task from eight minutes to 20 seconds. We’re continuing to add functions to Craft,
+            extending its usefulness to other tasks and other departments in the organisation.</p>
+
+        <p>This has been a hugely satisfying project for the 100 Shapes team – a brilliant example of how UX design can
+            make people’s daily work lives tangibly better.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
+             alt="Laptop Screen"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+
+        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
+        think they know everything
+        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance
+        to those of us who do.' %}
+    </div>
+</div>

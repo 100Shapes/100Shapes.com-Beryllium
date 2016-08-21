@@ -3,10 +3,9 @@ layout: default
 title: "Work"
 long_title: "UX design in practice: <br /> case studies"
 permalink: /work/
-standfirst:
-  Dolor sit amet, consectetur adipiscing
-  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-  minim veniam.
+standfirst: |
+  We’ve brought the benefits of UX design to some of the UK’s best-known organisations, with people-centred tools that support  business and audience engagement goals.
+
 ---
 
 
@@ -35,28 +34,30 @@ standfirst:
     {% endif %}
 </header>
 
-
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <div class="row">
-            {% for project in site.projects %}
-            <div class="small-12 column mb">
-                {% include page/project-promo.html project=project %}
-            </div>
-            {% endfor %}
+        <h2 class="h5">Business software and enterprise systems</h2>
+        {% for project in site.projects %}
+        {% if project.category == 'enterprise' %}
+        <div class="mb">
+            {% include page/project-promo.html project=project %}
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 
+
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="h5"
-            id="enterprise-ux">Enterprise UX</h2>
-        <p>
-            All things Enterprise UX solutions. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam.
-        </p>
-        {% include page/enterprise-promo.html %}
+        <h2 class="h5">Digital tools and applications</h2>
+        {% for project in site.projects %}
+        {% if project.category == 'app' %}
+        <div class="mb">
+            {% include page/project-promo.html project=project %}
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
+

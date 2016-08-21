@@ -40,6 +40,11 @@ $unit: $column-gutter;
 
     .Promo__heading {
       transform: translateY(-1rem);
+
+      @include breakpoint(small only) {
+        transform: translateY(1rem);
+      }
+
     }
   }
 
