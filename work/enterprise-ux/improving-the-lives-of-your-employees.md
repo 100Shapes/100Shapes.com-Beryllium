@@ -2,7 +2,6 @@
 layout: page
 title: Improves the lives of your employees
 long_title: Good design improves the lives of your employees as well as your organisation
-author: chris
 date: 2016-04-03
 bannerImage: enterprise.jpg
 ---

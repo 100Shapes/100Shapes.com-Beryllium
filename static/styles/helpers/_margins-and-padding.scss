@@ -12,6 +12,10 @@ $unit: $column-gutter;
   margin-bottom: $unit * 2;
 }
 
+.mt0 {
+  margin-top: 0 !important;
+}
+
 .mt {
   margin-top: $unit;
 }

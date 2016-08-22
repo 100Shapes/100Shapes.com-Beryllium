@@ -2,4 +2,12 @@
   position: absolute;
   top: 0;
   width: 100%;
+
+  &--yellow a {
+    color: $orange;
+  }
+
+  &--blue a {
+    color: $white;
+  }
 }

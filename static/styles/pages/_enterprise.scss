@@ -13,6 +13,15 @@
 
   }
 
+  .main a {
+    font-weight: bold;
+    border-bottom: 1px dotted $yellow;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+
   .Footer {
     background-color: $blue-dark;
   }

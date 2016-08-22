@@ -1,4 +1,8 @@
-<div class="Title-Bar">
+{% if page.bannerTheme %}
+<div class="Top-Bar Top-Bar--{{ page.bannerTheme }}">
+{% else %}
+<div class="Top-Bar">
+{% endif %}
     <div class="row">
         <div class="column">
             <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
