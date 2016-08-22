@@ -5,7 +5,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var loaders = [
   {
     test: /\.js?$/,
-    exclude: /node_modules/,
     loader: 'babel',
     query: {
       presets: [
