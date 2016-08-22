@@ -3,9 +3,9 @@ layout: default
 title: "Work"
 long_title: "UX design in practice: <br /> case studies"
 permalink: /work/
-standfirst: |
-  We’ve brought the benefits of UX design to some of the UK’s best-known organisations, with people-centred tools that support  business and audience engagement goals.
-
+standfirst: >
+  We’ve brought the benefits of UX design to some of the UK’s best-known organisations,
+  with people-centred tools that support business and audience engagement goals.
 ---
 
 
@@ -37,12 +37,11 @@ standfirst: |
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
         <h2 class="h5">Business software and enterprise systems</h2>
-        {% for project in site.projects %}
-        {% if project.category == 'enterprise' %}
+        {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' | reverse %}
+        {% for project in enterprise_projects %}
         <div class="mb">
             {% include page/project-promo.html project=project %}
         </div>
-        {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -51,12 +50,11 @@ standfirst: |
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
         <h2 class="h5">Digital tools and applications</h2>
-        {% for project in site.projects %}
-        {% if project.category == 'app' %}
+        {% assign app_projects = site.projects | where: 'category', 'app' | sort: 'priority' | reverse %}
+        {% for project in app_projects %}
         <div class="mb">
             {% include page/project-promo.html project=project %}
         </div>
-        {% endif %}
         {% endfor %}
     </div>
 </div>

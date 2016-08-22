@@ -29,7 +29,7 @@ pageClass: page--home
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="hide">Business systems and enterprise software</h2>
+        <h2 class="hide">Business software and enterprise systems</h2>
         {% include page/enterprise-promo.html %}
     </div>
 </div>
@@ -40,7 +40,7 @@ pageClass: page--home
         <h2 class="h3"
             id="projects">Organisations seeing the benefits of UX design</h2>
         <div class="row">
-            {% assign featured_projects = site.projects | where: 'featured', true %}
+            {% assign featured_projects = site.projects | where: 'featured', true | sort: 'priority' | reverse %}
             {% for project in featured_projects %}
             <div class="small-12 column mb">
                 {% include page/project-promo.html project=project %}
@@ -56,8 +56,8 @@ pageClass: page--home
         <h2 class="h3">Experiments and innovations</h2>
         <div class="main">
             <p class="lead">
-                Get a bunch of curious, creative, hands-on people in a room and things start to happen. Sometimes our
-                tinkering kicks off a whole new venture or product.
+                Get a bunch of curious, creative, hands-on people in a room and things start to happen.
+                Sometimes our tinkering kicks off a whole new venture or product.
             </p>
         </div>
         <div class="row">

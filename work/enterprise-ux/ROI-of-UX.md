@@ -3,8 +3,8 @@ layout: page
 title: "Business software and applications: the ROI of UX"
 long_title: "Business software and applications: measuring the ROI of UX"
 standfirst: >
-  Need a competitive advantage? Well designed business tools can increase
-  productivity, profits and brand value. Here’s how.
+  Enterprise systems designed around the user experience perform measurably
+  better, giving your business a competitive edge and boosting your bottom line.
 ---
 
 ## The value of a UX process
