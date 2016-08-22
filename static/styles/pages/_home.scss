@@ -1,6 +1,8 @@
 .page--home {
 
-  .Top-Bar a {
-    color: $white !important;
+  .Top-Bar {
+    a, button {
+      color: $white !important;
+    }
   }
 }
