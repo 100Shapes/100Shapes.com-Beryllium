@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Business software and applications: the ROI of UX"
+title: "Business software and applications: the ROI on UX"
 long_title: "Business software and applications: measuring the ROI of UX"
 standfirst: >
   Enterprise systems designed around the user experience perform measurably
