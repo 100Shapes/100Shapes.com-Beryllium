@@ -1,11 +1,27 @@
 <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
-    <ul class="vertical menu h5">
-        {% for item in site.menu %}
-        <li>
-            <a href="{{ item.link | prepend: site.baseurl }}">
-                {{ item.label }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+
+    {% include icons/logo--small.svg class='mt2' %}
+
+    <button type="button"
+            class="toggle-button"
+            data-toggle="offCanvasRight">
+        {% include icons/close-navigation.svg class='icon-menu' %}
+    </button>
+
+    <nav>
+        <ul class="text-center no-bullet h2">
+            <li class="mv">
+                <a href="{{ '/' | prepend: site.baseurl }}">
+                    Home
+                </a>
+            </li>
+            {% for item in site.menu %}
+            <li class="mv">
+                <a href="{{ item.link | prepend: site.baseurl }}">
+                    {{ item.label }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
 </div>

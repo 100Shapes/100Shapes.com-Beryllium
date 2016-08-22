@@ -3,12 +3,20 @@
   top: 0;
   width: 100%;
 
-  &--yellow a {
-    color: $orange;
+  .icon-menu {
+    fill: currentColor;
   }
 
-  &--blue a {
-    color: $white;
+  &--yellow  {
+    a, button {
+      color: $orange;
+    }
+  }
+
+  &--blue {
+    a, button {
+      color: $white;
+    }
   }
 }
 

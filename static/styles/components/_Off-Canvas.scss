@@ -1,10 +1,26 @@
 .off-canvas {
   height: 100%;
-  //z-index: -1 !important;
-  //opacity: 0;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $column-gutter;
+  opacity: 0;
+  transition: opacity 250ms;
 
   a {
-    color: map-get($foundation-palette, orange);
+    color: map-get($foundation-palette, secondary);
+  }
+
+  .logo {
+    fill: $blue;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: $column-gutter;
+    right: $column-gutter;
   }
 }
 
@@ -12,14 +28,17 @@
   background-color: transparent;
 }
 
-//
-//// Prevent the page from moving
-//.is-open-right {
-//  transform: none !important;
-//  opacity: 1 !important;
-//}
-//
-//.off-canvas.position-right {
-//  right: 0 !important;
-//  width: 100%;
-//}
+.is-open-right {
+  transform: none;
+}
+
+.off-canvas.position-right.is-open {
+  right: 0px;
+  opacity: 1;
+}
+
+.off-canvas.position-right {
+  right: 100%;
+  top: 0;
+  width: 100%;
+}
