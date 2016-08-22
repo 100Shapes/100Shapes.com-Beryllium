@@ -1,0 +1,5 @@
+.md-kl-l {
+  @include breakpoint(medium) {
+    border-left: 1px solid $white;
+  }
+}
