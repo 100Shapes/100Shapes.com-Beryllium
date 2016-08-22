@@ -22,6 +22,14 @@ var loaders = [
     test: /\.scss?$/,
     exclude: /node_modules/,
     loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader?browsers=last 2 versions!sass-loader')
+  },
+  {
+    test: require.resolve('animate.css'),
+    loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+  },
+  {
+    test: require.resolve('wowjs'),
+    loader: 'imports?this=>window!exports?window.WOW'
   }
 ];
 
