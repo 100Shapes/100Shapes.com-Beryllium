@@ -7,6 +7,10 @@
     fill: currentColor;
   }
 
+  a, button {
+    color: $blue;
+  }
+
   &--yellow  {
     a, button {
       color: $orange;
