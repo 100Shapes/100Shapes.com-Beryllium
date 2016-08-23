@@ -22,7 +22,7 @@
 .main {
   @include breakpoint(large) {
 
-    p:not(.lead) {
+    p:not(.lead), li {
       max-width: grid-column(7);
     }
 
