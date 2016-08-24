@@ -30,6 +30,10 @@ var loaders = [
   {
     test: require.resolve('wowjs'),
     loader: 'imports?this=>window!exports?window.WOW'
+  },
+  {
+    test: /\.(eot|svg|ttf|woff|woff2)$/,
+    loader: 'file?name=static/webfonts/[name].[ext]'
   }
 ];
 

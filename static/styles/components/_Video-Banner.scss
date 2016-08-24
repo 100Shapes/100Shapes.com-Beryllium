@@ -1,13 +1,21 @@
+$unit: $column-gutter;
+
 .Video-Banner {
   background-color: $black;
   position: absolute;
-  height: 750px;
-  top: $column-gutter * 5;
+  height: $unit * 18;
+  top: $unit * 4;
   left: 0;
   width: 100%;
   z-index: -1;
-  border-radius: $global-radius;
   overflow: hidden;
+
+  @include breakpoint(medium) {
+    top: $unit * 5;
+    border-radius: $global-radius;
+    height: $unit * 26;
+  }
+
 
   &::after {
     z-index: 1;
@@ -17,9 +25,12 @@
     top: 0px;
     left: 0px;
     position: absolute;
-    border-radius: $global-radius;
     background: linear-gradient(to bottom, rgba(33,92,255,0.7) 0%,rgba(33,92,255,0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3215cff', endColorstr='#e6215cff',GradientType=0 );
+
+    @include breakpoint(medium) {
+      border-radius: $global-radius;
+    }
   }
 
   &__Video {

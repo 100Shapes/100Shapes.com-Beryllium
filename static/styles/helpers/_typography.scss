@@ -1,5 +1,16 @@
-// Generate .h1, .h2, ... classes
+@font-face {
+  font-family: 'BrandonTextWeb-Light';
+  src: url('../webfonts/31F54B_0_0.eot');
+  src: url('../webfonts/31F54B_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/31F54B_0_0.woff2') format('woff2'), url('../webfonts/31F54B_0_0.woff') format('woff'), url('../webfonts/31F54B_0_0.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'BrandonTextWeb-Regular';
+  src: url('../webfonts/31F54B_1_0.eot');
+  src: url('../webfonts/31F54B_1_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/31F54B_1_0.woff2') format('woff2'), url('../webfonts/31F54B_1_0.woff') format('woff'), url('../webfonts/31F54B_1_0.ttf') format('truetype');
+}
+
+// Generate .h1, .h2, ... classes
 @each $size, $headers in $header-sizes {
   @include breakpoint($size) {
     @each $header, $font-size in $headers {
@@ -44,7 +55,6 @@
     }
   }
 }
-
 
 .fcw {
   color: $white !important;
