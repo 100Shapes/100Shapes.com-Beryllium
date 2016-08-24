@@ -17,6 +17,10 @@
         font-size: rem-calc(25.629);
       }
 
+      @include breakpoint(small only) {
+        font-size: rem-calc(25.629);
+      }
+
       &::before {
         content: "\201C"
       }

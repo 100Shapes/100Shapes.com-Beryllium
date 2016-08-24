@@ -10,6 +10,9 @@
   src: url('../webfonts/31F54B_1_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/31F54B_1_0.woff2') format('woff2'), url('../webfonts/31F54B_1_0.woff') format('woff'), url('../webfonts/31F54B_1_0.ttf') format('truetype');
 }
 
+$body-weight-regular: 300;
+$body-weight-book: 400;
+
 // Generate .h1, .h2, ... classes
 @each $size, $headers in $header-sizes {
   @include breakpoint($size) {

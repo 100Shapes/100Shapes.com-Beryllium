@@ -3,12 +3,16 @@ $unit: $column-gutter;
 .page--home {
 
   .Banner {
+<<<<<<< HEAD
     padding-top: $unit * 2;
 
     @include breakpoint(large) {
       padding-top: $unit * 6;
     }
 
+=======
+    padding-top: $unit * 6;
+>>>>>>> 91ed3f9... Updated typestyles
   }
 
 }
