@@ -36,7 +36,7 @@ standfirst: >
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="h5">Business software and enterprise systems</h2>
+        <h2>Business software and enterprise systems</h2>
         {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' | reverse %}
         {% for project in enterprise_projects %}
         <div class="mb">
@@ -49,7 +49,7 @@ standfirst: >
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="h5">Digital tools and applications</h2>
+        <h2>Digital tools and applications</h2>
         {% assign app_projects = site.projects | where: 'category', 'app' | sort: 'priority' | reverse %}
         {% for project in app_projects %}
         <div class="mb">

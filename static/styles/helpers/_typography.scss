@@ -21,32 +21,35 @@
   }
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+p {
+  font-weight: $body-weight-light;
+}
+
+h2, .h2,
+h4, .h4 {
+  font-family: 'BrandonTextWeb-Light', Helvetica, sans-serif;
+}
+
+h3, .h3 {
+  font-family: $body-font-family;
+}
+
+h1, .h1,
+h5, .h5,
+h6, .h6 {
   font-family: $header-font-family;
 }
 
 .main {
   @include breakpoint(large) {
 
-    p:not(.lead), li {
-      max-width: grid-column(7);
-    }
-
-    h1, .h1 {
-      max-width: grid-column(10);
-    }
-
     h2, .h2,
     h3, .h3,
     h4, .h4,
     h5, .h5,
     h6, .h6,
-    .lead {
+    p,
+    li{
       max-width: grid-column(8);
     }
 

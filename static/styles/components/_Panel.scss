@@ -9,8 +9,13 @@
     }
 
     &__text {
-
+      font-size: rem-calc(22.781);
       font-style: italic;
+      font-weight: $body-weight-book;
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(25.629);
+      }
 
       &::before {
         content: "\201C"
