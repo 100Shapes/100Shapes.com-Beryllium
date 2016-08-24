@@ -2,7 +2,7 @@
   background-color: $black;
   position: absolute;
   height: 750px;
-  top: 0;
+  top: $column-gutter * 5;
   left: 0;
   width: 100%;
   z-index: -1;

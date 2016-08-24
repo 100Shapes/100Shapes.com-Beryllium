@@ -1,5 +1,10 @@
 body {
-  margin: $column-gutter / 2;
+  margin: 0;
+
+  @include breakpoint(medium) {
+    margin-left: $column-gutter * 2;
+    margin-right: $column-gutter * 2;
+  }
 }
 
 svg {
