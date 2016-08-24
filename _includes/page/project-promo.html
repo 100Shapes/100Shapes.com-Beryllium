@@ -3,15 +3,15 @@
    style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image
     }});">
 
-    <div class="row align-middle Promo__row">
-        <div class="small-12 medium-8 large-7 column Promo__content">
+    <div class="row align-middle Promo__row collapse">
+        <div class="small-12 medium-9 large-7 column Promo__content">
             <h3 class="h4 Promo__heading">{{ include.project.promo_title }}</h3>
             <div class="cta-label">
-                <span class="cta-label__instruction">Read about</span>
+                <span class="cta-label__instruction h6">Read about</span>
                 <span class="cta-label__label h5">{{ include.project.project_name}}</span>
             </div>
         </div>
-        <div class="small-12 medium-4 large-5 column Promo__logo hide-for-small-only">
+        <div class="small-12 medium-4 large-5 column Promo__logo show-for-large">
             <span>
                 {% assign icon = 'icons/' | append: include.project.icon | append: '.svg' %}
                 {% include {{ icon }} %}

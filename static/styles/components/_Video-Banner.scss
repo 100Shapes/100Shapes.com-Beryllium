@@ -3,7 +3,7 @@ $unit: $column-gutter;
 .Video-Banner {
   background-color: $black;
   position: absolute;
-  height: $unit * 18;
+  height: $unit * 19;
   top: $unit * 4;
   left: 0;
   width: 100%;
@@ -13,7 +13,7 @@ $unit: $column-gutter;
   @include breakpoint(medium) {
     top: $unit * 5;
     border-radius: $global-radius;
-    height: $unit * 26;
+    height: $unit * 29;
   }
 
 
