@@ -1,7 +1,16 @@
 body {
   margin: 0;
 
+  @include breakpoint(small only) {
+    font-size: 81.8181%;
+  }
+
   @include breakpoint(medium) {
+    margin-left: $column-gutter;
+    margin-right: $column-gutter;
+  }
+
+  @include breakpoint(large) {
     margin-left: $column-gutter * 2;
     margin-right: $column-gutter * 2;
   }
