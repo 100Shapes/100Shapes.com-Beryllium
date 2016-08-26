@@ -10,7 +10,9 @@ import WOW from "wowjs";
 import "../styles/app.scss";
 import "animate.css";
 
-const w = new WOW();
+const w = new WOW({
+  live: false
+});
 w.init();
 
 $(document).foundation();

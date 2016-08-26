@@ -3,21 +3,21 @@
 {% if slug %}
 
 {% if include.long_title %}
-<h1>{{ include.long_title }}</h1>
+<h1 class="{{ site.animation_in_classes }}">{{ include.long_title }}</h1>
 {% else %}
-<h1>{{ include.title }}</h1>
+<h1 class="{{ site.animation_in_classes }}">{{ include.title }}</h1>
 {% endif %}
 
 {% else %}
 
 {% if include.long_title %}
-<h1>{{ include.long_title }}</h1>
+<h1 class="{{ site.animation_in_classes }}">{{ include.long_title }}</h1>
 {% else %}
-<h1>{{ include.title }}</h1>
+<h1 class="{{ site.animation_in_classes }}">{{ include.title }}</h1>
 {% endif %}
 
 {% endif %}
 
 {% if include.standfirst %}
-<p class="lead">{{ include.standfirst }}</p>
+<p class="lead {{ site.animation_in_classes }} Titles__standfirst">{{ include.standfirst }}</p>
 {% endif %}
