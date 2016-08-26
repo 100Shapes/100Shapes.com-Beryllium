@@ -24,6 +24,10 @@ var loaders = [
     loader: ExtractTextPlugin.extract('style-loader', 'css-loader!autoprefixer-loader?browsers=last 2 versions!sass-loader')
   },
   {
+    test: /\.(png|jpg)$/,
+    loader: 'url-loader?limit=8192'
+  },
+  {
     test: require.resolve('animate.css'),
     loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
   },
@@ -43,7 +47,7 @@ module.exports = {
   output: {
     path: path.resolve('dist'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: '/dist/'
   },
   plugins: [
     new ExtractTextPlugin('main.css', {
@@ -65,8 +69,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'foundation': 'foundation-sites',
-      'settings': 'static/_settings'
+      'foundation': 'foundation-sites'
     }
   },
   sassLoader: {
