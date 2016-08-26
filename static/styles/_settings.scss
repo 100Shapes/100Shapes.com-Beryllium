@@ -64,7 +64,7 @@ $header-margin-bottom: 2.1rem;
 // Grid
 $column-gutter: rem-calc(30);
 $grid-column-gutter: (
-        small: $column-gutter,
+        small: rem-calc(60),
         large: $column-gutter
 );
 
