@@ -8,10 +8,7 @@ body {
   @include breakpoint(medium) {
     margin-left: $column-gutter;
     margin-right: $column-gutter;
-<<<<<<< HEAD
     margin-bottom: $column-gutter;
-=======
->>>>>>> 91ed3f9... Updated typestyles
   }
 
   @include breakpoint(large) {
