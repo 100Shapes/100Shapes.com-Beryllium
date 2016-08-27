@@ -17,7 +17,7 @@ layout: default
 
     {% if page.bannerImage %}
     {% assign bannerImage = '/static/images/page-banners/' | append: page.bannerImage %}
-    <div class="row">
+    <div class="row mt2 md-mt4">
         <div class="small-12 medium-offset-1 medium-10 column">
             <img src="{{ bannerImage | prepend: site.baseurl }}"
                  alt="Promo image"/>

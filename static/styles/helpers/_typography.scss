@@ -65,3 +65,7 @@ h6, .h6 {
 .fcw {
   color: $white !important;
 }
+
+.main a, .lead a {
+  white-space: nowrap;
+}
