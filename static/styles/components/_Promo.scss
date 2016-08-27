@@ -39,10 +39,10 @@ $unit: $column-gutter;
     }
 
     .Promo__heading {
-      transform: translateY(-1rem);
+      transform: translateY(-0.8rem);
 
       @include breakpoint(small only) {
-        transform: translateY(1rem);
+        transform: translateY(0.8rem);
       }
 
     }
