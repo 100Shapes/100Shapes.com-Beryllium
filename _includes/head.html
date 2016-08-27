@@ -3,7 +3,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% capture page-title %}{% if page.long_title %}{{ page.long_title | escape }}{% else %}{{ page.title | escape }}{% endif %}{% endcapture %}
+    {% capture page-title %}{% if page.long_title %}{{ page.long_title | strip_html | escape }}{% else %}{{ page.title | strip_html | escape }}{% endif %}{% endcapture %}
     <title>{{ page-title }} | 100 Shapes</title>
 
     {% assign page-url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
