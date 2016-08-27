@@ -1,13 +1,15 @@
 climb:
   name: Climb.social
-  icon: climb-logo--large
+  iconLarge: climb-logo--large
+  iconSmall: climb-logo--small
   url: http://climb.social
   tagline: Social media, anywhere you want it.
   themeColour: '#1A5077'
 
 orbit:
   name: Orbit
-  icon: orbit-logo
+  iconLarge: orbit-logo
+  iconSmall: orbit-logo
   url: http://getorbit.io/
   tagline: Hyperlocal mobile apps, without the download.
   themeColour: '#370B6E'
