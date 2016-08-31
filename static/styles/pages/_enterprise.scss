@@ -1,5 +1,6 @@
 .page--enterprise {
   background: $blue-dark url('../images/business-systems/business-systems-banner.jpg') no-repeat top center fixed;
+  background-size: contain;
   color: $white;
 
   a, .icon-anchor, .Top-Bar button {

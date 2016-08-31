@@ -64,4 +64,3 @@ exclude:
 
 gems:
   - jekyll-sitemap
-  - jekyll-paginate
