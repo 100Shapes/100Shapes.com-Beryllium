@@ -9,7 +9,7 @@ $unit: $column-gutter;
 
   height: $unit * 10;
   @include breakpoint(medium) {
-    height: $unit * 10;
+    height: $unit * 17;
   }
 
   color: $white;
