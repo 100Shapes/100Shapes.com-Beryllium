@@ -31,18 +31,3 @@ standfirst: |
     </div>
 </div>
 
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|1.jpg|1.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
-             alt="Laptop Screen"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
-
-        {% include page/quote.html name='Chris Elphick' role='Design Director' text='Hello there, Those people who
-        think they know everything
-        are a great annoyance to those of us who do. Those people who think they know everything are a great annoyance
-        to those of us who do.' %}
-    </div>
-</div>
