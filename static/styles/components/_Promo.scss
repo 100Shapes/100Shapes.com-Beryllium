@@ -31,6 +31,18 @@ $unit: $column-gutter;
     transition: opacity 0.3s
   }
 
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.7) 100%);
+    border-radius: $global-radius;
+  }
+
   &:hover {
     color: inherit;
 
@@ -91,6 +103,11 @@ $unit: $column-gutter;
   }
 
   &--venture {
+
+    &:before {
+      background: none;
+    }
+
     height: $unit * 8;
     @include breakpoint(medium) {
       height: $unit * 10;
