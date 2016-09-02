@@ -89,5 +89,12 @@ $unit: $column-gutter;
       height: $unit * 17;
     }
   }
+
+  &--venture {
+    height: $unit * 8;
+    @include breakpoint(medium) {
+      height: $unit * 10;
+    }
+  }
 }
 
