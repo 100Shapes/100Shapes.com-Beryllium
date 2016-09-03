@@ -31,3 +31,13 @@ standfirst: |
     </div>
 </div>
 
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg|2.jpg|3.jpg|4.jpg|5.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/yale/' | prepend: site.baseurl | append: image }}"
+             alt=""
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+    </div>
+</div>

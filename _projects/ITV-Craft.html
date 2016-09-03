@@ -31,3 +31,14 @@ standfirst: |
             make people’s daily work lives tangibly better.</p>
     </div>
 </div>
+
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% assign images = '1.jpg' | split: "|" %}
+        {% for image in images %}
+        <img src="{{ '/static/images/projects/craft/' | prepend: site.baseurl | append: image }}"
+             alt=""
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+    </div>
+</div>

@@ -2,8 +2,8 @@ ixd:
   role: Interaction Designer
   apply_link: "mailto:hello@100shapes.com"
   description: |
-    We're always on the look out for Interaction Designers with attention to detail; who want to change the world
-    around them because they can spot better ways of interacting with tools and systems to encounter throughout of day.
+    We're always on the look-out for Interaction Designers with attention to detail; who want to change the world
+    around them because they can spot better ways of interacting with the tools and systems they encounter every day.
 
     If you're interested in working with us, send us your portfolio and focus on projects which describe _why_ you
     made certain decisions – that's what we're really interested in.
@@ -12,16 +12,16 @@ vd:
   role: Visual Designer
   apply_link: "mailto:hello@100shapes.com"
   description: |
-    Our visual designers define the final execution the what we make and do. It's super-important we get this right.
+    Our visual designers define the final execution the what we make and do – it's super-important we get this right.
 
 ur:
   role: User Researcher
   apply_link: "mailto:hello@100shapes.com"
   description: |
-    A description of a User researcher and the types of things they do.
+    We believe in evidence-based design. Usability assessment
 
 fedev:
-  role: User Researcher
+  role: Frontend Developer
   apply_link: "mailto:hello@100shapes.com"
   description: |
     A description of a User researcher and the types of things they do.
