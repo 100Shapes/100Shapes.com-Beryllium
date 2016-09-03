@@ -2,7 +2,12 @@
 layout: default
 ---
 
+{% if page.bannerTheme %}
 <header class="Banner Banner--{{ page.bannerTheme }} mb2">
+{% elsif page.bannerHex %}
+ <header class="Banner mb2" style="background-color: {{ page.bannerHex }};">
+{% endif %}
+
     <div class="row">
         <div class="small-12 medium-offset-1 medium-10 large-8 column">
             {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst %}
