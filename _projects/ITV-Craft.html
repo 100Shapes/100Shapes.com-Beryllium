@@ -38,7 +38,7 @@ standfirst: |
         {% assign images = '1.jpg' | split: "|" %}
         {% for image in images %}
         <img src="{{ '/static/images/projects/craft/' | prepend: site.baseurl | append: image }}"
-             alt=""
+             alt="ITV Craft {{ forloop.index }}"
              class="mb Panel {{ site.animation_in_classes }}">
         {% endfor %}
     </div>

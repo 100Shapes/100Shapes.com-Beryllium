@@ -34,7 +34,7 @@ standfirst: |
         {% assign images = '1.jpg|2.jpg|3.jpg|4.jpg' | split: "|" %}
         {% for image in images %}
         <img src="{{ '/static/images/projects/london-live/' | prepend: site.baseurl | append: image }}"
-             alt=""
+             alt="London Live {{ forloop.index }}"
              class="mb Panel {{ site.animation_in_classes }}">
         {% endfor %}
     </div>

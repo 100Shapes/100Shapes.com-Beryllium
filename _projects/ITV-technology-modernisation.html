@@ -30,8 +30,8 @@ standfirst: >
     <div class="medium-offset-1 medium-10 column">
         {% assign images = '1.jpg' | split: "|" %}
         {% for image in images %}
-        <img src="{{ '/static/images/projects/craft/' | prepend: site.baseurl | append: image }}"
-             alt=""
+        <img src="{{ '/static/images/projects/itv-technology-modernisation/' | prepend: site.baseurl | append: image }}"
+             alt="ITV Technology Modernisation {{ forloop.index }}"
              class="mb Panel {{ site.animation_in_classes }}">
         {% endfor %}
     </div>
