@@ -5,7 +5,7 @@ $unit: $column-gutter;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top right;
 
   height: $unit * 10;
   @include breakpoint(medium) {
