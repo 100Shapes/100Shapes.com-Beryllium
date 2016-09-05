@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wrapped
 title: "Join Us"
 long_title: "Live and breathe great design? <br/> We want to hear from you"
 standfirst: >
@@ -9,50 +9,46 @@ bannerTheme: blue
 permalink: /join-us/
 ---
 
-<div class="row main">
-    <div class="medium-offset-1 medium-10 column">
-        <p>Founded by Chris Elphick and brothers Michele and Paolo&nbsp;Memoli, 100&nbsp;Shapes has always been driven
-            by a shared
-            energy, curiosity and passion for design.</p>
+<p>Founded by Chris Elphick and brothers Michele and Paolo&nbsp;Memoli, 100&nbsp;Shapes has always been driven
+    by a shared
+    energy, curiosity and passion for design.</p>
 
-        <p>Today we’re an award-winning multi-disciplinary team of designers, researchers and front-end developers.
-            We’re
-            tinkerers, experimenters and creators, with no hard boundaries between work and play.
-        </p>
+<p>Today we’re an award-winning multi-disciplinary team of designers, researchers and front-end developers.
+    We’re
+    tinkerers, experimenters and creators, with no hard boundaries between work and play.
+</p>
 
-        <p>Our mission is to create an open, collaborative environment where we can explore our craft and deliver our
-            best work.
-            As a team we’re close and supportive, making our studio a fertile ground for ideas and growth. Sometimes the
-            things
-            we make launch whole new ventures and businesses.
-        </p>
+<p>Our mission is to create an open, collaborative environment where we can explore our craft and deliver our
+    best work.
+    As a team we’re close and supportive, making our studio a fertile ground for ideas and growth. Sometimes the
+    things
+    we make launch whole new ventures and businesses.
+</p>
 
-        <p>100 Shapes is located in the beating heart of Camden, North London. Our clients include household names like
-            ITV, the
-            BBC, London Live, Radio 3 and Yale University.
-        </p>
+<p>100 Shapes is located in the beating heart of Camden, North London. Our clients include household names like
+    ITV, the
+    BBC, London Live, Radio 3 and Yale University.
+</p>
 
-        <p>We nuture fresh talent and always want to know about clever, creative people out there who are as dedicated
-            to great
-            user experiences and design as we are.</p>
+<p>We nuture fresh talent and always want to know about clever, creative people out there who are as dedicated
+    to great
+    user experiences and design as we are.</p>
 
-        <p>Check out our current vacancies below, or send us your CV.</p>
+<p>Check out our current vacancies below, or send us your CV.</p>
 
-        <h2>
-            Current Opportunities
-        </h2>
+<h2>
+    Current Opportunities
+</h2>
 
-        {% for item in site.data.opportunities %}
-        {% assign job = item | last %}
-        <h3>
-            {{ job.role }}
-        </h3>
-        <p>
-            {{ job.description | markdownify }}
-        </p>
-        <p class="mb2">
-            <a href="{{ job.apply_link }}">Apply</a>
-        </p>
-        {% endfor %}
-    </div>
-</div>
+{% for item in site.data.opportunities %}
+{% assign job = item | last %}
+<h3>
+    {{ job.role }}
+</h3>
+<p>
+    {{ job.description | markdownify }}
+</p>
+<p class="mb2">
+    <a href="{{ job.apply_link }}">Apply</a>
+</p>
+{% endfor %}

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wrapped
 title: "Privacy Policy"
 permalink: /privacy-policy/
 standfirst: >
