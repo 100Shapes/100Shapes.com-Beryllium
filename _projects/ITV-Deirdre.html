@@ -7,7 +7,17 @@ icon: itv
 category: enterprise
 priority: 3
 bannerHex: '#2790a3'
-project_name: "Project Deidre"
+project_name: "ITV Deidre"
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
+  - file: 3.jpg
+    alt: Alt text here
+
 standfirst: |
   Named for ITV’s beloved Deirdre Barlow, Project Deirdre centralised and simplified ITV’s complex
   programme promotion system.
@@ -29,16 +39,5 @@ standfirst: |
             seasons, delivering substantial cost savings to the business. The system won ITV’s 2016 Technical Supplier
             for Innovation and Design Award.
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg|3.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/deirdre/' | prepend: site.baseurl | append: image }}"
-             alt="ITV Dierdre {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

@@ -7,6 +7,16 @@ icon: itv
 bannerHex: '#6cc0c8'
 category: app
 project_name: ITV AdSave
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
+  - file: 3.jpg
+    alt: Alt text here
+
 standfirst: |
   ITV AdSave showed ITV how it could build a relationship with the viewer that offered genuine value on the
   customer’s terms, unlike the one-way broadcast of an ad.
@@ -29,16 +39,5 @@ standfirst: |
             ITV stakeholders, demonstrating a range of use cases for interactive ads and how they could form a key
             element of ITV’s future customer engagement strategy.
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg|3.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/adsave/' | prepend: site.baseurl | append: image }}"
-             alt="ITV AdSave {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

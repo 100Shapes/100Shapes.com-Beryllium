@@ -7,6 +7,19 @@ icon: london-live
 category: app
 bannerHex: '#998eb1'
 project_name: "London Live Digital"
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
+  - file: 3.jpg
+    alt: Alt text here
+
+  - file: 4.jpg
+    alt: Alt text here
+
 standfirst: |
   It was an epic task with a tough deadline: to design and create London Live’s entire digital presence in time for a
   looming – and not-negotiable – go-live date.
@@ -26,16 +39,5 @@ standfirst: |
             moderating ‘hyperlocal’ Twitter streams – the basis for our later <a href="http://climb.social/">Climb.social</a>
             tool – and delivered the whole new digital platform right on time for launch.
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg|3.jpg|4.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/london-live/' | prepend: site.baseurl | append: image }}"
-             alt="London Live {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

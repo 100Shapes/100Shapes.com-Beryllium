@@ -17,6 +17,17 @@ layout: default
 
 {{ content }}
 
+<div class="row">
+    <div class="medium-offset-1 medium-10 column">
+        {% for image in page.images %}
+        {% capture path %}/static/images/projects/{{ page.slug }}/{% endcapture %}
+        <img src="{{ path | prepend: site.baseurl | append: image.file }}"
+             alt="{{ image.alt }}"
+             class="mb Panel {{ site.animation_in_classes }}">
+        {% endfor %}
+    </div>
+</div>
+
 {% for project in site.projects %}
 {% if project.title == page.title %}
 {% if forloop.last %}

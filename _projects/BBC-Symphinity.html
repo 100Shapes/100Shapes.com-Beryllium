@@ -7,6 +7,16 @@ icon: bbc
 project_name: "Project: BBC Symphinity"
 bannerHex: '#cfbcab'
 category: app
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
+  - file: 3.jpg
+    alt: Alt text here
+
 standfirst: |
   BBC Simphinity was designed to give listeners a new way in to classical music by presenting themed playlists with
   nuggets of history, musical context and trivia.
@@ -38,16 +48,5 @@ standfirst: |
             Read more of the <a href="http://www.bbc.co.uk/taster/projects/symphinity/inside-story">inside story on the
             BBC Taster website.</a>
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg|3.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/symphinity/' | prepend: site.baseurl | append: image }}"
-             alt="BBC Symphinity {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

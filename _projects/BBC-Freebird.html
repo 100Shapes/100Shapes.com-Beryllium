@@ -7,6 +7,13 @@ project_name: "BBC Freebird"
 bannerHex: '#6d727f'
 icon: bbc
 category: app
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
 standfirst: |
   Project Freebird was designed to present external content on the BBC website while staying true to the broadcaster’s
   core principle of balance.
@@ -26,16 +33,5 @@ standfirst: |
             safeguarding its own brand. The BBC is considering other ways Freebird can be applied across its wider
             digital innovation strategy.
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/freebird/' | prepend: site.baseurl | append: image }}"
-             alt="BBC Freebird {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

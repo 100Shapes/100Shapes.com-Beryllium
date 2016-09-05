@@ -7,6 +7,10 @@ icon: itv
 bannerHex: '#4eb4b7'
 category: enterprise
 project_name: ITV Craft
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
 standfirst: |
   The rapid development of a new user interface eliminated a major daily
   pain point for ITV’s busy Global Entertainment team.
@@ -30,16 +34,5 @@ standfirst: |
 
         <p>This has been a hugely satisfying project for the 100 Shapes team – a brilliant example of how UX design can
             make people’s daily work lives tangibly better.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/craft/' | prepend: site.baseurl | append: image }}"
-             alt="ITV Craft {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

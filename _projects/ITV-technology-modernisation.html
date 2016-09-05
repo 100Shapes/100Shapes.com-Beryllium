@@ -8,6 +8,10 @@ icon: itv
 bannerHex: '#8f9eb2'
 category: enterprise
 project_name: ITV Technology Modernisation
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
 standfirst: >
   We work with ITV on an ‘engagement’ service model to implement continuous
   system optimisation, delivering exceptional value month to month.
@@ -23,16 +27,5 @@ standfirst: >
         <p>Building on established trust, the model frees ITV resource from laborious internal scoping processes. It
             allows us to be proactive, work faster and preempt system issues before they arise, delivering numerous
             efficiencies and ultimately saving money for ITV.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/itv-technology-modernisation/' | prepend: site.baseurl | append: image }}"
-             alt="ITV Technology Modernisation {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>

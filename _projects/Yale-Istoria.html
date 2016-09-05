@@ -7,6 +7,22 @@ icon: yale
 category: app
 bannerHex: '#c3a9b0'
 project_name: Yale Istoria
+images:
+  - file: 1.jpg
+    alt: Alt text here
+
+  - file: 2.jpg
+    alt: Alt text here
+
+  - file: 3.jpg
+    alt: Alt text here
+
+  - file: 4.jpg
+    alt: Alt text here
+
+  - file: 5.jpg
+    alt: Alt text here
+
 standfirst: |
   Project Istoria brought a vast digital library into the tablet age, providing a flexible platform for students and
   faculty to build bespoke reading packs.
@@ -29,16 +45,5 @@ standfirst: |
             UP is now considering how and when Istoria might be launched.
 
         </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="medium-offset-1 medium-10 column">
-        {% assign images = '1.jpg|2.jpg|3.jpg|4.jpg|5.jpg' | split: "|" %}
-        {% for image in images %}
-        <img src="{{ '/static/images/projects/yale/' | prepend: site.baseurl | append: image }}"
-             alt="Yale Istoria {{ forloop.index }}"
-             class="mb Panel {{ site.animation_in_classes }}">
-        {% endfor %}
     </div>
 </div>
