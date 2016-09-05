@@ -1,7 +1,8 @@
+{% capture promo %}{{ site.baseurl }}/static/images/projects/{{ include.project.slug }}/promo.jpg{% endcapture %}
+
 <a href="{{ include.project.url | prepend: site.baseurl }}"
    class="Promo {{ site.animation_in_classes }} p md-p2"
-   style="background-image: url({{ '/static/images/projects/' | prepend: site.baseurl }}{{ include.project.promo_image
-    }});">
+   style="background-image: url({{ promo }});">
 
     <div class="row align-middle Promo__row collapse">
         <div class="small-12 medium-9 large-7 column Promo__content">
