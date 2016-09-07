@@ -114,6 +114,11 @@ $unit: $column-gutter;
     @include breakpoint(medium) {
       height: $unit * 10;
     }
+
+    .Promo__content {
+      max-width: inherit;
+    }
+
   }
 }
 
