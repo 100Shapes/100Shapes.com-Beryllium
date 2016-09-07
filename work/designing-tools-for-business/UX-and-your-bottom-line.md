@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wrapped
 title: "Business software and applications: UX and your bottom line"
 long_title: "Business software and applications: UX and your bottom line"
 standfirst: >
@@ -36,9 +36,8 @@ The IEEE research showed that 50% of programmers’ time is spent on avoidable r
 The cost of fixing errors after development is many times more than if errors are caught and fixed – or new requirements added – during the development process. That’s because when you add or change a function you need to pull apart and rebuilt structural elements of the system. Think of it as a wall: it’s far cheaper to build it in the right place the first time than to pull it down and move it later.
 
 
-    (number of changes) x (avg. hrs/change) x (cost of developer) x 4 if late = £££
-    e.g.
-    20 changes x 8 hrs each x £50/hour = £8,000 if fixed early, or £32,000 if changed late
+> (number of changes) x (avg. hrs/change) x (cost of developer) x 4 if late = £££
+> e.g. 20 changes x 8 hrs each x £50/hour = £8,000 if fixed early, or £32,000 if changed late
 
 The factor of four for late fixes in this example is a conservative one. The IEEE study put the cost of changes post-development at 100 times the cost of making fixes before the project is complete – when it’s often too late to do any more than patch the problem anyway.
 
@@ -56,9 +55,8 @@ User-centred design streamlines your systems. ‘Smart’ tools designed around 
 
 A useful cost-saving metric is to analyse how long a given task takes, and how much time will be saved if you can cut that in half (for example) every time:
 
-    (time saved) x (employee cost) x (employees) = £££
-    e.g.
-    2 hours/week x £15/hr x 200 employees = £6000/week
+> (time saved) x (employee cost) x (employees) = £££ <br>
+> e.g. 2 hours/week x £15/hr x 200 employees = £6000/week
 
 
 4. Better data capture and fewer user errors 
@@ -69,9 +67,8 @@ Well-designed tools and checking protocols can significantly reduce the risk of 
 
 The example below assumes each employee makes just a couple of errors per month, which take a few minutes to fix – once discovered. But look how quickly the costs compound. And what it doesn’t calculate is the snowball effect of the error being passed on in the meantime to other departments – marketing, perhaps, or technology or commercial or sales – where the problem continues to multiply by each additional area of the business.
 
-    (number of errors) x (avg. fix time) x (employee cost) x (number of employees) = £££
-    e.g.
-    2 errors/month x 0.83hrs x £16/hr x 500 employees = £1,328 per month 
+> (number of errors) x (avg. fix time) x (employee cost) x (number of employees) = £££ <br>
+> e.g. 2 errors/month x 0.83hrs x £16/hr x 500 employees = £1,328 per month 
 
 Improving data quality can deliver further cost benefits by saving on data hygiene processes and limiting the waste of resources like print and postage. Well-designed data capture processes can also offer added value such as improved capacity to segment and target your audience groups.
 
@@ -80,9 +77,8 @@ Improving data quality can deliver further cost benefits by saving on data hygie
 
 Training budgets are usually proportional to user interface complexity. Intuitive, easy-to-use software reduces the need for expensive or ‘tied-in’ training, as well as ongoing documentation and support costs. Other benefits include smaller training teams and less time out for your staff while in training. 
 
-    (number of training hours saved) x [(cost of trainer) + (cost of employee)] = £££
-    e.g.
-    4 hours x 200 employees x (£30/hr + £15/hr) = £3600
+> (number of training hours saved) x [(cost of trainer) + (cost of employee)] = £££ <br>
+> e.g. 4 hours x 200 employees x (£30/hr + £15/hr) = £3600
 
 Another key saving to calculate might be the reduction of calls to the support team or help desk. Work out what metrics are significant to you, and look at the numbers.
 

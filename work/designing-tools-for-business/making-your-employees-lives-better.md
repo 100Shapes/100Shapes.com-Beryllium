@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wrapped
 title: Making your employees’ lives better
 date: 2016-04-03
 bannerImage: enterprise.jpg

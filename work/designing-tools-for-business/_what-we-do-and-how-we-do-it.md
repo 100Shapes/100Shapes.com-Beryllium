@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wrapped
 title: What we do, and how we do it 
 author: michele
 date: 2016-04-03
