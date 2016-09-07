@@ -45,20 +45,21 @@ standfirst: |
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
 
-        {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' | reverse %}
-        {% for project in enterprise_projects %}
+        {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' |
+        reverse | limit: 1 %}
+        {% for project in enterprise_projects limit: 2 %}
         <div class="mb">
             {% include page/project-promo.html project=project %}
         </div>
         {% endfor %}
+
+        <a href="/work/" class="expanded button">See more of our work</a>
+
     </div>
 </div>
 
 <div class="row main">
     <div class="medium-offset-1 medium-10 column">
-
-        <p><a href="/work/">See more</a></p>
-
 
         <p class="Tag h5 mt2">Approach</p>
         <h2 class="mt0">We develop user research and design programs
