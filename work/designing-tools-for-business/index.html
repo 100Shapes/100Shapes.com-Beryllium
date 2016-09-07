@@ -44,14 +44,15 @@ standfirst: |
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-
-        {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' |
-        reverse | limit: 1 %}
-        {% for project in enterprise_projects limit: 2 %}
-        <div class="mb">
-            {% include page/project-promo.html project=project %}
+        <div class="row">
+            {% assign enterprise_projects = site.projects | where: 'category', 'enterprise' | sort: 'priority' |
+            reverse | limit: 1 %}
+            {% for project in enterprise_projects limit: 2 %}
+            <div class="column small-12 large-6 mb">
+                {% include page/project-promo.html project=project %}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
 
         <a href="/work/" class="expanded button">See more of our work</a>
 

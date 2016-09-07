@@ -5,6 +5,7 @@ $unit: $column-gutter;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   background-position: top right;
 
   height: $unit * 10;
@@ -71,6 +72,7 @@ $unit: $column-gutter;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 25em;
   }
 
   &__logo {
