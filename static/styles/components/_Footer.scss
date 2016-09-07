@@ -1,18 +1,16 @@
 $unit: $column-gutter;
 
 .Footer {
-  margin: ($unit * 4) 0 ($unit / 2);
-
-  background-color: $light-gray;
-  border-radius: $global-radius;
-
-  @include breakpoint(small only) {
-
+  .menu {
     text-align: center;
-
-    .menu {
-      justify-content: center !important;
-    }
+    justify-content: center !important;
   }
 
+  small {
+    color: $mid-gray;
+
+    li {
+      line-height: 2 !important;
+    }
+  }
 }

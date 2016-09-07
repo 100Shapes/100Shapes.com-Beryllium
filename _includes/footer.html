@@ -1,36 +1,36 @@
-<footer class="Footer pv ffss">
+<footer class="Footer mt2 pv ffss">
+
+    <div class="Panel">
+        <ul class="menu pv">
+            <li>
+                {% assign emailHref = 'mailto:' | append: site.email %}
+                {% include page/icon-anchor.html label=site.email href=emailHref icon='mail' %}
+            </li>
+            <li>
+                {% assign phoneHref = 'tel:' | append: site.phone_number %}
+                {% include page/icon-anchor.html label=site.phone_number_display href=phoneHref icon='phone' %}
+            </li>
+            <li>
+                {% include page/icon-anchor.html label=site.address href=site.address_link icon='location-pin' %}
+            </li>
+        </ul>
+        <ul class="menu pb">
+            {% for item in site.data.networks %}
+            {% assign network = item | last %}
+            <li>
+                <a href="{{ network.link }}" class="icon-anchor">
+                    {% assign icon = 'icons/' | append: network.icon | append: '.svg' %}
+                    {% include {{ icon }} %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
     <div class="row align-middle">
-        <div class="small-12 medium-7 column">
-            <ul class="menu">
-                <li>
-                    {% assign emailHref = 'mailto:' | append: site.email %}
-                    {% include page/icon-anchor.html label=site.email href=emailHref icon='mail' %}
-                </li>
-                <li>
-                    {% assign phoneHref = 'tel:' | append: site.phone_number %}
-                    {% include page/icon-anchor.html label=site.phone_number_display href=phoneHref icon='phone' %}
-                </li>
-                <li>
-                    {% include page/icon-anchor.html label=site.address href=site.address_link icon='location-pin' %}
-                </li>
-            </ul>
-        </div>
 
-        <div class="small-12 medium-5 column sm-mt-only">
-            <ul class="menu menu--right">
-                {% for item in site.data.networks %}
-                {% assign network = item | last %}
-                <li>
-                    <a href="{{ network.link }}" class="icon-anchor">
-                        {% assign icon = 'icons/' | append: network.icon | append: '.svg' %}
-                        {% include {{ icon }} %}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <small class="small-12 column mt text-center">
+        <small class="small-12 column mt2 text-center">
             <ul class="no-bullet">
                 <li>&copy; {{ 'now' | date: "%Y" }}. 100 Shapes Ltd. All rights
                     reserved.
