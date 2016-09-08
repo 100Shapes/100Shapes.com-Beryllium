@@ -1,6 +1,6 @@
 ixd:
   role: Interaction Designer
-  apply_link: "mailto:hello@100shapes.com"
+  apply_link: "mailto:jobs@100shapes.com"
   description: |
     We're always on the look-out for Interaction Designers with attention to detail; who want to change the world
     around them because they can spot better ways of interacting with the tools and systems they encounter every day.
@@ -10,18 +10,38 @@ ixd:
 
 vd:
   role: Visual Designer
-  apply_link: "mailto:hello@100shapes.com"
+  apply_link: "mailto:jobs@100shapes.com"
   description: |
     Our visual designers define the final execution the what we make and do – it's super-important we get this right.
 
 ur:
   role: User Researcher
-  apply_link: "mailto:hello@100shapes.com"
+  apply_link: "mailto:jobs@100shapes.com"
   description: |
     We believe in evidence-based design. Usability assessment
 
 fedev:
   role: Frontend Developer
-  apply_link: "mailto:hello@100shapes.com"
+  apply_link: "mailto:jobs@100shapes.com"
   description: |
-    A description of a User researcher and the types of things they do.
+    Building for the web is an ever evolving and wide reaching craft. We look developers who appreciate who are using the latest tech but respect the value in reducing the number of parts in a system.
+
+    We look for developers who are a bit confused by the word programmer.
+
+    We look for developers who have have npm war stories.
+
+    We look for developers who have advanced font features.
+
+    We look for developers who have something to say about systemd.
+
+    Some of the tools we like to use:
+
+    - React with Redux
+    - PostCSS and Sass
+    - Webpack and Gulp
+    - JavaScript ES2015 with Babel
+    - Django / Python a bonus
+    - Docker / Linux / MacOS
+
+    Build design systems expressed through CSS.
+
