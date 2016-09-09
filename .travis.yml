@@ -6,13 +6,14 @@ cache:
     - node_modules
 
 node_js:
-  - "0.12"
+  - "6.5.0"
 
 before_install:
   - rvm install ruby-2.1.0
   - rvm use 2.1.0 --default
   - gem install bundler
   - bundle install
+  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 
 install:
   - npm config set registry http://registry.npmjs.org/
