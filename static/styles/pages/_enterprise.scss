@@ -25,4 +25,13 @@
   .Footer .Panel {
     background-color: $blue;
   }
+
+  .ctas a {
+    border-bottom: none !important;
+    display: flex;
+
+    span {
+      margin-left: 10px;
+    }
+  }
 }
