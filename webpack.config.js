@@ -25,7 +25,7 @@ var loaders = [
   },
   {
     test: /\.(png|jpg)$/,
-    loader: 'url-loader?limit=8192'
+    loader: 'url?limit=8192'
   },
   {
     test: require.resolve('animate.css'),
@@ -37,7 +37,7 @@ var loaders = [
   },
   {
     test: /\.(eot|svg|ttf|woff|woff2)$/,
-    loader: 'file?name=static/webfonts/[name].[ext]'
+    loader: 'url?name=static/webfonts/[name].[ext]'
   }
 ];
 
@@ -59,9 +59,9 @@ module.exports = {
       }
     }),
     new webpack.ProvidePlugin({
-      $: "foundation-sites/node_modules/jquery",
-      jQuery: "foundation-sites/node_modules/jquery",
-      "window.jQuery": "foundation-sites/node_modules/jquery"
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
     })
   ],
   module: {
