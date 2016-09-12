@@ -28,20 +28,20 @@ p {
   font-weight: $body-weight-light;
 }
 
+h1, .h1,
 h2, .h2,
-h4, .h4 {
-  font-family: 'BrandonTextWeb-Light', Helvetica, sans-serif;
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $header-font-family;
 }
 
 h3, .h3 {
   font-family: $body-font-family;
 }
 
-h1, .h1,
-h5, .h5,
-h6, .h6,
 .ffss {
-  font-family: $header-font-family;
+  font-family: $header-font-family !important;
 }
 
 .main {
