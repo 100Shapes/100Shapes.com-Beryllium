@@ -3,6 +3,9 @@ layout: page-wrapped
 title: What we do, and how we do it 
 author: michele
 date: 2016-04-03
+description: >
+  
+
 ---
 
 There are plenty of resources and materials describing UX process on the web, but it’s important to describe the role this process should play within an organisation to get the most value.
