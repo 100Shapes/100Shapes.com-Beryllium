@@ -36,7 +36,10 @@
     color: $mid-gray;
 
     &__item {
-      margin-right: 1.5rem;
+      display: inline-block;
+      white-space: nowrap;
+      margin-right: 1rem;
+      margin-top: 0.25rem;
     }
   }
 
