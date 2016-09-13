@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Blog"
+long_title: "UX Design & Tech Blog"
+permalink: /blog/
+standfirst: >
+  Smashing letters together untill coherency emerges.
+---
+
+
+{% if page.themeColour %}
+<header class="Banner mb2" style="background-color: {{ page.themeColour }}">
+{% else %}
+<header class="Banner">
+{% endif %}
+    <div class="row">
+        <div class="small-12 medium-offset-1 medium-10 large-8 column">
+            {% include page/titles.html title=page.title long_title=page.long_title standfirst=page.standfirst
+            slug=page.url %}
+        </div>
+    </div>
+</header>
+
+<div class="row mb2">
+    <div class="medium-offset-1 medium-10 column">
+        {% for post in site.posts %}
+        <div class="mb2">
+             {% include page/post-promo.html post=post %}   
+        </div>
+        {% endfor %}
+    </div>
+</div>
