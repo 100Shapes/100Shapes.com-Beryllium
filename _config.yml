@@ -24,6 +24,9 @@ menu:
   - label: Work
     link: /work/
 
+  - label: Blog
+    link: /blog/
+
   - label: Join us
     link: /join-us/
 
@@ -38,6 +41,12 @@ defaults:
       collection: projects
     values:
       layout: project
+  - 
+    scope:
+      collection: posts
+    values:
+      medium_publication: ux-design-and-tech-blog
+  
 
 # Build settings
 markdown: kramdown

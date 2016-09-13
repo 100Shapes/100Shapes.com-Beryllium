@@ -1,0 +1,16 @@
+{% assign author = site.data.people[include.post.author] %}
+
+<a href="https://medium.com/{{ post.medium_publication }}/{{ post.medium_id }}"
+   class="index-item index-item--article {{ site.animation_in_classes }}">
+    <article class="index-item__content">
+        <h1 class="index-item__heading">{{ include.post.title }}</h1>
+    
+        <div class="index-item__strap">
+            <span class="index-item__strap__item index-item__author">
+                <img class="index-item__author__avatar" src="{{ author.gravatar }}" /> 
+                <span class="index-item__author__name">{{ author.name_long }}</span>
+            </span>
+            <span class="index-item__strap__item index-item__date">{% include snippets/pretty-date.html date=include.post.date %}</span>
+        </div>
+    </article>
+</a>
