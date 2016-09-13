@@ -7,7 +7,7 @@
     
         <div class="index-item__strap">
             <span class="index-item__strap__item index-item__author">
-                <img class="index-item__author__avatar" src="{{ author.gravatar }}" /> 
+            <img class="index-item__author__avatar" src="{{ author.gravatar }}" alt="{{ author.name_long }} gravatar" /> 
                 <span class="index-item__author__name">{{ author.name_long }}</span>
             </span>
             <span class="index-item__strap__item index-item__date">{% include snippets/pretty-date.html date=include.post.date %}</span>

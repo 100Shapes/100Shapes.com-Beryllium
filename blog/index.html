@@ -7,7 +7,6 @@ standfirst: >
   Smashing letters together untill coherency emerges.
 ---
 
-
 {% if page.themeColour %}
 <header class="Banner mb2" style="background-color: {{ page.themeColour }}">
 {% else %}
@@ -23,9 +22,11 @@ standfirst: >
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
+        {% assign posts = site.posts %}
+
         {% for post in site.posts %}
         <div class="mb2">
-             {% include page/post-promo.html post=post %}   
+            {% include page/post-promo.html post=post %}   
         </div>
         {% endfor %}
     </div>
