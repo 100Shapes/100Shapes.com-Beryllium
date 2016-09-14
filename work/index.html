@@ -47,8 +47,8 @@ standfirst: >
 </div>
 
 
-<div class="row mb2">
-    <div class="medium-offset-1 medium-10 column">
+<div class="row">
+    <div class="medium-offset-1 medium-10 column mt2">
         <h2>Digital tools and applications</h2>
         {% assign app_projects = site.projects | where: 'category', 'app' | sort: 'priority' | reverse %}
         {% for project in app_projects %}

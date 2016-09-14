@@ -33,6 +33,11 @@ $unit: $column-gutter;
   margin-bottom: $unit;
 }
 
+.mv2 {
+  margin-top: $unit * 2;
+  margin-bottom: $unit * 2;
+}
+
 .p {
   padding: $unit;
 }
