@@ -100,9 +100,10 @@ $unit: $column-gutter;
   }
 
   &--enterprise {
-    height: $unit * 20;
+    height: $unit * 12;
+
     @include breakpoint(medium) {
-      height: $unit * 25;
+      height: $unit * 20;
     }
   }
 
