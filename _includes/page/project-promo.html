@@ -1,4 +1,5 @@
-{% capture promo %}{{ site.baseurl }}/static/images/projects/{{ include.project.slug }}/promo.jpg{% endcapture %}
+{% capture promo %}{{ site.url }}{{ site.baseurl }}/static/images/projects/{{ include.project.slug
+}}/promo.jpg{% endcapture %}
 
 <a href="{{ include.project.url | prepend: site.baseurl }}"
    class="Promo {{ site.animation_in_classes }} p md-p2 lg-p3"
