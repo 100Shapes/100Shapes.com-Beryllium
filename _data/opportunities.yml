@@ -12,28 +12,38 @@ vd:
   role: Visual Designer
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    Our visual designers define the final execution the what we make and do – it's super-important we get this right.
+    As a visual designer at 100 Shapes you will be responsible for creating appropriate, clean interfaces,
+    compositions and graphic pieces. You’ll breathe life into wireframes, design bold identities for bold
+    companies and be given the chance to explore your art in directions you didn’t think you could. We’re keen
+    believers that one design problem can have many right answers.
+
+    We like to be hands on with our projects, utilising your skills as a designer, whether sketching or perfecting
+    a mobile layout. You’ll work side by side our developers, user researchers and fellow designers as well as
+    getting stuck in to client-facing workshops. Drop us an email and link to your website/dribbble portfolio.
+
 
 ur:
   role: User Researcher
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    We believe in evidence-based design. Usability assessment
+    Research is core to our design process at 100 Shapes. We believe that evidence based design creates
+    digital products that provide value to users.
+
+    We’re always interested in meeting User Researchers who are approachable, analytical thinkers,
+    and who take ownership of their findings through to design and development stages.
+
 
 fedev:
   role: Frontend Developer
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    Building for the web is an ever evolving and wide reaching craft. We look developers who appreciate who are using the latest tech but respect the value in reducing the number of parts in a system.
+    Building for the web is an ever evolving and wide reaching craft. We look developers who appreciate who are
+    using the latest tech but respect the value in reducing the number of parts in a system.
 
     We look for developers who are a bit confused by the word programmer.
-
     We look for developers who have have npm war stories.
-
     We look for developers who have advanced font features.
-
     We look for developers who have something to say about systemd.
-
     Some of the tools we like to use:
 
     - React with Redux
@@ -42,6 +52,5 @@ fedev:
     - JavaScript ES2015 with Babel
     - Django / Python a bonus
     - Docker / Linux / MacOS
-
-    Build design systems expressed through CSS.
+    - Build design systems expressed through CSS.
 

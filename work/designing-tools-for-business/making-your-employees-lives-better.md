@@ -3,9 +3,13 @@ layout: page-wrapped
 title: Making your employees’ lives better
 date: 2016-04-03
 bannerImage: enterprise.jpg
+
 standfirst: >
   Clunky, slow, frustrating: most of us have experienced horrible business tools. But the UX focus we’ve come to expect from consumer products is finally filtering through to business systems – and delivering real benefits to staff.
 
+description: >
+  Clunky, slow, frustrating: most of us have experienced horrible business tools. But the UX focus we’ve come to expect from consumer products is finally filtering through to business systems – and delivering real benefits to staff.
+  
 ---
 
 Few companies today would quibble that their customer-facing products – websites, apps, software, devices – should look good and be easy to use. Forrester Research found in 2012 that 93% of executives listed improving the customer experience as a top strategic priority. 

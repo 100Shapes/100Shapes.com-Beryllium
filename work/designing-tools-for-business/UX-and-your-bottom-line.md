@@ -1,9 +1,15 @@
 ---
 layout: page-wrapped
 title: "Business software and applications: UX and your bottom line"
-long_title: "Business software and applications: UX and your bottom line"
+
 standfirst: >
-  Research confirms what those of us working in the field have long understood: good UX is good for business. But how do you convince the decision-makers in your organisation that user experience is worth the investment?
+  Research confirms what those of us working in the field have long understood: good UX is good for business.
+  But how do you convince the decision-makers in your organisation that user experience is worth the investment?
+  
+description: >
+  Research confirms what those of us working in the field have long understood: good UX is good for business.
+  But how do you convince the decision-makers in your organisation that user experience is worth the investment?
+
 ---
 
 There are many ways that the business case for user-centred design makes sense. If you’re looking at external user audiences (customers), benefits include improved higher conversion rates, improved customer experience and increased brand value. With internal users (staff), gains include better adoption rates, improved data quality and increased productivity. 
