@@ -4,6 +4,10 @@ $unit: $column-gutter;
   margin-bottom: 0;
 }
 
+.mb-half {
+  margin-bottom: $unit * 0.5;
+}
+
 .mb {
   margin-bottom: $unit;
 }

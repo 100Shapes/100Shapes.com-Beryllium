@@ -1,3 +1,26 @@
-.button.warning {
-  color: $blue;
+.button {
+
+  &.warning {
+    color: $blue;
+  }
+
+  &.hollow {
+    border-width: 2px !important;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+      border-color: $blue;
+    }
+  }
+
+  &.hollow.warning {
+
+    &:hover {
+      background-color: map-get($foundation-palette, secondary);
+      color: $blue-dark;
+      border-color: map-get($foundation-palette, secondary);
+    }
+  }
+
 }
