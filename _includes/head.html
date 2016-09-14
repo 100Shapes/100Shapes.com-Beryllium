@@ -15,7 +15,7 @@
     {% capture page-description %}{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate:
     155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 
-    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" type="image/favicon-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/favicon-icon" />
 
     <link rel="stylesheet" href="{{ '/dist/main.css' | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page-url }}">
