@@ -61,7 +61,7 @@ pageClass: page--home
             {% for item in site.data.ventures %}
             {% assign venture = item | last %}
             <div class="small-12 column mb">
-                {% include ventures/list-item.html venture=venture %}
+                {% include ventures/list-item.html venture=venture key=item.first %}
             </div>
             {% endfor %}
         </div>

@@ -40,7 +40,7 @@ $unit: $column-gutter;
     top: 0;
     left: 0;
     z-index: 2;
-    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: $global-radius;
   }
 
@@ -121,6 +121,14 @@ $unit: $column-gutter;
     .Promo__heading {
       max-width: none;
     }
+  }
+
+  &--venture--climb::after {
+    background-color: #b3daf6;
+  }
+
+  &--venture--orbit::after {
+    background-color: #F54946;
   }
 }
 
