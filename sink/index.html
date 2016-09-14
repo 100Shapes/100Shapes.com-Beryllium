@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Sink"
+permalink: /sink/
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="sink">
+  <h1>Logos</h1>
+  <div class="row mt2">
+    {% for logo in site.data.logos %}
+      {% assign url = 'optic-logos/' | append: logo | append: '.svg'  %}
+      <div class="column small-2">
+        {% include {{ url }}  %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

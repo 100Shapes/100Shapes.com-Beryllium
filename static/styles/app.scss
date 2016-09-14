@@ -63,3 +63,11 @@
 
 @import "pages/enterprise";
 @import "pages/home";
+
+.sink {
+  svg {
+    max-width: 100%;
+    height: auto;
+    fill: pink;
+  }
+}
