@@ -13,6 +13,9 @@
 $body-weight-regular: 300;
 $body-weight-book: 400;
 
+$header-font-family-regular: $header-font-family;
+$header-font-family-light: 'BrandonTextWeb-Light', Helvetica, sans-serif;
+
 // Generate .h1, .h2, ... classes
 @each $size, $headers in $header-sizes {
   @include breakpoint($size) {
@@ -28,12 +31,15 @@ p {
   font-weight: $body-weight-light;
 }
 
-h1, .h1,
 h2, .h2,
-h4, .h4,
+h4, .h4 {
+  font-family: $header-font-family-light;
+}
+
+h1, .h1,
 h5, .h5,
 h6, .h6 {
-  font-family: $header-font-family;
+  font-family: $header-font-family-regular;
 }
 
 h3, .h3 {
@@ -41,7 +47,7 @@ h3, .h3 {
 }
 
 .ffss {
-  font-family: $header-font-family !important;
+  font-family: $header-font-family-regular !important;
 }
 
 .main {
