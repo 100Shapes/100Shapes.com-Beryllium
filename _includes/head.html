@@ -3,8 +3,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page.seo_title | default: page.long_title | default: page.title | strip_html | escape }} | 100 Shapes,
-        London</title>
+    {% capture page-title %}{{ page.seo_title | default: page.long_title | default: page.title | strip_html | escape }} | 100 Shapes, London{% endcapture %}
+    {% capture site-title %}100 Shapes – {{ site.title }}{% endcapture %}
+    <title>{{ page-title }} </title>
 
     {% assign page-url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 
@@ -26,7 +27,7 @@
     <meta property="og:url" content="{{ page-url }}"/>
     <meta property="og:image" content="{{ share-image }}"/>
     <meta property="og:description" content="{{ page-description }}"/>
-    <meta property="og:site_name" content="100 Shapes – {{ site.title }}"/>
+    <meta property="og:site_name" content="{{ site-title }}"/>
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{ page-title }}">
@@ -34,10 +35,9 @@
     <meta itemprop="image" content="{{ share-image }}">
 
     <!-- Twitter Card data -->
-
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="{{ site.twitter_username }}">
-    <meta name="twitter:creator" content="{{ site.twitter_username }}">
+    <meta name="twitter:site" content="{{ site.data.networks.twitter.handle }}">
+    <meta name="twitter:creator" content="{{ site.data.networks.twitter.handle }}">
     <meta name="twitter:title" content="{{ page-title }}">
     <meta name="twitter:description" content="{{ page-description }}">
     <meta name="twitter:image" content="{{ share-image }}">
