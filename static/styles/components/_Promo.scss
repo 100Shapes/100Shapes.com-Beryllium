@@ -16,7 +16,7 @@ $unit: $column-gutter;
   color: $white;
   background-color: $black;
   border-radius: $global-radius;
-  perspective: 1px; // fix chrome border-radius clipping
+  will-change: transform; // fix chrome border-radius clipping
   transition: color 0.3s;
 
   &::before,
