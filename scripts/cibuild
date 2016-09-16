@@ -3,4 +3,4 @@ set -e # halt script on error
 
 NODE_ENV=production node ./node_modules/.bin/webpack --progress -p
 JEKYLL_ENV=production bundle exec jekyll build
-bundle exec htmlproofer ./_site
+bundle exec htmlproofer --file-ignore ./_site/404.html ./_site
