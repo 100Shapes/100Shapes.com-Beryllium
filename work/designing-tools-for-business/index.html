@@ -111,14 +111,15 @@ description: >
         <ul class="no-bullet mt2 ctas">
             <li class="mt">
                 {% assign emailHref = 'mailto:' | append: site.email %}
-                {% include page/icon-anchor.html label=site.email href=emailHref icon='mail' %}
+                {% include page/icon-anchor.html label=site.email href=emailHref icon='mail' hideLabelsOnMobile=false %}
             </li>
             <li class="mt">
                 {% assign phoneHref = 'tel:' | append: site.phone_number %}
-                {% include page/icon-anchor.html label=site.phone_number_display href=phoneHref icon='phone' %}
+                {% include page/icon-anchor.html label=site.phone_number_display href=phoneHref icon='phone'
+                hideLabelsOnMobile=false %}
             </li>
             <li class="mt">
-                {% include page/icon-anchor.html label=site.address href=site.address_link icon='location-pin' %}
+                {% include page/icon-anchor.html label=site.address href=site.address_link icon='location-pin' hideLabelsOnMobile=false %}
             </li>
         </ul>
 

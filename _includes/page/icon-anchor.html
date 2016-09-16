@@ -1,5 +1,11 @@
+{% if include.hideLabelsOnMobile == false %}
+    {% assign hide-labels-on-mobile = false %}
+{% else %}
+    {% assign hide-labels-on-mobile = true %}
+{% endif %}
+
 <a href="{{ include.href }}" class="icon-anchor align-middle h5">
     {% assign icon = 'icons/' | append: include.icon | append: '.svg' %}
     {% include {{ icon }} %}
-    <span class="show-for-large">{{ include.label }}</span>
+    <span {% if hide-labels-on-mobile %}class="show-for-large"{% endif %}>{{ include.label }}</span>
 </a>
