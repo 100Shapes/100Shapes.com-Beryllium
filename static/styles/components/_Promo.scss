@@ -8,7 +8,7 @@ $unit: $column-gutter;
   overflow: hidden;
   background-position: top right;
 
-  height: $unit * 10;
+  height: $unit * 12;
   @include breakpoint(medium) {
     height: $unit * 17;
   }
