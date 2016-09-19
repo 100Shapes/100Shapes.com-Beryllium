@@ -1,16 +1,27 @@
 {% assign author = site.data.people[include.post.author] %}
 
 <a href="https://medium.com/{{ post.medium_publication }}/{{ post.medium_id }}"
-   class="index-item index-item--article {{ site.animation_in_classes }}">
-    <article class="index-item__content">
-        <h1 class="index-item__heading">{{ include.post.title }}</h1>
-    
-        <div class="index-item__strap">
-            <span class="index-item__strap__item index-item__author">
-            <img class="index-item__author__avatar" src="{{ author.gravatar }}" alt="{{ author.name_long }} gravatar" /> 
-                <span class="index-item__author__name">{{ author.name_long }}</span>
-            </span>
-            <span class="index-item__strap__item index-item__date">{% include snippets/pretty-date.html date=include.post.date %}</span>
+   class="Promo Promo--post {{ site.animation_in_classes }}">
+    <article class="Promo__content">
+
+
+        <div class="Promo--post__banner" style="background-image:url('{{ include.post.promo_image }}');">
+        </div>
+
+        <div class="Promo--post__body p md-p2">
+
+            <h1 class="Promo__heading h3 ffss mb0">{{ include.post.title }}</h1>
+
+            <footer>
+                <p class="mb-half show-for-large">{% include snippets/pretty-date.html
+                    date=include.post.date %}</p>
+
+                <div class="Promo--post__author">
+                    <img class="Promo--post__author__avatar mr-half" src="{{ author.gravatar }}"
+                         alt="{{ author.name_long }} gravatar"/>
+                    <span class="Promo--post__author__name">{{ author.name_long }}</span>
+                </div>
+            </footer>
         </div>
     </article>
 </a>

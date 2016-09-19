@@ -1,4 +1,6 @@
 $unit: $column-gutter;
+$promo-post-image-height-small: $column-gutter * 6;
+$promo-post-image-height-medium: $column-gutter * 7;
 
 .Promo {
   display: block;
@@ -126,6 +128,52 @@ $unit: $column-gutter;
 
   &--venture--orbit::after {
     background-color: #F54946;
+  }
+
+  &--post {
+    background: $light-gray;
+
+    height: $unit * 15;
+    @include breakpoint(medium) {
+      height: $unit * 21;
+    }
+  }
+
+  &--post::after {
+    background-color: map-get($foundation-palette, secondary);
+  }
+
+  &--post::before {
+    background: none;
+  }
+
+  &--post .Promo__content {
+    color: $black !important;
+  }
+
+  &--post__banner {
+    background-size: cover;
+
+    height: $promo-post-image-height-small;
+    @include breakpoint(medium) {
+      height: $promo-post-image-height-medium;
+    }
+  }
+
+  &--post__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--post__author__avatar {
+    border-radius: 9999em;
+
+    width: 40px;
+    @include breakpoint(medium) {
+      width: 60px;
+    }
   }
 }
 

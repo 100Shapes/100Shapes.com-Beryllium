@@ -25,6 +25,13 @@ $foundation-palette: (
 $global-flexbox: true;
 $global-width: rem-calc(1200);
 $global-radius: 8px;
+$breakpoints: (
+        small: 0,
+        medium: 640px,
+        large: 1440px,
+        xlarge: 1440px,
+        xxlarge: 1640px,
+);
 
 // Typography
 $header-font-family: 'BrandonTextWeb-Regular', Helvetica, sans-serif;
