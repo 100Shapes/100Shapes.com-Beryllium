@@ -153,6 +153,7 @@ $promo-post-image-height-medium: $column-gutter * 7;
 
   &--post__banner {
     background-size: cover;
+    background-position: center;
 
     height: $promo-post-image-height-small;
     @include breakpoint(medium) {
