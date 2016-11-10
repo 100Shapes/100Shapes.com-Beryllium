@@ -1,50 +1,20 @@
 ixd:
-  role: Interaction Designer
+  role: User Experience Designer
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    We're always on the look-out for Interaction Designers with attention to detail; who want to change the world
-    around them because they can spot better ways of interacting with the tools and systems they encounter every day.
-
-    If you're interested in working with us, send us your portfolio and focus on projects which describe _why_ you
-    made certain decisions – that's what we're really interested in.
+    As our homepage declares, all great design has people at it’s heart. We believe that evidence based design creates digital products that provide true value to their users. With a user-centred approach, any task no matter how complex can be transformed into something straightforward and easy-to-use. We’re always interested in meeting UX Designers who are approachable, analytical thinkers with a keen eye for detail; those who want to change the world around them because they can see better, more inspiring ways for people to interact with the products we encounter everyday. Sound like you?
 
 vd:
   role: Visual Designer
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    As a visual designer at 100 Shapes you will be responsible for creating appropriate, clean interfaces,
-    compositions and graphic pieces. You’ll breathe life into wireframes, design bold identities for bold
-    companies and be given the chance to explore your art in directions you didn’t think you could. We’re keen
-    believers that one design problem can have many right answers.
-
-    We like to be hands on with our projects, utilising your skills as a designer, whether sketching or perfecting
-    a mobile layout. You’ll work side by side our developers, user researchers and fellow designers as well as
-    getting stuck in to client-facing workshops. Drop us an email and link to your website/dribbble portfolio.
-
-
-ur:
-  role: User Researcher
-  apply_link: "mailto:jobs@100shapes.com"
-  description: |
-    Research is core to our design process at 100 Shapes. We believe that evidence based design creates
-    digital products that provide value to users.
-
-    We’re always interested in meeting User Researchers who are approachable, analytical thinkers,
-    and who take ownership of their findings through to design and development stages.
-
+    Visual design is a powerful part of our design process. Great visual designs effortlessly communicate the emotional qualities of a brand and conjure an emotional response from it’s audience. We always want to hear from motivated designers who bring inspiring and brave approaches to typography, layout and visual languages; those with the ability to take sketches and wireframes and transform them into beautiful, intuitive designs.
 
 fedev:
   role: Frontend Developer
   apply_link: "mailto:jobs@100shapes.com"
   description: |
-    Building for the web is an ever evolving and wide reaching craft. We look developers who appreciate who are
-    using the latest tech but respect the value in reducing the number of parts in a system.
-
-    We look for developers who are a bit confused by the word programmer.
-    We look for developers who have have npm war stories.
-    We look for developers who have advanced font features.
-    We look for developers who have something to say about systemd.
-    Some of the tools we like to use:
+    Building for the web is an ever evolving and wide reaching craft. We look for developers who appreciate the latest tech but respect the value in reducing the number of parts in a system.  We look for developers who are a bit confused by the word programmer. We look for developers who have npm war stories. We look for developers who have advanced font features. We look for developers who have something to say about systemd. Some of the tools we like to use: 
 
     - React with Redux
     - PostCSS and Sass
