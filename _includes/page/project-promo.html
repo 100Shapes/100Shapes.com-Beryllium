@@ -8,15 +8,15 @@
         <h3 class="Promo__heading ffss mb0">
             {{ include.title | default: include.project.promo_title | default: include.project.title }}
         </h3>
-        <div>
-            <span class="show-for-large float-right">
-                {% assign icon = 'icons/' | append: include.project.icon | append: '.svg' %}
-                {% include {{ icon }} %}
-            </span>
+        <div class="Promo__details">
             <div class="cta-label">
                 <p class="cta-label__instruction mb-half">Read about</p>
                 <p class="cta-label__label h4 mb0">{{ include.project.project_name}}</p>
             </div>
+            <span class="show-for-large">
+                {% assign icon = 'icons/' | append: include.project.icon | append: '.svg' %}
+                {% include {{ icon }} %}
+            </span>
         </div>
     </div>
 </a>

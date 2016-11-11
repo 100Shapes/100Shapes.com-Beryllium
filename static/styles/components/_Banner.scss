@@ -29,3 +29,7 @@ $unit: $column-gutter;
     }
   }
 }
+
+.page--enterprise .Banner {
+  padding-bottom: $unit * 2 !important;
+}

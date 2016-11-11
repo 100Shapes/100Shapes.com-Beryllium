@@ -81,6 +81,15 @@ $promo-post-image-height-medium: $column-gutter * 7;
     fill: currentColor;
   }
 
+  &__details {
+    display: flex;
+    align-items: center;
+
+    .cta-label {
+      flex: 1;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
