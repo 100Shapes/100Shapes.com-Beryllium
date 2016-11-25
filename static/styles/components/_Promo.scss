@@ -9,6 +9,9 @@ $promo-post-image-height-medium: $column-gutter * 7;
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: top right;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  transition: 0.3s all;
 
   height: $unit * 12;
   @include breakpoint(medium) {
@@ -19,7 +22,7 @@ $promo-post-image-height-medium: $column-gutter * 7;
   background-color: $black;
   border-radius: $global-radius;
   will-change: transform; // fix chrome border-radius clipping
-  transition: color 0.3s;
+
 
   &::before,
   &::after {
@@ -39,12 +42,15 @@ $promo-post-image-height-medium: $column-gutter * 7;
   &::after {
     z-index: 3;
     opacity: 0;
-    background-color: rgba(map-get($foundation-palette, secondary), 0.90);
+    background-color: rgba(map-get($foundation-palette, primary), 0.90);
     transition: opacity 0.3s
   }
 
   &:hover {
     color: inherit;
+    transform: rotateY(-2deg) rotateX(4deg) translateX(4px) translateY(-2px);
+
+    box-shadow: rgba(black, 0.2) 0 30px 60px 0;
 
     &::after {
       opacity: 1;
@@ -57,10 +63,6 @@ $promo-post-image-height-medium: $column-gutter * 7;
         transform: translateY(0.8rem);
       }
 
-    }
-
-    .Promo__content {
-      color: $black !important;
     }
   }
 
