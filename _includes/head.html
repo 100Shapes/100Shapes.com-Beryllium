@@ -15,6 +15,8 @@
 
     {% capture page-description %}{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate:
     155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+    
+    <meta name="description" content="{{ page-description }}">
 
     <link rel="icon" href="/static/images/favicon/static.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="/static/images/favicon/static-16.png" sizes="16x16" type="image/png">
