@@ -2,6 +2,8 @@
 layout: page-wrapped
 title: "Privacy Policy"
 permalink: /privacy-policy/
+description: >
+  Privacy policy for the 100 Shapes website.
 standfirst: >
   Protecting your personal details on our website.
 ---
