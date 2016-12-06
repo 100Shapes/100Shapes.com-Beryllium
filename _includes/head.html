@@ -3,9 +3,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% capture page-title %}{{ page.seo_title | default: page.long_title | default: page.title | strip_html | escape }} | 100 Shapes, London{% endcapture %}
-    {% capture site-title %}100 Shapes – {{ site.title }}{% endcapture %}
-    <title>{{ page-title }} </title>
+    {% capture page-title %}100 Shapes | {{ page.seo_title | default: page.long_title | default: page.title | strip_html | escape }}{% endcapture %}
+    {% capture site-title %}100 Shapes | {{ site.title }}{% endcapture %}
+    <title>{{ page-title }}</title>
 
     {% assign page-url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 
