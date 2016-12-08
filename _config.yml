@@ -1,8 +1,8 @@
 # Site settings
 title: UX design for business systems and digital products
 description: > # this means to ignore newlines until 'baseurl:'
-  100 Shapes designs enterprise software, applications and other
-  digital tools based on user experience principles for better
+  100 Shapes designs enterprise systems, applications and other
+  digital tools based on user experience (UX) principles for better
   business performance.
 baseurl: ''
 url: ''
@@ -18,7 +18,7 @@ phone_number_display: +44 203 773 8175
 animation_in_classes: 'wow fadeIn'
 
 menu:
-  - label: UX & Enterprise
+  - label: Designing enterprise systems
     link: /work/designing-tools-for-business/
 
   - label: Work
@@ -41,12 +41,12 @@ defaults:
       collection: projects
     values:
       layout: project
-  - 
+  -
     scope:
       collection: posts
     values:
       medium_publication: ux-design-and-tech-blog
-  
+
 
 # Build settings
 markdown: kramdown
