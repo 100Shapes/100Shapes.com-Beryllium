@@ -66,6 +66,3 @@ exclude:
   - node_modules
   - static/js
   - static/styles
-
-gems:
-  - jekyll-sitemap
