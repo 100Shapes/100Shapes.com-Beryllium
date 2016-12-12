@@ -55,9 +55,6 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-gems:
-  - jekyll-redirect-from
-
 exclude:
   - vendor
   - Gemfile
