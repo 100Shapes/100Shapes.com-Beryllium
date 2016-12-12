@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /partials/
 Host: 100shapes.com
-Sitemap: http://www.100shapes.com/sitemap.xml
+Sitemap: http://www.100shapes.com/sitemap.atom
