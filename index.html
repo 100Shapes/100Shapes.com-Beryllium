@@ -1,9 +1,6 @@
 ---
 title: Home
-long_title: UX design for business systems and digital products
-description: >
-  100 Shapes designs enterprise software, applications and other digital tools based on user experience
-  principles for better business performance.
+long_title: UX design of enterprise software and business apps
 layout: default
 pageClass: page--home
 ---
@@ -11,15 +8,15 @@ pageClass: page--home
 <header class="Banner fcw">
     <div class="row">
         <div class="small-12 medium-offset-1 medium-10 large-7 column">
-            <h1 class="hide">{{ site.title }} | 100 Shapes</h1>
+            <h1 class="hide">{{ site.long_title }}</h1>
 
             <h2 class="h1 {{ site.animation_in_classes }}">
-                All great design <br class="hide-for-small-only" />has people at its heart.
+                All great software <br class="hide-for-small-only" />has people at its heart.
             </h2>
 
             <p class="lead {{ site.animation_in_classes }} Titles__standfirst mb0">
-                Tools simply work better when designed for the people who use them. That’s why 100 Shapes puts the user
-                experience at the centre of every business system and digital product we design.
+                Enterprise software works better when designed for the people who use it. That’s why 100 Shapes puts the user
+                experience at the centre of every business application and internal tool we design.
             </p>
         </div>
     </div>
@@ -27,14 +24,14 @@ pageClass: page--home
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column">
-        <h2 class="hide">Business software and enterprise systems</h2>
+        <h2 class="hide">Enterprise software and business apps</h2>
         {% include page/tools-for-business-promo.html %}
     </div>
 </div>
 
 <div class="row mb2">
     <div class="medium-offset-1 medium-10 column mt2">
-        <h2 id="projects">Organisations seeing the benefits of UX design</h2>
+        <h2 id="projects">Businesses seeing the benefits of UX design</h2>
         <div class="row">
             {% assign featured_projects = site.projects | where: 'featured', true | sort: 'priority' | reverse %}
             {% for project in featured_projects %}
@@ -54,7 +51,7 @@ pageClass: page--home
         <div class="main mb2">
             <p>
                 Get a bunch of curious, creative, hands-on people in a room and things start to happen.
-                Sometimes our tinkering kicks off a whole new venture or product.
+                Sometimes our tinkering kicks off a whole new venture, software, tool or app.
             </p>
         </div>
         <div class="row">
@@ -73,21 +70,19 @@ pageClass: page--home
         <h2>About 100 Shapes</h2>
         <div class="main mb2">
             <p>
-                100 Shapes are a user experience (UX) &amp; digital design
-                studio based in London UK. We specialise in the design, prototyping
-                and development of bespoke enterprise business systems; creating
-                internal business tools to help large organisation run more productively.
+                100 Shapes are an enterprise UX ('user experience') &amp; design agency focused
+                on designing enterprise software and business apps for better
+                business performance; helping large organisations run more productively.
             </p>
             <p>
                 We help identify inefficient workflows and processes within large organisations
-                and design systems and tools to change them for the better. We do this
-                by putting staff at the centre of the design process because we understand
-                that happier employees and better designed business tools mean
-                more efficient businesses.
+                and create business architectures and enterprise tools to change them for the better.
+                We do this by putting staff at the centre of the design process because we understand
+                that happier employees and better designed business apps mean more efficient businesses.
             </p>
             <p>
-                Can we help with your enterprise project?
-                <a href="#" class="chat-toggle">Get in touch</a> for a consultation and quote.
+                Can we help with your internal tool?
+                <a href="#" class="chat-toggle">Get in touch</a> for a free consultation and quote.
             </p>
         </div>
     </div>
