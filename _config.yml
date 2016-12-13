@@ -12,7 +12,7 @@ permalink: /blog/:categories/:title/
 
 # 100 Shapes Settings
 email: hello@100shapes.com
-phone_number: +442037738175
+phone_number: '+442037738175'
 phone_number_display: +44 203 773 8175
 animation_in_classes: 'wow fadeIn'
 
