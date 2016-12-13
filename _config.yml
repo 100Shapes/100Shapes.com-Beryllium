@@ -17,9 +17,6 @@ phone_number_display: +44 203 773 8175
 animation_in_classes: 'wow fadeIn'
 
 menu:
-  - label: Designing enterprise software
-    link: /work/designing-tools-for-business/
-
   - label: Work
     link: /work/
 
@@ -69,6 +66,3 @@ exclude:
   - node_modules
   - static/js
   - static/styles
-
-gems:
-  - jekyll-sitemap

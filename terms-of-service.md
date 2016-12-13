@@ -2,8 +2,13 @@
 layout: page-wrapped
 title: "Terms of Serivce"
 permalink: /terms-of-service/
+
 standfirst: >
   Protecting your personal details on our website.
+
+description: >
+  Protecting your personal details on our website.
+  
 ---
 
 Last updated: September 14, 2016

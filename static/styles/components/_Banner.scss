@@ -12,6 +12,15 @@ $unit: $column-gutter;
     border-radius: $global-radius;
   }
 
+  a {
+      border-bottom: 1px dotted $yellow;
+
+      &:hover {
+          border-color: $orange;
+          border-bottom-style: solid;
+      }
+  }
+
   &--yellow {
     background-color: $yellow;
   }
