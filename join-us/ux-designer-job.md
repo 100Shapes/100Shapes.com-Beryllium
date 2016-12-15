@@ -97,7 +97,7 @@ You’re curious and proactive, often challenging and inspiring us with your per
 - Office perks - free coffee and breakfast
 
 
-Sound like you? Contact [job@100shapes.com](mailto:jobs@100shapes.com?subject=UX%20Designer%20application).
+Sound like you? Contact [jobs@100shapes.com](mailto:jobs@100shapes.com?subject=UX%20Designer%20application).
 
 
 ## About 100 Shapes
