@@ -14,6 +14,24 @@ description: >
 
 ---
 
+<h2>Current vacancies</h2>
+
+{% for item in site.data.opportunities %}
+{% assign job = item | last %}
+<h3>
+    {{ job.role }}
+</h3>
+<p>
+    {{ job.description | markdownify }}
+</p>
+<p class="mb2">
+    <a href="{{ job.apply_link }}">Read more</a>
+</p>
+{% endfor %}
+
+
+<h2>About 100 Shapes</h2>
+
 <p>Founded by Chris Elphick and brothers Michele and Paolo&nbsp;Memoli, 100&nbsp;Shapes has always been driven
     by a shared
     energy, curiosity and passion for UX &amp; design.</p>
@@ -40,15 +58,3 @@ description: >
 
 <br />
 
-{% for item in site.data.opportunities %}
-{% assign job = item | last %}
-<h3>
-    {{ job.role }}
-</h3>
-<p>
-    {{ job.description | markdownify }}
-</p>
-<p class="mb2">
-    <a href="{{ job.apply_link }}">Get in touch</a>
-</p>
-{% endfor %}

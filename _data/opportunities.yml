@@ -1,26 +1,6 @@
 ixd:
   role: User Experience Designer
-  apply_link: "mailto:jobs@100shapes.com"
-  description: |
-    As our homepage declares, all great design has people at it’s heart. We believe that evidence based design creates digital products that provide true value to their users. With a user-centred approach, any task no matter how complex can be transformed into something straightforward and easy-to-use. We’re always interested in meeting UX Designers who are approachable, analytical thinkers with a keen eye for detail; those who want to change the world around them because they can see better, more inspiring ways for people to interact with the products we encounter everyday. Sound like you?
-
-vd:
-  role: Visual Designer
-  apply_link: "mailto:jobs@100shapes.com"
-  description: |
-    Visual design is a powerful part of our design process. Great visual designs effortlessly communicate the emotional qualities of a brand and conjure an emotional response from it’s audience. We always want to hear from motivated designers who bring inspiring and brave approaches to typography, layout and visual languages; those with the ability to take sketches and wireframes and transform them into beautiful, intuitive designs.
-
-fedev:
-  role: Frontend Developer
-  apply_link: "mailto:jobs@100shapes.com"
-  description: |
-    Building for the web is an ever evolving and wide reaching craft. We look for developers who appreciate the latest tech but respect the value in reducing the number of parts in a system.  We look for developers who are a bit confused by the word programmer. We look for developers who have npm war stories. We look for developers who have advanced font features. We look for developers who have something to say about systemd. Some of the tools we like to use: 
-
-    - React with Redux
-    - PostCSS and Sass
-    - Webpack and Gulp
-    - JavaScript ES2015 with Babel
-    - Django / Python a bonus
-    - Docker / Linux / MacOS
-    - Build design systems expressed through CSS.
-
+  apply_link: "./ux-designer-job/"
+  description: >
+    As our homepage declares, all great design has people at it’s heart. We believe that evidence based design creates digital products that provide true value to their users. With a user-centred approach, any task no matter how complex can be transformed into something straightforward and easy-to-use. We’re looking for a UX
+    Designer to join our growing design team. Is this you?
