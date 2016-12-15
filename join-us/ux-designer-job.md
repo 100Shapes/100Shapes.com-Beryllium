@@ -1,6 +1,6 @@
 ---
 layout: page-wrapped
-title: UX Designer<br> Job Description
+title: UX Designer Role<br>
 seo_title: UX Designer job role for business software design
 bannerTheme: blue
 
@@ -13,7 +13,7 @@ standfirst: >
   better with incredible business applications.
   <br>
   <br>
-  <a href="mailto:jobs@100shapes.com?subject=UX%20SDesigner%20application">Apply now</a>
+  <a href="mailto:jobs@100shapes.com?subject=UX%20Designer%20application">Apply now</a>
 
 ---
 
@@ -94,7 +94,7 @@ You’re curious and proactive, often challenging and inspiring us with your per
 - Office perks - free coffee and breakfast
 
 
-Sound like you? [Contact job@100shapes.com](mailto:jobs@100shapes.com?subject=UX%20SDesigner%20application).
+Sound like you? Contact [job@100shapes.com](mailto:jobs@100shapes.com?subject=UX%20Designer%20application).
 
 
 ## About 100 Shapes
