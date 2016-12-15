@@ -57,9 +57,12 @@ You’re curious and proactive, often challenging and inspiring us with your per
 ## Essential skills
 
 
-- Skilled in all the usual design applications which enable you to do your job: Sketch, Photoshop, Illustrator, Marvel, etc.
+- We live and breathe in Sketch, fluency in this is a must
+- Prototyping in tools like Marvel App will be a big part of your job
+- Any additional software mastery e.g. Adobe Creative Suite is a bonus
 - Knowledge of web/mobile/device-specific design and user-centered design principles
 - Mastery of UX skills: user research, information architecture, interaction design
+- Mastery of UX toolbox & process
 - 1 + years of professional design experience
 
 
