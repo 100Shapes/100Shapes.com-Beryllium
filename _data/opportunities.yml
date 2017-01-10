@@ -1,5 +1,6 @@
 ixd:
   role: User Experience Designer
+  live: false
   apply_link: "./ux-designer-job/"
   description: >
     As our homepage declares, all great design has people at it’s heart. We believe that evidence based design creates digital products that provide true value to their users. With a user-centred approach, any task no matter how complex can be transformed into something straightforward and easy-to-use. We’re looking for a UX
