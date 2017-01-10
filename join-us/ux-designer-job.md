@@ -1,8 +1,9 @@
 ---
 layout: page-wrapped
-title: UX Designer Role<br>
+title: UX Designer Role
 seo_title: UX Designer job role for business software design
 bannerTheme: blue
+published: false
 
 description: >
   Become a UX designer at 100 Shapes and help us deliver incredible
