@@ -14,7 +14,13 @@ description: >
 
 ---
 
+{% for item in site.data.opportunities %}
+{% assign job = item | last %}
+{% if job.isLive %}
 <h2>Current vacancies</h2>
+{% break %}
+{% endif %}
+{% endfor %}
 
 {% for item in site.data.opportunities %}
 {% assign job = item | last %}
