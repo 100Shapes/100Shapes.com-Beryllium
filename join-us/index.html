@@ -18,6 +18,7 @@ description: >
 
 {% for item in site.data.opportunities %}
 {% assign job = item | last %}
+{% if job.isLive %}
 <h3>
     {{ job.role }}
 </h3>
@@ -27,6 +28,7 @@ description: >
 <p class="mb2">
     <a href="{{ job.apply_link }}">Read more</a>
 </p>
+{% endif %}
 {% endfor %}
 
 
