@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-set -e # halt script on error
-
-node ./node_modules/.bin/webpack --progress --watch & bundle exec jekyll serve
